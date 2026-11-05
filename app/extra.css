@@ -1,0 +1,60 @@
+/* Abschnittsfarben: drei deutlich getrennte Grautöne, nie zwei gleiche nebeneinander */
+section.s-a{background:#0F1011}
+section.s-b{background:#1D1E21}
+section.s-c{background:#2B2D32}
+section.s-d{background:#080809}
+.s-a .form{background:#1F2124}
+.s-a .f input,.s-a .f select,.s-a .f textarea{background:#0F1011}
+.s-c .form,.s-b .form{background:#111214}
+.s-b .f input,.s-b .f select,.s-b .f textarea,.s-c .f input,.s-c .f select,.s-c .f textarea{background:#1D1E21}
+.s-c .why .col,.why.s-c .col{border-top-color:#41444A}
+section.nobord{border-top:0}
+.cats,.stock{padding-top:100px}
+.stock{padding-bottom:120px}
+.cats{padding-bottom:110px}
+section.rev{padding:110px 0;text-align:left}
+section.rev .eyebrow{display:block;text-align:center}
+.hero2 .shot img{object-position:62% 55%}
+.hero-chip{display:inline-flex;align-items:center;gap:10px;margin-top:22px;margin-left:14px;padding:9px 16px;background:var(--yellow);color:#151618;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.hero-chip:hover{background:#fff}
+.tiles{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.tiles span small{display:block;margin-top:4px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--mut)}
+.ltitle{margin:0;font-weight:800;font-size:clamp(32px,4.6vw,64px);letter-spacing:-.02em;line-height:1.1;text-transform:uppercase}
+.hours{margin:20px 0 0;padding:0;list-style:none;color:rgba(255,255,255,.72);font-size:15px}
+.hours li{display:flex;justify-content:space-between;gap:20px;padding:6px 0;border-top:1px solid #2A2C30;max-width:360px}
+.hours li:last-child{border-bottom:1px solid #2A2C30}
+/* Google-Bewertungen */
+.gsum{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 14px;margin:24px 0 40px;font-size:15px;color:var(--mut)}
+.gsum b{font-size:34px;font-weight:800;color:var(--ink);line-height:1}
+.gst{color:#FBBC04;letter-spacing:2px;font-size:18px}
+.grow{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 20px;justify-content:flex-start}
+.gcard{flex:0 0 min(340px,84vw);scroll-snap-align:start;background:#fff;color:#202124;border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:10px;font-family:Roboto,Arial,sans-serif}
+.gcard header{display:flex;align-items:center;gap:12px}
+.gcard header>div{flex:1;min-width:0}
+.gcard header b{display:block;font-size:15px;font-weight:600;line-height:1.2}
+.gcard header small{display:block;font-size:12.5px;color:#70757a}
+.gcard header img,.gcard .av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+.gcard .av{background:#1A73E8;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600}
+.gcard p{margin:0;font-size:14.5px;line-height:1.55;color:#3C4043;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+.glinks{margin:36px 0 0;display:flex;flex-wrap:wrap;gap:14px 36px;justify-content:center}
+@media (min-width:1100px){.grow{justify-content:center}}
+@media (max-width:900px){.cats,.stock{padding-top:72px}.hero-chip{margin-left:0;display:flex;width:fit-content}section.rev{padding:80px 0}}
+/* Schrift insgesamt ruhiger und kleiner */
+.hero2 h1{font-weight:700;font-size:clamp(28px,4.2vw,60px);line-height:1.08;letter-spacing:-.01em}
+.hero2-row p{font-size:16px}
+.head h2,.svc h2,.ank h2,.fin h2,.post h2,.contact h2{font-weight:700;font-size:clamp(24px,2.8vw,38px);letter-spacing:-.005em}
+.ltitle,.post h1,.info h1{font-weight:700;font-size:clamp(26px,3.2vw,42px);letter-spacing:-.01em}
+.intro p{font-weight:600;font-size:clamp(19px,2.1vw,28px);letter-spacing:-.01em}
+.band p{font-weight:700;font-size:clamp(24px,3.4vw,46px)}
+.lead{font-size:16.5px}
+.why h3{font-weight:700;font-size:17px}
+.cbody h3{font-weight:600;font-size:17px}
+.cbody .pr b{font-weight:700;font-size:21px}
+.priceline b{font-weight:700;font-size:clamp(28px,3.2vw,40px)}
+.contact .tel{font-weight:700;font-size:clamp(26px,3vw,38px)}
+.tiles span{font-weight:700;font-size:clamp(16px,1.5vw,21px)}
+.post article h3{font-size:18px;font-weight:700}
+.post article p,.post article li{font-size:16px}
+.b1,.b2{font-weight:600;font-size:14px;padding:14px 24px}
+.hero-chip{font-weight:600}
+@media (max-width:900px){.hero2 h1{font-size:clamp(26px,7.4vw,38px)}.head h2,.svc h2,.ank h2,.fin h2,.post h2,.contact h2{font-size:clamp(22px,6vw,30px)}}
