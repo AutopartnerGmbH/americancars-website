@@ -79,7 +79,7 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
             </label>
             <label className='f'>Nachricht<textarea name='msg' defaultValue={`Ich interessiere mich für: ${v.name}.`} /></label>
             <button className='btn' type='submit'>Anfrage senden</button>
-            <p className='ok' role='status'>Entwurf: Auf der fertigen Seite geht diese Anfrage direkt per E-Mail an Sie.</p>
+            <p className='ok' role='status'></p>
             <p className='note'>Wir melden uns schnellstmöglich bei Ihnen.</p>
           </form>
         </div>

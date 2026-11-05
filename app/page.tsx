@@ -87,7 +87,7 @@ export default function Home() {
           <div className='r2'><label className='f'>Anliegen<select name='anl'><option>Wartung / Inspektion</option><option>Reparatur</option><option>TÜV / AU</option><option>Umbau / Tuning</option><option>Unfallschaden</option><option>Umzugsgut / Import</option><option>Sonstiges</option></select></label><label className='f'>Wunschtermin<input type='date' name='wt' /></label></div>
           <label className='f'>Nachricht<textarea name='msg' /></label>
           <button className='btn' type='submit'>Termin anfragen</button>
-          <p className='ok' role='status'>Entwurf: Auf der fertigen Seite geht diese Anfrage direkt per E-Mail an Sie.</p>
+          <p className='ok' role='status'></p>
           <p className='note'>Wir melden uns zur Terminbestätigung bei Ihnen.</p>
         </form>
       </div></section>
@@ -100,7 +100,7 @@ export default function Home() {
           <label className='f'>Fotos (Front, Heck, Innenraum, Tacho)<input type='file' name='fotos' accept='image/*' multiple /></label>
           <div className='r2'><label className='f'>Name<input type='text' name='name' autoComplete='name' /></label><label className='f'>Telefon oder E-Mail<input type='text' name='kontakt' /></label></div>
           <button className='btn' type='submit'>Angebot anfordern</button>
-          <p className='ok' role='status'>Entwurf: Auf der fertigen Seite geht diese Anfrage direkt per E-Mail an Sie.</p>
+          <p className='ok' role='status'></p>
           <p className='note'>Sie erhalten von uns ein Angebot. Ohne Verpflichtung.</p>
         </form>
         <div>

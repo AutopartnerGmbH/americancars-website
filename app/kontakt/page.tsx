@@ -36,7 +36,7 @@ export default function Kontakt() {
               </label>
               <label className='f'>Nachricht<textarea name='msg' /></label>
               <button className='btn' type='submit'>Absenden</button>
-              <p className='ok' role='status'>Entwurf: Auf der fertigen Seite geht diese Nachricht direkt per E-Mail an Sie.</p>
+              <p className='ok' role='status'></p>
             </form>
           </article>
         </div>
