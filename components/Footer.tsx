@@ -60,8 +60,8 @@ export default function Footer() {
       <div className='wrap legal'>
         <span>© {site.name} · Prüfstützpunkt TÜV NORD</span>
         <span>
-          <a href={`${site.oldSite}/impressum`}>Impressum</a>
-          <a href={`${site.oldSite}/datenschutz`}>Datenschutz</a>
+          <a href='/impressum'>Impressum</a>
+          <a href='/datenschutz'>Datenschutz</a>
           <a href='https://www.instagram.com/autopartner_american.cars/'>Instagram</a>
           <a href='https://www.youtube.com/@AutopartnerAmericanCars'>YouTube</a>
         </span>
