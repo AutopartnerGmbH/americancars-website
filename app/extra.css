@@ -64,3 +64,9 @@ footer .seo p{margin:0 0 16px;max-width:760px;font-size:13.5px;line-height:1.7}
 footer .seo ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 10px}
 footer .seo li a{display:block;padding:6px 12px;border:1px solid var(--line);font-size:12.5px;color:var(--mut);transition:border-color .2s,color .2s}
 footer .seo li a:hover{border-color:var(--yellow);color:var(--ink)}
+section.pop{padding:72px 0}
+.pop .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.poplist{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.poplist a{display:block;padding:10px 16px;border:1px solid #3A3D42;font-size:14px;font-weight:600;transition:border-color .2s,color .2s}
+.poplist a:hover{border-color:var(--yellow);color:var(--yellow)}
+@media (max-width:900px){.pop .wrap{grid-template-columns:1fr;gap:32px}section.pop{padding:56px 0}}

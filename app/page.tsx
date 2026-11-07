@@ -57,6 +57,26 @@ export default function Home() {
 
       <section className='band'><Photo src='/img/silverado.jpg' alt='Chevrolet Silverado mit Offroad-Umbau' /><div className='wrap'><span className='eyebrow'>Unser Anspruch</span><p>Jedes Fahrzeug haben wir selbst geprüft. <span>Bevor Sie es sehen.</span></p></div></section>
 
+      <section className='pop s-b'><div className='wrap'>
+        <div><span className='eyebrow'>Beliebte Modelle</span>
+          <ul className='poplist'>
+            <li><a href='/modelle/dodge-ram'>Dodge RAM</a></li>
+            <li><a href='/modelle/ford-mustang'>Ford Mustang</a></li>
+            <li><a href='/modelle/chevrolet-silverado'>Chevrolet Silverado</a></li>
+            <li><a href='/modelle/ford-bronco'>Ford Bronco</a></li>
+            <li><a href='/modelle/chrysler-pacifica'>Chrysler Pacifica</a></li>
+          </ul></div>
+        <div><span className='eyebrow'>Werkstatt-Leistungen</span>
+          <ul className='poplist'>
+            <li><a href='/hu-au-hagen'>HU & AU</a></li>
+            <li><a href='/klimaservice'>Klimaservice</a></li>
+            <li><a href='/motordiagnose'>Motordiagnose</a></li>
+            <li><a href='/bremsen-service'>Bremsen</a></li>
+            <li><a href='/getriebe-motor-reparatur'>Getriebe & Motor</a></li>
+            <li><a href='/unfall-instandsetzung'>Unfallreparatur</a></li>
+          </ul></div>
+      </div></section>
+
       <section className='why s-c' id='warum'><div className='wrap'>
         <span className='eyebrow'>Warum American Cars</span>
         <div className='cols'>

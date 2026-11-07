@@ -155,6 +155,72 @@ export const pages: Page[] = [
       { h: 'Aktuelle Beiträge', links: [['Umzugsgut: Auto aus den USA importieren', '/umzugsgut'], ['Tipps & Hinweise zum Kauf eines US-Fahrzeugs', '/tipps-hinweise'], ['Betrugsmasche bei US-Unfallfahrzeugen', '/betrugsmasche']] },
     ],
   },
+  {
+    slug: 'klimaservice',
+    title: 'Klimaservice in Hagen',
+    eyebrow: 'KFZ-Meisterwerkstatt · alle Marken',
+    lead: 'Kalte Luft im Sommer, klare Scheiben im Winter: Prüfung, Wartung und Befüllung Ihrer Klimaanlage.',
+    desc: 'Klimaservice in Hagen für alle Marken: Klimaanlage prüfen, absaugen, evakuieren und befüllen, Kältemittel R134a und 1234yf. KFZ-Meisterwerkstatt Autopartner GmbH.',
+    blocks: [
+      { h: 'Wann Sie die Klimaanlage prüfen lassen sollten', ul: ['Die Luft wird nicht mehr richtig kalt', 'Die Scheiben beschlagen schnell', 'Es riecht muffig aus den Lüftungsdüsen', 'Die Klimaanlage läuft laut oder schaltet sich häufig ein und aus', 'Die letzte Prüfung liegt länger als ein Jahr zurück'], p: ['Eine jährliche Prüfung hält die Kühlleistung hoch und beugt Folgeschäden am Kompressor vor.'] },
+      { h: 'So läuft der Klimaservice ab', ol: ['Hoch- und Niederdruck vergleichen und den Zustand bewerten', 'Kompressor, Trockner, Verdampfer und Kondensator prüfen, Innenraumtemperatur messen', 'Innenraumfilter erneuern', 'Kältemittel absaugen und das System evakuieren', 'Mit der vorgeschriebenen Menge Kältemittel befüllen'] },
+      { h: 'Für alle Fahrzeuge und beide Kältemittel', p: ['Wir arbeiten mit einem Kombi-Gerät von SNAP-ON für die Kältemittel R134a und 1234yf. So bedienen wir ältere und neuere Fahrzeuge, ob Golf oder Dodge RAM.'] },
+    ],
+    cta: ['Werkstatttermin anfragen', '/#werkstatt'],
+  },
+  {
+    slug: 'hu-au-hagen',
+    title: 'HU und AU in Hagen',
+    eyebrow: 'Prüfstützpunkt TÜV NORD',
+    lead: 'Hauptuntersuchung und Abgasuntersuchung für alle Hersteller, direkt bei uns in der Werkstatt.',
+    desc: 'HU und AU in Hagen-Hohenlimburg: Prüfstützpunkt TÜV NORD für alle Marken, Vorabcheck in der Meisterwerkstatt, auch für US-Fahrzeuge. Autopartner GmbH.',
+    blocks: [
+      { h: 'TÜV und AU aus einer Hand', p: ['Wir sind Prüfstützpunkt der TÜV NORD und prüfen Fahrzeuge aller Hersteller, vom Kleinwagen bis zum US-Pickup. Hauptuntersuchung (HU) und Abgasuntersuchung (AU) erledigen Sie bei uns in einem Termin.', 'Pkw müssen in der Regel alle zwei Jahre zur HU, die erste Untersuchung steht nach drei Jahren an.'] },
+      { h: 'Das bringen Sie mit', ul: ['Ihr Fahrzeug', 'Die Zulassungsbescheinigung Teil I (Fahrzeugschein)', 'Bei Umbauten die zugehörigen Papiere, zum Beispiel Gutachten oder Teilegutachten'] },
+      { h: 'Vorab-Check gegen Überraschungen', p: ['Auf Wunsch schauen wir Ihr Fahrzeug vor der Prüfung in unserer Meisterwerkstatt an. Kleine Mängel wie Beleuchtung oder Bremsbeläge beheben wir direkt, damit die Plakette beim ersten Mal klappt.'] },
+      { h: 'Auch für Importfahrzeuge', p: ['Für US-Importe führen wir zusätzlich die Vollabnahme nach § 21 StVZO durch.'], links: [['Mehr zu TÜV und Homologation', '/tuev-und-homologation']] },
+    ],
+    cta: ['Termin anfragen', '/#werkstatt'],
+  },
+  {
+    slug: 'motordiagnose',
+    title: 'Motordiagnose und Fehlerauslesen',
+    eyebrow: 'KFZ-Meisterwerkstatt · alle Marken',
+    lead: 'Warnleuchte an? Wir lesen den Fehlerspeicher aus und finden die Ursache.',
+    desc: 'Motordiagnose und Fehlerspeicher auslesen in Hagen: Diagnosegeräte von SNAP-ON, alle Marken, auch US-Fahrzeuge. Autopartner GmbH American Cars.',
+    blocks: [
+      { h: 'Wenn eine Warnleuchte aufleuchtet', p: ['Moderne Fahrzeuge speichern Fehler im Bordcomputer. Wir lesen den Fehlerspeicher mit SNAP-ON-Diagnosegeräten über den OBD-Anschluss aus. Manche Fehler lassen sich direkt löschen, andere analysieren wir anhand der Schaltpläne.', 'Die Diagnosesoftware halten wir aktuell, damit auch neuere Modelle zuverlässig ausgelesen werden.'] },
+      { h: 'Typische Anlässe', ul: ['Motorkontrollleuchte oder Warnleuchten im Kombiinstrument', 'Leistungsverlust oder unruhiger Motorlauf', 'Erhöhter Verbrauch', 'Probleme beim Starten', 'Elektrikfehler und Fehlermeldungen im Display'] },
+      { h: 'Für US-Fahrzeuge und alle anderen Marken', p: ['Wir kennen amerikanische Fahrzeuge in jedem Detail und diagnostizieren genauso Fahrzeuge deutscher und asiatischer Hersteller.'] },
+    ],
+    cta: ['Werkstatttermin anfragen', '/#werkstatt'],
+  },
+  {
+    slug: 'bremsen-service',
+    title: 'Bremsen prüfen und reparieren',
+    eyebrow: 'KFZ-Meisterwerkstatt · alle Marken',
+    lead: 'Bremsbeläge, Bremsscheiben und Bremsflüssigkeit: sicher bremsen ist keine Nebensache.',
+    desc: 'Bremsen prüfen und reparieren in Hagen: Beläge, Scheiben, Bremsflüssigkeit und Bremsleitungen für alle Marken. KFZ-Meisterwerkstatt Autopartner GmbH.',
+    blocks: [
+      { h: 'Woran Sie merken, dass die Bremse Aufmerksamkeit braucht', ul: ['Quietschen oder Schleifen beim Bremsen', 'Vibrieren im Lenkrad oder Bremspedal', 'Der Pedalweg wird länger oder weich', 'Das Fahrzeug zieht beim Bremsen zur Seite', 'Die Bremsenwarnleuchte brennt'] },
+      { h: 'Das prüfen und erneuern wir', ul: ['Bremsbeläge und Bremsscheiben', 'Bremsflüssigkeit', 'Bremsleitungen und Bremsschläuche', 'Bremssättel und Bremsbelagstärke', 'Radlager und Achskomponenten auf Spiel und Verschleiß'] },
+      { h: 'Auch für schwere US-Fahrzeuge', p: ['Pickups und SUV aus den USA sind schwer und beanspruchen die Bremsen stark. Wir kennen die Besonderheiten und verbauen die passenden Teile.'] },
+    ],
+    cta: ['Werkstatttermin anfragen', '/#werkstatt'],
+  },
+  {
+    slug: 'getriebe-motor-reparatur',
+    title: 'Getriebe und Motor reparieren',
+    eyebrow: 'KFZ-Meisterwerkstatt · alle Marken',
+    lead: 'Erst die Diagnose, dann der Preis: Getriebe- und Motorinstandsetzung in der Meisterwerkstatt.',
+    desc: 'Getriebe und Motor reparieren in Hagen: Diagnose, Getriebeservice und Motoreninstandsetzung für alle Marken und US-Fahrzeuge. Autopartner GmbH American Cars.',
+    blocks: [
+      { h: 'Schäden früh erkennen', ul: ['Ruckeln oder verzögertes Schalten', 'Ungewöhnliche Geräusche aus Getriebe oder Motor', 'Ölverlust unter dem Fahrzeug', 'Leistungsverlust oder starker Ölverbrauch', 'Warnleuchten im Kombiinstrument'] },
+      { h: 'So gehen wir vor', ol: ['Wir lesen den Fehlerspeicher aus und prüfen das Fahrzeug.', 'Wir erklären Ihnen den Befund und die Reparaturmöglichkeiten.', 'Sie entscheiden. Erst danach beginnen wir mit der Reparatur.'] },
+      { h: 'Erfahrung mit amerikanischer Technik', p: ['Viele US-Fahrzeuge fahren mit Automatikgetrieben und großvolumigen Motoren. Wir reparieren sie in unserer eigenen Meisterwerkstatt, genauso wie Fahrzeuge aller anderen Marken.'] },
+    ],
+    cta: ['Werkstatttermin anfragen', '/#werkstatt'],
+  },
 ];
 
 export const getPage = (slug: string) => pages.find((p) => p.slug === slug);
