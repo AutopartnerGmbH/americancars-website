@@ -1,7 +1,12 @@
 import Photo from '@/components/Photo';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getVehicle, vehicles } from '@/lib/vehicles';
+import { getVehicle, vehicles, priceNum } from '@/lib/vehicles';
+import Finanzierung from '@/components/Finanzierung';
+import FavButton from '@/components/Fav';
+import { site } from '@/lib/site';
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://americancars-website.vercel.app';
 import Car from '@/components/Car';
 
 export function generateStaticParams() {
@@ -22,11 +27,33 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const v = getVehicle(slug);
   if (!v) notFound();
+  const pn = priceNum(v);
+  const ld = {
+    '@context': 'https://schema.org',
+    '@type': ['Product', 'Car'],
+    name: v.name,
+    brand: { '@type': 'Brand', name: v.brand },
+    description: v.meta,
+    url: `${BASE}/fahrzeuge/${v.slug}`,
+    ...(v.image ? { image: v.image.startsWith('http') ? v.image : BASE + v.image } : {}),
+    ...(pn
+      ? {
+          offers: {
+            '@type': 'Offer',
+            price: pn,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            seller: { '@type': 'AutoDealer', name: site.name },
+          },
+        }
+      : {}),
+  };
   const similar = vehicles.filter((x) => x.slug !== v.slug).slice(0, 3);
   const specs: [string, string][] = [...v.specs, ['Getriebe', '[aus mobile.de]'], ['Carfax', '[Bericht verlinken]']];
 
   return (
     <main id='top'>
+      <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <div className='wrap crumbs'>
         <a href='/'>Startseite</a> › <a href='/fahrzeuge'>Fahrzeuge</a> › {v.name}
       </div>
@@ -41,8 +68,10 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
             <p className='sub'>{v.meta}</p>
             <div className='priceline'>
               <b>{v.price}</b>
-              <span>{v.rate} [Berechnungsgrundlage ergänzen]</span>
+              {pn && v.vat === 'ausweisbar' && <span>Netto {(pn / 1.19).toLocaleString('de-DE', { maximumFractionDigits: 0 })} € · MwSt. ausweisbar</span>}
+              {v.vat === 'differenz' && <span>Differenzbesteuert, MwSt. nicht ausweisbar</span>}
             </div>
+            <p className='warr'><b>Garantie optional:</b> 595 € pro Jahr. Details besprechen wir gern persönlich mit Ihnen.</p>
             <dl className='specs'>
               {specs.map(([k, val]) => (
                 <div key={k}><dt>{k}</dt><dd>{val}</dd></div>
@@ -51,6 +80,7 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
             <div className='acts2'>
               <a className='b1' href='tel:+492334808140'>Jetzt anrufen</a>
               <a className='b2' href='#anfrage'>Anfrage senden</a>
+              <FavButton slug={v.slug} label />
             </div>
           </div>
         </div>
@@ -84,6 +114,11 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
           </form>
         </div>
       </section>
+      {pn && (
+        <section className='s-c calcs'>
+          <div className='wrap'><Finanzierung price={pn} /></div>
+        </section>
+      )}
       <section className='stock s-a'>
         <div className='wrap'>
           <div className='head'><h2>Ähnliche Fahrzeuge</h2></div>

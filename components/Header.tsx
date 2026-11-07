@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { brandSvg } from '@/lib/icons';
 import { nav as items } from '@/lib/nav';
 import { site } from '@/lib/site';
+import { FavCount } from '@/components/Fav';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -59,6 +60,7 @@ export default function Header() {
             ))}
           </ul>
         </nav>
+        <FavCount />
         <a className='tel' href={`tel:${site.phoneTel}`}>{site.phone}</a>
         <button
           className='burger'

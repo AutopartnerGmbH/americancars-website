@@ -1,8 +1,11 @@
 import Photo from '@/components/Photo';
+import FavButton from '@/components/Fav';
 import type { Vehicle } from '@/lib/vehicles';
 
 export default function Car({ v }: { v: Vehicle }) {
   return (
+    <div className='carw'>
+    <FavButton slug={v.slug} />
     <a className='car' href={`/fahrzeuge/${v.slug}`}>
       <div className='pic'>
         {v.image ? (
@@ -20,9 +23,9 @@ export default function Car({ v }: { v: Vehicle }) {
         <span className='meta'>{v.meta}</span>
         <div className='pr'>
           <b>{v.price}</b>
-          <span>{v.rate}</span>
         </div>
       </div>
     </a>
+    </div>
   );
 }
