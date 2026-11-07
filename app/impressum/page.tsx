@@ -16,15 +16,15 @@ export default function Impressum() {
             <h3>Angaben gemäß § 5 DDG</h3>
             <p>Autopartner GmbH<br />American Cars<br />{site.street}<br />{site.city}</p>
             <h3>Vertreten durch</h3>
-            <p>Geschäftsführer: [Willi Lückel, Christoph Lückel – bitte bestätigen]</p>
+            <p>Geschäftsführer: Willi Lückel, Christoph Lückel</p>
             <h3>Kontakt</h3>
             <p>Telefon: {site.phone}<br />E-Mail: <a href={`mailto:${site.mail}`}>{site.mail}</a></p>
             <h3>Registereintrag</h3>
-            <p>Eintragung im Handelsregister.<br />Registergericht: Amtsgericht Hagen<br />Registernummer: [HRB-Nummer ergänzen]</p>
+            <p>Eintragung im Handelsregister.<br />Registergericht: Amtsgericht Hagen<br />Registernummer: HRB 2828</p>
             <h3>Umsatzsteuer-ID</h3>
-            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [USt-IdNr. ergänzen]</p>
+            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE153315731</p>
             <h3>Berufsrechtliche Angaben</h3>
-            <p>Kfz-Meisterbetrieb. Zuständige Kammer: [Handwerkskammer Südwestfalen – bitte bestätigen]. Berufsbezeichnung: [Kfz-Techniker-Meister, verliehen in der Bundesrepublik Deutschland – bitte bestätigen].</p>
+            <p>Kfz-Meisterbetrieb. Zuständige Kammer: Handwerkskammer Dortmund. Berufsbezeichnung: [Kfz-Techniker-Meister, verliehen in der Bundesrepublik Deutschland – bitte bestätigen].</p>
             <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
             <p>[Christoph Lückel – bitte bestätigen]<br />{site.street}<br />{site.city}</p>
             <h3>Verbraucherstreitbeilegung</h3>
