@@ -26,9 +26,9 @@ export default function Impressum() {
             <h3>Berufsrechtliche Angaben</h3>
             <p>Kfz-Meisterbetrieb. Zuständige Kammer: Handwerkskammer Dortmund. Berufsbezeichnung: [Kfz-Techniker-Meister, verliehen in der Bundesrepublik Deutschland – bitte bestätigen].</p>
             <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
-            <p>[Christoph Lückel – bitte bestätigen]<br />{site.street}<br />{site.city}</p>
+            <p>Christoph Lückel<br />{site.street}<br />{site.city}</p>
             <h3>Verbraucherstreitbeilegung</h3>
-            <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. [bitte bestätigen]</p>
+            <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
             <h3>Haftung für Inhalte</h3>
             <p>Wir erstellen die Inhalte dieser Seite mit größter Sorgfalt. Für die Richtigkeit, Vollständigkeit und Aktualität können wir jedoch keine Gewähr übernehmen. Preise und Fahrzeugdaten sind freibleibend. Irrtümer und Zwischenverkauf bleiben vorbehalten.</p>
             <h3>Haftung für Links</h3>
