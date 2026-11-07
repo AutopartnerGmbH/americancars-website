@@ -11,6 +11,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Fab from '@/components/Fab';
 import FormsInit from '@/components/FormsInit';
+import Consent from '@/components/Consent';
 
 const live = process.env.NEXT_PUBLIC_LIVE === '1';
 
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <Fab />
         <FormsInit />
+        <Consent />
       </body>
     </html>
   );

@@ -62,6 +62,7 @@ export default function Footer() {
         <span>
           <a href='/impressum'>Impressum</a>
           <a href='/datenschutz'>Datenschutz</a>
+          <a href='#' id='cookie-settings'>Cookie-Einstellungen</a>
           <a href='https://www.instagram.com/autopartner_american.cars/'>Instagram</a>
           <a href='https://www.youtube.com/@AutopartnerAmericanCars'>YouTube</a>
         </span>
