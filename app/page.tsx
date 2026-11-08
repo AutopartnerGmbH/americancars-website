@@ -88,7 +88,7 @@ export default function Home() {
         <div className='cols'>
           <div className='col'><h3>Carfax zu jedem Fahrzeug</h3><p>Sie sehen die Historie, bevor Sie sich entscheiden. Kostenlos und ohne Nachfragen.</p></div>
           <div className='col'><h3>Meisterwerkstatt im Haus</h3><p>Wir kennen amerikanische Technik und reparieren alle Marken, vor dem Verkauf und danach.</p></div>
-          <div className='col'><h3>Prüfstützpunkt TÜV NORD</h3><p>HU, AU und Vollabnahmen direkt bei uns in Hagen, für alle Hersteller.</p></div>
+          <div className='col'><h3>Prüfstützpunkt des TÜV NORD</h3><p>HU, AU und Vollabnahmen direkt bei uns in Hagen, für alle Hersteller.</p></div>
           <div className='col'><h3>Ehrliche Beratung</h3><p>Auch wenn am Ende kein Kauf zustande kommt, loben Kunden unsere offene Art.</p></div>
         </div>
       </div></section>

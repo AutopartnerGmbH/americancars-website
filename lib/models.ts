@@ -47,7 +47,7 @@ export const models: Model[] = [
     name: 'Ford Mustang',
     match: /mustang/i,
     title: 'Ford Mustang kaufen in Hagen',
-    desc: 'Ford Mustang kaufen in Hagen: Coupé und Cabrio aus den USA, unfallfrei mit Carfax, eigene Meisterwerkstatt und Prüfstützpunkt TÜV NORD.',
+    desc: 'Ford Mustang kaufen in Hagen: Coupé und Cabrio aus den USA, unfallfrei mit Carfax, eigene Meisterwerkstatt und Prüfstützpunkt des TÜV NORD.',
     lead: 'Der Ford Mustang ist der Klassiker unter den amerikanischen Sportwagen. Wir bieten Coupé und Cabrio, geprüft und mit Carfax.',
     blocks: [
       { h: 'Mustang als Coupé und Cabrio', p: ['Im Bestand haben wir den Mustang mit dem V6-Motor mit 305 PS, als Coupé und als Cabrio. Er ist der Einstieg in die amerikanische Sportwagenwelt: gut zu fahren, auffällig im Auftritt und alltagstauglich.'] },

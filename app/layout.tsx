@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     template: '%s | American Cars Hagen',
   },
   description:
-    'US-Fahrzeuge in Hagen: geprüfte Fahrzeuge mit Carfax, KFZ-Meisterwerkstatt, Prüfstützpunkt TÜV NORD, Import, Umrüstung und Umzugsgut. Autopartner GmbH – American Cars.',
+    'US-Fahrzeuge in Hagen: geprüfte Fahrzeuge mit Carfax, KFZ-Meisterwerkstatt, Prüfstützpunkt des TÜV NORD, Import, Umrüstung und Umzugsgut. Autopartner GmbH – American Cars.',
   openGraph: {
     title: 'American Cars Hagen – US-Fahrzeuge, Meisterwerkstatt, TÜV NORD',
-    description: 'Geprüfte US-Fahrzeuge mit Carfax, eigene Meisterwerkstatt und Prüfstützpunkt TÜV NORD in Hagen.',
+    description: 'Geprüfte US-Fahrzeuge mit Carfax, eigene Meisterwerkstatt und Prüfstützpunkt des TÜV NORD in Hagen.',
     type: 'website',
   },
   // Testseite wird nicht von Google indexiert, bis NEXT_PUBLIC_LIVE=1 gesetzt ist.

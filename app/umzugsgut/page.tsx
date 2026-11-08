@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Umzugsgut: Auto aus den USA importieren',
   description:
-    'Umzugsgut beim Fahrzeug-Import aus den USA: Voraussetzungen, Ablauf, Zoll und Zulassung. Prüfung und Umrüstung bei Autopartner GmbH in Hagen, Prüfstützpunkt TÜV NORD.',
+    'Umzugsgut beim Fahrzeug-Import aus den USA: Voraussetzungen, Ablauf, Zoll und Zulassung. Prüfung und Umrüstung bei Autopartner GmbH in Hagen, Prüfstützpunkt des TÜV NORD.',
 };
 
 export default function Umzugsgut() {
@@ -31,7 +31,7 @@ export default function Umzugsgut() {
 <li>Sie schildern uns Ihren Fall. Wir prüfen gemeinsam, ob Ihr Fahrzeug als Umzugsgut in Frage kommt.</li>
 <li>Die Zollanmeldung für Übersiedlungsgut wird beim Zoll eingereicht, mit Nachweisen zu Wohnsitz und Fahrzeugbesitz. [Wer die Zollanmeldung übernimmt, bitte ergänzen]</li>
 <li>Nach der Freigabe kommt das Fahrzeug in unsere Werkstatt. Wir erstellen den Prüfumfang für die deutsche Zulassung und führen nötige Umrüstungen durch.</li>
-<li>Die Abnahme erfolgt bei uns als Prüfstützpunkt der TÜV NORD. Danach steht der Zulassung nichts mehr im Weg.</li>
+<li>Die Abnahme erfolgt bei uns als Prüfstützpunkt des TÜV NORD. Danach steht der Zulassung nichts mehr im Weg.</li>
 </ol>
 
 <h3>Was wir für Sie tun</h3>

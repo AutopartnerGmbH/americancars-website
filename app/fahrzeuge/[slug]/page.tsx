@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!v) return {};
   return {
     title: `${v.name} kaufen in Hagen`,
-    description: `${v.name}, ${v.meta}, ${v.price}. Autopartner GmbH American Cars in Hagen, Prüfstützpunkt TÜV NORD.`,
+    description: `${v.name}, ${v.meta}, ${v.price}. Autopartner GmbH American Cars in Hagen, Prüfstützpunkt des TÜV NORD.`,
   };
 }
 

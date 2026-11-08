@@ -21,7 +21,7 @@ export const pages: Page[] = [
       { h: 'Klimaservice', p: ['Eine jährliche Prüfung hält die Kühlleistung hoch und beugt warmer Luft, beschlagenen Scheiben und Gerüchen vor. Wir arbeiten mit einem Kombi-Gerät von SNAP-ON für die Kältemittel R134a und 1234yf.'], ol: ['Hoch- und Niederdruck vergleichen und den Zustand bewerten', 'Kompressor, Trockner, Verdampfer und Kondensator prüfen, Innenraumtemperatur messen', 'Innenraumfilter erneuern', 'Kältemittel absaugen und das System evakuieren', 'Mit der vorgeschriebenen Menge Kältemittel befüllen'] },
       { h: 'Motordiagnose und Fehlerauslesen', p: ['Moderne Fahrzeuge speichern Fehler im Bordcomputer. Wir lesen den Fehlerspeicher mit SNAP-ON-Diagnosegeräten über den OBD-Anschluss aus. Manche Fehler lassen sich direkt löschen, andere analysieren wir anhand der Schaltpläne. Die Diagnosesoftware halten wir aktuell.'] },
       { h: 'Weitere Leistungen', links: [['Alle Werkstatt-Leistungen im Überblick', '/werkstatt-leistungen']] },
-      { h: 'Alles aus einer Hand', ul: ['Wartung und Reparatur für alle Marken', 'HU und AU als Prüfstützpunkt TÜV NORD', 'Umbau und Tuning', 'Unfall-Instandsetzung mit Schadensabwicklung', 'Ersatzschlüssel für Ford Mustang, Chevrolet Camaro und Dodge Challenger'] },
+      { h: 'Alles aus einer Hand', ul: ['Wartung und Reparatur für alle Marken', 'HU und AU als Prüfstützpunkt des TÜV NORD', 'Umbau und Tuning', 'Unfall-Instandsetzung mit Schadensabwicklung', 'Ersatzschlüssel für Ford Mustang, Chevrolet Camaro und Dodge Challenger'] },
     ],
     cta: ['Werkstatttermin anfragen', '/#werkstatt'],
   },
@@ -30,7 +30,7 @@ export const pages: Page[] = [
     title: 'TÜV & Homologation',
     eyebrow: 'Prüfstützpunkt des TÜV NORD',
     lead: 'Umrüstung, Homologation, TÜV-Abnahme und Zulassung: der Rundum-Service für Importfahrzeuge.',
-    desc: 'TÜV-Vollabnahme nach § 21 StVZO, Homologation und AU für US-Importfahrzeuge in Hagen. Prüfstützpunkt TÜV NORD für alle Hersteller.',
+    desc: 'TÜV-Vollabnahme nach § 21 StVZO, Homologation und AU für US-Importfahrzeuge in Hagen. Prüfstützpunkt des TÜV NORD für alle Hersteller.',
     blocks: [
       { h: 'Umrüstung und TÜV-Abnahme für US-Cars', p: ['Wir führen die TÜV-Vollabnahme für US-Importfahrzeuge nach § 21 StVZO durch, die für den Straßenverkehr in Deutschland nötig ist. Die erforderlichen Unterlagen beschaffen wir für Sie:'], ul: ['Zollunbedenklichkeitsbescheinigung', 'KBA-Auskunft', 'Herkunftsdokumente (US-Title bzw. MSO)', 'Fahrzeugdatenblatt', 'Lichttechnisches Gutachten'] },
       { h: 'So geht es weiter', ol: ['Umrüstung nach den geltenden StVZO-Vorgaben', 'Antrag auf den deutschen Fahrzeugbrief', 'TÜV-Vorführung und Abnahme', 'Deutsche Papiere inklusive nötiger Ausnahmegenehmigungen', 'Abgasuntersuchung (AU)'], p: ['Danach können Sie das Fahrzeug beim Straßenverkehrsamt anmelden.'] },
@@ -174,9 +174,9 @@ export const pages: Page[] = [
     title: 'HU und AU in Hagen',
     eyebrow: 'Prüfstützpunkt des TÜV NORD',
     lead: 'Hauptuntersuchung und Abgasuntersuchung für alle Hersteller, direkt bei uns in der Werkstatt.',
-    desc: 'HU und AU in Hagen-Hohenlimburg: Prüfstützpunkt TÜV NORD für alle Marken, Vorabcheck in der Meisterwerkstatt, auch für US-Fahrzeuge. Autopartner GmbH.',
+    desc: 'HU und AU in Hagen-Hohenlimburg: Prüfstützpunkt des TÜV NORD für alle Marken, Vorabcheck in der Meisterwerkstatt, auch für US-Fahrzeuge. Autopartner GmbH.',
     blocks: [
-      { h: 'TÜV und AU aus einer Hand', p: ['Wir sind Prüfstützpunkt der TÜV NORD und prüfen Fahrzeuge aller Hersteller, vom Kleinwagen bis zum US-Pickup. Hauptuntersuchung (HU) und Abgasuntersuchung (AU) erledigen Sie bei uns in einem Termin.', 'Pkw müssen in der Regel alle zwei Jahre zur HU, die erste Untersuchung steht nach drei Jahren an.'] },
+      { h: 'TÜV und AU aus einer Hand', p: ['Wir sind Prüfstützpunkt des TÜV NORD und prüfen Fahrzeuge aller Hersteller, vom Kleinwagen bis zum US-Pickup. Hauptuntersuchung (HU) und Abgasuntersuchung (AU) erledigen Sie bei uns in einem Termin.', 'Pkw müssen in der Regel alle zwei Jahre zur HU, die erste Untersuchung steht nach drei Jahren an.'] },
       { h: 'Das bringen Sie mit', ul: ['Ihr Fahrzeug', 'Die Zulassungsbescheinigung Teil I (Fahrzeugschein)', 'Bei Umbauten die zugehörigen Papiere, zum Beispiel Gutachten oder Teilegutachten'] },
       { h: 'Vorab-Check gegen Überraschungen', p: ['Auf Wunsch schauen wir Ihr Fahrzeug vor der Prüfung in unserer Meisterwerkstatt an. Kleine Mängel wie Beleuchtung oder Bremsbeläge beheben wir direkt, damit die Plakette beim ersten Mal klappt.'] },
       { h: 'Auch für Importfahrzeuge', p: ['Für US-Importe führen wir zusätzlich die Vollabnahme nach § 21 StVZO durch.'], links: [['Mehr zu TÜV und Homologation', '/tuev-und-homologation']] },
@@ -719,7 +719,7 @@ export const pages: Page[] = [
         "ul": [
           "Beratung zu passenden Fahrwerkskomponenten",
           "Einbau und Einstellung inklusive Achsvermessung",
-          "Abnahme und Eintragung über unseren Prüfstützpunkt TÜV NORD"
+          "Abnahme und Eintragung über unseren Prüfstützpunkt des TÜV NORD"
         ]
       },
       {
@@ -1127,7 +1127,7 @@ export const pages: Page[] = [
         "ul": [
           "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
           "KFZ-Meisterwerkstatt für alle Marken",
-          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "HU und AU als Prüfstützpunkt des TÜV NORD",
           "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
         ]
       },
@@ -1182,7 +1182,7 @@ export const pages: Page[] = [
         "ul": [
           "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
           "KFZ-Meisterwerkstatt für alle Marken",
-          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "HU und AU als Prüfstützpunkt des TÜV NORD",
           "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
         ]
       },
@@ -1237,7 +1237,7 @@ export const pages: Page[] = [
         "ul": [
           "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
           "KFZ-Meisterwerkstatt für alle Marken",
-          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "HU und AU als Prüfstützpunkt des TÜV NORD",
           "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
         ]
       },
@@ -1292,7 +1292,7 @@ export const pages: Page[] = [
         "ul": [
           "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
           "KFZ-Meisterwerkstatt für alle Marken",
-          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "HU und AU als Prüfstützpunkt des TÜV NORD",
           "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
         ]
       },
@@ -1347,7 +1347,7 @@ export const pages: Page[] = [
         "ul": [
           "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
           "KFZ-Meisterwerkstatt für alle Marken",
-          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "HU und AU als Prüfstützpunkt des TÜV NORD",
           "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
         ]
       },
