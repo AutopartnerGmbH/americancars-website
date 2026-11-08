@@ -10,12 +10,12 @@ export const nav: NavItem[] = [
       ['TÜV & Homologation', '/tuev-und-homologation'],
       ['Fahrzeug umbauen & tunen', '/us-fahrzeug-tunen'],
       ['Unfall-Instandsetzung', '/unfall-instandsetzung'],
-      ['Alle Werkstatt-Leistungen', '/werkstatt-leistungen'],
       ['Klimaservice', '/klimaservice'],
       ['HU & AU', '/hu-au-hagen'],
       ['Motordiagnose', '/motordiagnose'],
       ['Bremsen', '/bremsen-service'],
       ['Getriebe & Motor', '/getriebe-motor-reparatur'],
+      ['Alle Werkstatt-Leistungen', '/werkstatt-leistungen'],
     ],
   },
   {
