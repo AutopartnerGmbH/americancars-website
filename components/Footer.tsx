@@ -29,6 +29,11 @@ const searches: [string, string][] = [
   ['Unfallreparatur Hagen', '/unfall-instandsetzung'],
   ['US-Auto tunen', '/us-fahrzeug-tunen'],
   ['Fahrzeugankauf Hagen', '/#ankauf'],
+  ['US-Fahrzeuge Iserlohn', '/us-cars-iserlohn'],
+  ['US-Fahrzeuge Dortmund', '/us-cars-dortmund'],
+  ['US-Fahrzeuge Wuppertal', '/us-cars-wuppertal'],
+  ['US-Fahrzeuge Witten', '/us-cars-witten'],
+  ['US-Fahrzeuge Sauerland', '/us-cars-sauerland'],
 ];
 
 export default function Footer() {

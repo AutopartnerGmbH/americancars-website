@@ -1105,6 +1105,281 @@ export const pages: Page[] = [
       "/#werkstatt"
     ]
   },
+  {
+    "slug": "us-cars-iserlohn",
+    "title": "US-Fahrzeuge und Werkstatt für Iserlohn",
+    "eyebrow": "Autopartner GmbH · Hagen-Hohenlimburg",
+    "lead": "Wir sitzen in Hagen-Hohenlimburg und bedienen Kunden aus Iserlohn und der Umgebung.",
+    "desc": "US-Fahrzeuge, KFZ-Meisterwerkstatt und TÜV NORD Prüfstützpunkt für Kunden aus Iserlohn. Autopartner GmbH American Cars, Hagen-Hohenlimburg.",
+    "blocks": [
+      {
+        "h": "Das bieten wir Kunden aus Iserlohn",
+        "ul": [
+          "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
+          "KFZ-Meisterwerkstatt für alle Marken",
+          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
+        ]
+      },
+      {
+        "h": "Unser Standort",
+        "p": [
+          "Autopartner GmbH, Auf dem Lölfert 37, 58119 Hagen-Hohenlimburg. Telefon 02334 / 80814-0."
+        ],
+        "links": [
+          [
+            "Route von Iserlohn in Google Maps",
+            "https://www.google.com/maps/dir/?api=1&origin=Iserlohn&destination=Auf%20dem%20L%C3%B6lfert%2037%2C%2058119%20Hagen"
+          ]
+        ]
+      },
+      {
+        "h": "Gleich mehr erfahren",
+        "links": [
+          [
+            "Fahrzeuge im Bestand",
+            "/fahrzeuge"
+          ],
+          [
+            "Alle Werkstatt-Leistungen",
+            "/werkstatt-leistungen"
+          ],
+          [
+            "Import und Umrüstung",
+            "/import-umruestung"
+          ],
+          [
+            "Kontakt",
+            "/kontakt"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Anfrage senden",
+      "/kontakt"
+    ]
+  },
+  {
+    "slug": "us-cars-dortmund",
+    "title": "US-Fahrzeuge und Werkstatt für Dortmund",
+    "eyebrow": "Autopartner GmbH · Hagen-Hohenlimburg",
+    "lead": "Wir sitzen in Hagen-Hohenlimburg und bedienen Kunden aus Dortmund und der Umgebung.",
+    "desc": "US-Fahrzeuge, KFZ-Meisterwerkstatt und TÜV NORD Prüfstützpunkt für Kunden aus Dortmund. Autopartner GmbH American Cars, Hagen-Hohenlimburg.",
+    "blocks": [
+      {
+        "h": "Das bieten wir Kunden aus Dortmund",
+        "ul": [
+          "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
+          "KFZ-Meisterwerkstatt für alle Marken",
+          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
+        ]
+      },
+      {
+        "h": "Unser Standort",
+        "p": [
+          "Autopartner GmbH, Auf dem Lölfert 37, 58119 Hagen-Hohenlimburg. Telefon 02334 / 80814-0."
+        ],
+        "links": [
+          [
+            "Route von Dortmund in Google Maps",
+            "https://www.google.com/maps/dir/?api=1&origin=Dortmund&destination=Auf%20dem%20L%C3%B6lfert%2037%2C%2058119%20Hagen"
+          ]
+        ]
+      },
+      {
+        "h": "Gleich mehr erfahren",
+        "links": [
+          [
+            "Fahrzeuge im Bestand",
+            "/fahrzeuge"
+          ],
+          [
+            "Alle Werkstatt-Leistungen",
+            "/werkstatt-leistungen"
+          ],
+          [
+            "Import und Umrüstung",
+            "/import-umruestung"
+          ],
+          [
+            "Kontakt",
+            "/kontakt"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Anfrage senden",
+      "/kontakt"
+    ]
+  },
+  {
+    "slug": "us-cars-wuppertal",
+    "title": "US-Fahrzeuge und Werkstatt für Wuppertal",
+    "eyebrow": "Autopartner GmbH · Hagen-Hohenlimburg",
+    "lead": "Wir sitzen in Hagen-Hohenlimburg und bedienen Kunden aus Wuppertal und der Umgebung.",
+    "desc": "US-Fahrzeuge, KFZ-Meisterwerkstatt und TÜV NORD Prüfstützpunkt für Kunden aus Wuppertal. Autopartner GmbH American Cars, Hagen-Hohenlimburg.",
+    "blocks": [
+      {
+        "h": "Das bieten wir Kunden aus Wuppertal",
+        "ul": [
+          "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
+          "KFZ-Meisterwerkstatt für alle Marken",
+          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
+        ]
+      },
+      {
+        "h": "Unser Standort",
+        "p": [
+          "Autopartner GmbH, Auf dem Lölfert 37, 58119 Hagen-Hohenlimburg. Telefon 02334 / 80814-0."
+        ],
+        "links": [
+          [
+            "Route von Wuppertal in Google Maps",
+            "https://www.google.com/maps/dir/?api=1&origin=Wuppertal&destination=Auf%20dem%20L%C3%B6lfert%2037%2C%2058119%20Hagen"
+          ]
+        ]
+      },
+      {
+        "h": "Gleich mehr erfahren",
+        "links": [
+          [
+            "Fahrzeuge im Bestand",
+            "/fahrzeuge"
+          ],
+          [
+            "Alle Werkstatt-Leistungen",
+            "/werkstatt-leistungen"
+          ],
+          [
+            "Import und Umrüstung",
+            "/import-umruestung"
+          ],
+          [
+            "Kontakt",
+            "/kontakt"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Anfrage senden",
+      "/kontakt"
+    ]
+  },
+  {
+    "slug": "us-cars-witten",
+    "title": "US-Fahrzeuge und Werkstatt für Witten",
+    "eyebrow": "Autopartner GmbH · Hagen-Hohenlimburg",
+    "lead": "Wir sitzen in Hagen-Hohenlimburg und bedienen Kunden aus Witten und der Umgebung.",
+    "desc": "US-Fahrzeuge, KFZ-Meisterwerkstatt und TÜV NORD Prüfstützpunkt für Kunden aus Witten. Autopartner GmbH American Cars, Hagen-Hohenlimburg.",
+    "blocks": [
+      {
+        "h": "Das bieten wir Kunden aus Witten",
+        "ul": [
+          "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
+          "KFZ-Meisterwerkstatt für alle Marken",
+          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
+        ]
+      },
+      {
+        "h": "Unser Standort",
+        "p": [
+          "Autopartner GmbH, Auf dem Lölfert 37, 58119 Hagen-Hohenlimburg. Telefon 02334 / 80814-0."
+        ],
+        "links": [
+          [
+            "Route von Witten in Google Maps",
+            "https://www.google.com/maps/dir/?api=1&origin=Witten&destination=Auf%20dem%20L%C3%B6lfert%2037%2C%2058119%20Hagen"
+          ]
+        ]
+      },
+      {
+        "h": "Gleich mehr erfahren",
+        "links": [
+          [
+            "Fahrzeuge im Bestand",
+            "/fahrzeuge"
+          ],
+          [
+            "Alle Werkstatt-Leistungen",
+            "/werkstatt-leistungen"
+          ],
+          [
+            "Import und Umrüstung",
+            "/import-umruestung"
+          ],
+          [
+            "Kontakt",
+            "/kontakt"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Anfrage senden",
+      "/kontakt"
+    ]
+  },
+  {
+    "slug": "us-cars-sauerland",
+    "title": "US-Fahrzeuge und Werkstatt fürs Sauerland",
+    "eyebrow": "Autopartner GmbH · Hagen-Hohenlimburg",
+    "lead": "Wir sitzen in Hagen-Hohenlimburg und bedienen Kunden aus dem Sauerland und der Umgebung.",
+    "desc": "US-Fahrzeuge, KFZ-Meisterwerkstatt und TÜV NORD Prüfstützpunkt für Kunden aus Sauerland. Autopartner GmbH American Cars, Hagen-Hohenlimburg.",
+    "blocks": [
+      {
+        "h": "Das bieten wir Kunden aus Sauerland",
+        "ul": [
+          "Geprüfte US-Fahrzeuge mit Carfax, importiert und umgerüstet in Hagen",
+          "KFZ-Meisterwerkstatt für alle Marken",
+          "HU und AU als Prüfstützpunkt TÜV NORD",
+          "Ankauf Ihres Fahrzeugs und Inzahlungnahme"
+        ]
+      },
+      {
+        "h": "Unser Standort",
+        "p": [
+          "Autopartner GmbH, Auf dem Lölfert 37, 58119 Hagen-Hohenlimburg. Telefon 02334 / 80814-0."
+        ],
+        "links": [
+          [
+            "Route von Sauerland in Google Maps",
+            "https://www.google.com/maps/dir/?api=1&origin=Sauerland&destination=Auf%20dem%20L%C3%B6lfert%2037%2C%2058119%20Hagen"
+          ]
+        ]
+      },
+      {
+        "h": "Gleich mehr erfahren",
+        "links": [
+          [
+            "Fahrzeuge im Bestand",
+            "/fahrzeuge"
+          ],
+          [
+            "Alle Werkstatt-Leistungen",
+            "/werkstatt-leistungen"
+          ],
+          [
+            "Import und Umrüstung",
+            "/import-umruestung"
+          ],
+          [
+            "Kontakt",
+            "/kontakt"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Anfrage senden",
+      "/kontakt"
+    ]
+  },
 ];
 
 export const getPage = (slug: string) => pages.find((p) => p.slug === slug);
