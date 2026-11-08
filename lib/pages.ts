@@ -777,11 +777,11 @@ export const pages: Page[] = [
     "slug": "autoglas-steinschlag",
     "title": "Autoglas: Steinschlag und Scheibentausch",
     "eyebrow": "KFZ-Meisterwerkstatt · Karosserie",
-    "lead": "Kleiner Steinschlag oder gerissene Scheibe? Frühes Handeln spart Kosten.",
-    "desc": "Steinschlag reparieren und Scheibentausch in Hagen für alle Marken. Autopartner GmbH American Cars in Hagen.",
+    "lead": "Steinschlag oder Scheibenschaden? Wir erledigen alles und rechnen direkt mit Ihrer Versicherung ab.",
+    "desc": "Autoglas in Hagen: Steinschlag reparieren, Frontscheiben für nahezu alle US-Fahrzeuge besorgen und einbauen, Direktabrechnung mit der Versicherung. Autopartner GmbH American Cars.",
     "blocks": [
       {
-        "h": "Wann das sinnvoll ist",
+        "h": "Wann Sie handeln sollten",
         "ul": [
           "Ein Steinschlag in der Frontscheibe, solange er klein ist",
           "Die Scheibe hat einen Riss",
@@ -789,21 +789,31 @@ export const pages: Page[] = [
         ]
       },
       {
-        "h": "Das machen wir",
-        "ul": [
-          "Steinschlag bewerten und, wenn möglich, reparieren",
-          "Front-, Heck- oder Seitenscheibe tauschen",
-          "Kamera- und Sensorsysteme im Scheibenbereich beachten"
+        "h": "Ohne Aufwand für Sie",
+        "p": [
+          "Wir rechnen direkt mit Ihrer Versicherung ab und übernehmen die gesamte Abwicklung. Für Sie entsteht kein Aufwand: Sie bringen das Fahrzeug, den Rest erledigen wir.",
+          "Ob und in welcher Höhe eine Selbstbeteiligung anfällt, hängt von Ihrem Versicherungsvertrag ab. Das klären wir gern vorab mit Ihnen."
         ]
       },
       {
+        "h": "Frontscheiben für US-Fahrzeuge",
         "p": [
-          "Ob eine Kaskoversicherung die Kosten übernimmt, klären wir gern mit Ihnen."
+          "Wir besorgen Frontscheiben für nahezu alle US-Fahrzeuge und bauen sie fachgerecht in unserer Meisterwerkstatt ein. Das gilt für Pickups, SUV und Limousinen amerikanischer Hersteller."
+        ]
+      },
+      {
+        "h": "Unser Leistungsumfang",
+        "ul": [
+          "Steinschlag bewerten und, wenn möglich, reparieren",
+          "Front-, Heck- oder Seitenscheibe tauschen",
+          "Beschaffung der passenden Scheibe, auch für US-Modelle",
+          "Kamera- und Sensorsysteme im Scheibenbereich beachten",
+          "Abrechnung mit der Versicherung und komplette Abwicklung"
         ]
       }
     ],
     "cta": [
-      "Werkstatttermin anfragen",
+      "Termin anfragen",
       "/#werkstatt"
     ]
   },

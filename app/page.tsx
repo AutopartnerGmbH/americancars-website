@@ -1,7 +1,7 @@
 import Photo from '@/components/Photo';
 import Reviews from '@/components/Reviews';
 import Car from '@/components/Car';
-import { vehicles, getVehicle } from '@/lib/vehicles';
+import { vehicles } from '@/lib/vehicles';
 import { activeCategories, brandsInStock } from '@/lib/categories';
 import { site } from '@/lib/site';
 
@@ -10,7 +10,7 @@ export const revalidate = 3600;
 export default function Home() {
   const cats = activeCategories();
   const brands = brandsInStock();
-  const hero = getVehicle('pacifica-select');
+  const hero = vehicles.find((v) => /pacifica/i.test(v.name));
 
   return (
     <main id='top'>
@@ -18,7 +18,11 @@ export default function Home() {
         <div className='shot'><Photo src='/img/hero.jpg' alt='Schwarzer Chrysler Pacifica von Autopartner American Cars auf der Autobahn' /></div>
         <div className='wrap hero-in'>
           <span className='cert'>Prüfstützpunkt TÜV NORD</span>
-          {hero && <a className='hero-chip' href={`/fahrzeuge/${hero.slug}`}>Chrysler Pacifica ab {hero.price} →</a>}
+          {hero ? (
+            <a className='hero-chip' href={`/fahrzeuge/${hero.slug}`}>Chrysler Pacifica ab {hero.price} →</a>
+          ) : (
+            <a className='hero-chip' href='/fahrzeuge'>Aktuelle US-Fahrzeuge ansehen →</a>
+          )}
           <h1>US-Fahrzeuge, <span className='mark'>persönlich ausgewählt.</span></h1>
           <div className='hero2-row'>
             <p>Unfallfrei, mit Carfax-Bericht und eigener Meisterwerkstatt. Seit {site.since} in Hagen.</p>
