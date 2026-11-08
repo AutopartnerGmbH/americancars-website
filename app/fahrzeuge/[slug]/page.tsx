@@ -6,7 +6,8 @@ import Finanzierung from '@/components/Finanzierung';
 import FavButton from '@/components/Fav';
 import { site } from '@/lib/site';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://americancars-website.vercel.app';
+import { BASE } from '@/lib/url';
+import JsonLd, { crumbs } from '@/components/JsonLd';
 import Car from '@/components/Car';
 
 export function generateStaticParams() {
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const v = getVehicle(slug);
   if (!v) return {};
   return {
-    title: `${v.name} kaufen in Hagen`,
+    title: { absolute: `${v.name} kaufen | American Cars` },
     description: `${v.name}, ${v.meta}, ${v.price}. Autopartner GmbH American Cars in Hagen, Prüfstützpunkt des TÜV NORD.`,
   };
 }
@@ -43,7 +44,7 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
             price: pn,
             priceCurrency: 'EUR',
             availability: 'https://schema.org/InStock',
-            seller: { '@type': 'AutoDealer', name: site.name },
+            seller: { '@id': `${BASE}/#autohaus` },
           },
         }
       : {}),
@@ -53,7 +54,7 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
 
   return (
     <main id='top'>
-      <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      <JsonLd data={[ld, crumbs([['Fahrzeuge', '/fahrzeuge'], [v.name, `/fahrzeuge/${v.slug}`]])]} />
       <div className='wrap crumbs'>
         <a href='/'>Startseite</a> › <a href='/fahrzeuge'>Fahrzeuge</a> › {v.name}
       </div>

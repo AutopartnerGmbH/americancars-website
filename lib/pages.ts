@@ -112,7 +112,7 @@ export const pages: Page[] = [
     title: 'Betrugsmasche bei US-Unfallfahrzeugen',
     eyebrow: 'Warnung',
     lead: 'Preise, die zu schön sind, um wahr zu sein: so läuft die Masche mit aufgebauten US-Unfallwagen.',
-    desc: 'Betrugsmasche bei US-Fahrzeugen: Salvage Title, Wiederaufbau in Osteuropa, zusammengesetzte Unfallwagen, manipulierte Airbags. Warnung von Autopartner GmbH Hagen.',
+    desc: 'Betrugsmasche bei US-Fahrzeugen: Salvage Title, Wiederaufbau in Osteuropa, zusammengesetzte Unfallwagen, manipulierte Airbags. Warnung aus Hagen.',
     blocks: [
       { p: ['Medien haben über Händler berichtet, die unfallbeschädigte US-Modelle wie Mustang, Challenger, Camaro, Pacifica oder Grand Caravan anbieten, oft zu auffällig günstigen Preisen. Unser Partner in Florida sieht solche Fahrzeuge vor dem Kauf.'] },
       { h: 'So läuft es typischerweise ab', ol: ['In den USA hat ein Fahrzeug einen schweren Unfall. Die Versicherung erklärt es zum Totalschaden und es erhält einen „Salvage Title“. Das steht im Carfax. In den USA darf das Auto so nicht mehr zugelassen werden.', 'Die Versicherung verkauft das nicht fahrbereite Fahrzeug an den Meistbietenden, häufig an ausländische Aufkäufer.', 'Die Aufkäufer lassen die Fahrzeuge etwa in Litauen günstig reparieren. Bis hierhin ist nichts zu beanstanden.'] },
@@ -162,7 +162,7 @@ export const pages: Page[] = [
     title: 'Klimaservice in Hagen',
     eyebrow: 'KFZ-Meisterwerkstatt · alle Marken',
     lead: 'Kalte Luft im Sommer, klare Scheiben im Winter: Prüfung, Wartung und Befüllung Ihrer Klimaanlage.',
-    desc: 'Klimaservice in Hagen für alle Marken: Klimaanlage prüfen, absaugen, evakuieren und befüllen, Kältemittel R134a und 1234yf. KFZ-Meisterwerkstatt Autopartner GmbH.',
+    desc: 'Klimaservice in Hagen für alle Marken: Klimaanlage prüfen, absaugen, evakuieren und befüllen, Kältemittel R134a und 1234yf. KFZ-Meisterwerkstatt.',
     blocks: [
       { h: 'Wann Sie die Klimaanlage prüfen lassen sollten', ul: ['Die Luft wird nicht mehr richtig kalt', 'Die Scheiben beschlagen schnell', 'Es riecht muffig aus den Lüftungsdüsen', 'Die Klimaanlage läuft laut oder schaltet sich häufig ein und aus', 'Die letzte Prüfung liegt länger als ein Jahr zurück'], p: ['Eine jährliche Prüfung hält die Kühlleistung hoch und beugt Folgeschäden am Kompressor vor.'] },
       { h: 'So läuft der Klimaservice ab', ol: ['Hoch- und Niederdruck vergleichen und den Zustand bewerten', 'Kompressor, Trockner, Verdampfer und Kondensator prüfen, Innenraumtemperatur messen', 'Innenraumfilter erneuern', 'Kältemittel absaugen und das System evakuieren', 'Mit der vorgeschriebenen Menge Kältemittel befüllen'] },
@@ -779,7 +779,7 @@ export const pages: Page[] = [
     "title": "Autoglas: Steinschlag und Scheibentausch",
     "eyebrow": "KFZ-Meisterwerkstatt · Karosserie",
     "lead": "Steinschlag oder Scheibenschaden? Wir erledigen alles und rechnen direkt mit Ihrer Versicherung ab.",
-    "desc": "Autoglas in Hagen: Steinschlag reparieren, Frontscheiben für nahezu alle US-Fahrzeuge besorgen und einbauen, Direktabrechnung mit der Versicherung. Autopartner GmbH American Cars.",
+    "desc": "Autoglas in Hagen: Steinschlag reparieren, Frontscheiben für nahezu alle US-Fahrzeuge besorgen und einbauen, Direktabrechnung mit der Versicherung.",
     "blocks": [
       {
         "h": "Wann Sie handeln sollten",

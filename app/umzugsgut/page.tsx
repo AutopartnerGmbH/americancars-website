@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Umzugsgut: Auto aus den USA importieren',
   description:
-    'Umzugsgut beim Fahrzeug-Import aus den USA: Voraussetzungen, Ablauf, Zoll und Zulassung. Prüfung und Umrüstung bei Autopartner GmbH in Hagen, Prüfstützpunkt des TÜV NORD.',
+    'Umzugsgut beim Fahrzeug-Import aus den USA: Voraussetzungen, Ablauf, Zoll und Zulassung. Prüfung und Umrüstung in Hagen, Prüfstützpunkt des TÜV NORD.',
 };
 
 export default function Umzugsgut() {

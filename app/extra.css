@@ -186,3 +186,12 @@ html,body{overflow-x:clip}
 .h3-tuev{margin:0 0 30px}
 .h3-tuev .tuevbadge{margin:0}
 .ratestrip{padding:22px 0;background:#1b1c21;border-bottom:1px solid #2a2c33;align-items:center}
+
+.seotext{margin-top:56px;max-width:760px;display:grid;gap:16px}.seotext p{margin:0;color:#cfcfd4;line-height:1.7}
+
+.pfaq{border-top:1px solid #2b2d34;padding:2px 0}.pfaq:last-of-type{border-bottom:1px solid #2b2d34}
+.pfaq summary{cursor:pointer;list-style:none;padding:14px 34px 14px 0;font-weight:600;position:relative}
+.pfaq summary::-webkit-details-marker{display:none}
+.pfaq summary::after{content:'+';position:absolute;right:4px;top:10px;font-size:22px;color:#F6C500}
+.pfaq[open] summary::after{content:'–'}
+.pfaq p{margin:0 0 16px;color:#cfcfd4}

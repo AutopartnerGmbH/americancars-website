@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Car from '@/components/Car';
 import { getModel, models } from '@/lib/models';
 import { vehicles } from '@/lib/vehicles';
+import JsonLd, { crumbs } from '@/components/JsonLd';
 
 export const dynamicParams = false;
 export const generateStaticParams = () => models.map((m) => ({ model: m.slug }));
@@ -20,6 +21,7 @@ export default async function ModelPage({ params }: { params: Promise<{ model: s
   const list = vehicles.filter((v) => m.match.test(v.name));
   return (
     <main id='top'>
+      <JsonLd data={crumbs([['Fahrzeuge', '/fahrzeuge'], [m.name, `/modelle/${m.slug}`]])} />
       <section className='post s-b nobord'>
         <div className='wrap'>
           <aside>

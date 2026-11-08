@@ -12,7 +12,7 @@ const find = (slug: string) => brandsInStock().find((b) => b.toLowerCase() === s
 export async function generateMetadata({ params }: { params: Promise<{ brand: string }> }): Promise<Metadata> {
   const { brand } = await params;
   const b = find(brand);
-  return b ? { title: `${b} kaufen in Hagen`, description: `${b} im aktuellen Bestand von Autopartner GmbH American Cars in Hagen.` } : {};
+  return b ? { title: `${b} kaufen in Hagen`, description: `${b} aus den USA im aktuellen Bestand von Autopartner GmbH American Cars in Hagen: geprüft, mit Carfax-Bericht und Finanzierungsrechner.` } : {};
 }
 
 export default async function Page({ params }: { params: Promise<{ brand: string }> }) {

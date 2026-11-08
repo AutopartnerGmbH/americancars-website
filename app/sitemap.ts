@@ -8,7 +8,6 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://americancars-website.v
 const hidden = ['team'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const paths = [
     '/',
     '/fahrzeuge',
@@ -22,5 +21,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...activeCategories().map((c) => `/fahrzeuge/kategorie/${c.key}`),
     ...brandsInStock().map((b) => `/fahrzeuge/marke/${b.toLowerCase()}`),
   ];
-  return paths.map((p) => ({ url: BASE + p, lastModified: now }));
+  return paths.map((p) => ({ url: BASE + p }));
 }
