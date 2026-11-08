@@ -12,6 +12,8 @@ export const site = {
     ['Freitag', '8:00 – 15:30 Uhr'],
     ['Samstag', 'nach Vereinbarung'],
   ] as [string, string][],
+  payment: 'Überweisung, EC-Karte, Barzahlung (keine Kreditkarten)',
+  languages: 'Deutsch, Englisch',
   hoursShort: 'Mo–Do 8:00–17:00 · Fr 8:00–15:30 Uhr',
   since: 1988,
   oldSite: 'https://www.americancars.de',

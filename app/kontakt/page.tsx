@@ -22,6 +22,7 @@ export default function Kontakt() {
             <p><a className='link' href='https://www.google.com/maps/search/?api=1&query=Autopartner+GmbH+Auf+dem+L%C3%B6lfert+37+Hagen' target='_blank' rel='noopener noreferrer'>Route in Google Maps</a></p>
             <h3>Öffnungszeiten</h3>
             <ul>{site.hours.map(([d, t]) => <li key={d}>{d}: {t}</li>)}</ul>
+            <ul><li>Zahlung: {site.payment}</li><li>Sprachen: {site.languages}</li></ul>
             <h3>Erreichbar unter</h3>
             <ul>
               <li>Telefon: <a href={`tel:${site.phoneTel}`}>{site.phone}</a></li>

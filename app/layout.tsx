@@ -42,6 +42,8 @@ const jsonLd = {
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: '08:00', closes: '15:30' },
   ],
   email: 'info@autopartner-hagen.de',
+  paymentAccepted: 'Überweisung, EC-Karte, Bargeld',
+  knowsLanguage: ['de', 'en'],
   address: { '@type': 'PostalAddress', streetAddress: 'Auf dem Lölfert 37', postalCode: '58119', addressLocality: 'Hagen', addressCountry: 'DE' },
   sameAs: ['https://www.instagram.com/autopartner_american.cars/', 'https://www.youtube.com/@AutopartnerAmericanCars'],
 };

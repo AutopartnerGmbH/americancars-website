@@ -148,6 +148,7 @@ export default function Home() {
           <h2>Besuchen Sie uns in Hagen.</h2>
           <address>{site.name}<br />{site.street}, {site.city}</address>
           <ul className='hours'>{site.hours.map(([d, t]) => <li key={d}><span>{d}</span><span>{t}</span></li>)}</ul>
+          <ul className='hours info2'><li><span>Zahlung</span><span>{site.payment}</span></li><li><span>Sprachen</span><span>{site.languages}</span></li></ul>
         </div>
         <div>
           <a className='tel' href={`tel:${site.phoneTel}`}>{site.phone}</a>
