@@ -106,3 +106,8 @@ section.calcs{padding:72px 0}
 .tuevbadge.s img{height:18px}
 .tuev-page,.cert{all:unset}
 .legal-tuev{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap}
+
+.tuevbadge,.tuevbadge.s{background:none;border:0;border-radius:0;box-shadow:none;padding:0;gap:4px}
+.tuevbadge .tb-txt{color:#fff;font-size:12px;text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.tuevbadge img{height:44px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.55))}
+.tuevbadge.s{flex-direction:row;align-items:center;gap:10px}.tuevbadge.s .tb-txt{font-size:11px}.tuevbadge.s img{height:28px}
