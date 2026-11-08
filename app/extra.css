@@ -92,3 +92,4 @@ section.calcs{padding:72px 0}
 .cmpscroll{overflow-x:auto}.cmp table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
 .cmp th,.cmp td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.cmp th a:hover{color:var(--yellow)}.cmp td:first-child{color:var(--mut)}
 @media(max-width:900px){.favlink{margin-left:auto}.bar .tel{margin-left:0}section.calcs{padding:48px 0}}
+.hero2 .shot img{object-position:50% 60%}@media(max-width:900px){.hero2 .shot img{object-position:50% 55%}}

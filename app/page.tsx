@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main id='top'>
       <section className='hero2'>
-        <div className='shot'><Photo src='/img/pacifica.jpg' alt='Schwarzer Chrysler Pacifica im Ausstellungsraum von Autopartner American Cars in Hagen' /></div>
+        <div className='shot'><Photo src='/img/hero.jpg' alt='Schwarzer Chrysler Pacifica von Autopartner American Cars auf der Autobahn' /></div>
         <div className='wrap hero-in'>
           <span className='cert'>Prüfstützpunkt TÜV NORD</span>
           {hero && <a className='hero-chip' href={`/fahrzeuge/${hero.slug}`}>Chrysler Pacifica ab {hero.price} →</a>}
