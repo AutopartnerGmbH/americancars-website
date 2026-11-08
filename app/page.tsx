@@ -1,4 +1,3 @@
-import TuevBadge from '@/components/TuevBadge';
 import Photo from '@/components/Photo';
 import Reviews, { RatingChip } from '@/components/Reviews';
 import Marquee from '@/components/Marquee';
@@ -18,29 +17,23 @@ export default function Home() {
 
   return (
     <main id='top'>
-      <section className='hero2'>
-        <div className='shot'><Photo src='/img/hero.jpg' alt='Schwarzer Chrysler Pacifica von Autopartner American Cars auf der Autobahn' /></div>
-        <div className='wrap hero-in'>
-          <TuevBadge />
+      <section className='hero3'>
+        <div className='h3-img'>
+          <Photo src='/img/hero.jpg' alt='Schwarzer Chrysler Pacifica von Autopartner American Cars auf der Autobahn' />
           {hero ? (
             <a className='hero-chip' href={`/fahrzeuge/${hero.slug}`}>Chrysler Pacifica ab {hero.price} →</a>
           ) : (
             <a className='hero-chip' href='/fahrzeuge'>Aktuelle US-Fahrzeuge ansehen →</a>
           )}
+        </div>
+        <div className='wrap h3-text'>
           <h1>US-Fahrzeuge, <span className='mark'>persönlich ausgewählt.</span></h1>
-          <div className='hero2-row'>
-            <p>Unfallfrei, mit Carfax-Bericht und eigener Meisterwerkstatt. Seit {site.since} in Hagen.</p>
-            <div className='acts'><a className='b1' href='/fahrzeuge'>Bestand ansehen</a><a className='b2' href='/kontakt'>Besichtigung vereinbaren</a></div>
-          </div>
-          <RatingChip />
-          <ul className='herostats'>
-            <li><b>Seit {site.since}</b><span>in Hagen</span></li>
-            <li><b>Carfax</b><span>zu jedem Fahrzeug</span></li>
-            <li><b>Meister</b><span>Werkstatt im Haus</span></li>
-          </ul>
+          <p>Unfallfrei, mit Carfax-Bericht und eigener Meisterwerkstatt. Seit {site.since} in Hagen.</p>
+          <div className='acts'><a className='b1' href='/fahrzeuge'>Bestand ansehen</a><a className='b2' href='/kontakt'>Besichtigung vereinbaren</a></div>
         </div>
       </section>
       <Marquee />
+      <div className='ratestrip'><RatingChip /></div>
       <section className='intro s-a'><div className='wrap'>
         <span className='eyebrow'>Autopartner GmbH</span>
         <p>Wir importieren amerikanische Fahrzeuge und kennen jedes einzelne. <span>Bei uns kaufen Sie kein Auto aus dem Katalog, sondern eines, das wir selbst geprüft haben.</span></p>
