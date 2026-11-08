@@ -7,14 +7,13 @@ import Faq from '@/components/Faq';
 import Car from '@/components/Car';
 import { vehicles } from '@/lib/vehicles';
 import { models } from '@/lib/models';
-import { activeCategories, brandsInStock } from '@/lib/categories';
+import { activeCategories } from '@/lib/categories';
 import { site } from '@/lib/site';
 
 export const revalidate = 3600;
 
 export default function Home() {
   const cats = activeCategories();
-  const brands = brandsInStock();
   const popular = models
     .map((m) => ({ m, n: vehicles.filter((v) => m.match.test(v.name)).length }))
     .filter((x) => x.n > 0)
@@ -47,11 +46,7 @@ export default function Home() {
         <p>Wir importieren amerikanische Fahrzeuge und kennen jedes einzelne. <span>Bei uns kaufen Sie kein Auto aus dem Katalog, sondern eines, das wir selbst geprüft haben.</span></p>
       </div></section>
 
-      <section className='cats s-b'><div className='wrap'>
-        <div className='head'><h2>Was suchen Sie?</h2><div className='brands'>{brands.map((b) => <a key={b} href={`/fahrzeuge/marke/${b.toLowerCase()}`}>{b}</a>)}</div></div>
-      </div></section>
-
-      <section className='stock s-a' id='bestand'><div className='wrap'>
+      <section className='stock s-b' id='bestand'><div className='wrap'>
         <div className='head'>
           <h2>Aktueller Bestand</h2>
           <div className='filters'>
