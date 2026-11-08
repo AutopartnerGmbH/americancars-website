@@ -1,6 +1,9 @@
 import TuevBadge from '@/components/TuevBadge';
 import Photo from '@/components/Photo';
-import Reviews from '@/components/Reviews';
+import Reviews, { RatingChip } from '@/components/Reviews';
+import Marquee from '@/components/Marquee';
+import Ablauf from '@/components/Ablauf';
+import Faq from '@/components/Faq';
 import Car from '@/components/Car';
 import { vehicles } from '@/lib/vehicles';
 import { activeCategories, brandsInStock } from '@/lib/categories';
@@ -29,8 +32,15 @@ export default function Home() {
             <p>Unfallfrei, mit Carfax-Bericht und eigener Meisterwerkstatt. Seit {site.since} in Hagen.</p>
             <div className='acts'><a className='b1' href='/fahrzeuge'>Bestand ansehen</a><a className='b2' href='/kontakt'>Besichtigung vereinbaren</a></div>
           </div>
+          <RatingChip />
+          <ul className='herostats'>
+            <li><b>Seit {site.since}</b><span>in Hagen</span></li>
+            <li><b>Carfax</b><span>zu jedem Fahrzeug</span></li>
+            <li><b>Meister</b><span>Werkstatt im Haus</span></li>
+          </ul>
         </div>
       </section>
+      <Marquee />
       <section className='intro s-a'><div className='wrap'>
         <span className='eyebrow'>Autopartner GmbH</span>
         <p>Wir importieren amerikanische Fahrzeuge und kennen jedes einzelne. <span>Bei uns kaufen Sie kein Auto aus dem Katalog, sondern eines, das wir selbst geprüft haben.</span></p>
@@ -93,6 +103,8 @@ export default function Home() {
         </div>
       </div></section>
 
+      <Ablauf />
+
       <section className='svc s-b' id='werkstatt'><div className='wrap two'>
         <div>
           <span className='eyebrow'>KFZ-Meisterwerkstatt · Prüfstützpunkt des TÜV NORD</span>
@@ -147,6 +159,8 @@ export default function Home() {
       </div></section>
 
       <Reviews />
+
+      <Faq />
 
       <section className='contact s-d' id='kontakt'><div className='wrap'>
         <div>

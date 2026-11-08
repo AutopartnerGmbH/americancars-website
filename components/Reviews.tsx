@@ -84,3 +84,17 @@ export default async function Reviews() {
     </section>
   );
 }
+
+export async function RatingChip() {
+  const data = await load();
+  const rating = data?.rating ? data.rating.toFixed(1).replace('.', ',') : '4,8';
+  const total = data?.user_ratings_total ?? 140;
+  return (
+    <a className='ratechip' href='#bewertungen' aria-label={`Google-Bewertung ${rating} von 5`}>
+      {G}
+      <b>{rating}</b>
+      <span className='gst'>{stars(5)}</span>
+      <span>{data ? `${total} Bewertungen` : `über ${total} Bewertungen`}</span>
+    </a>
+  );
+}
