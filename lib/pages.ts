@@ -20,6 +20,7 @@ export const pages: Page[] = [
       { h: 'Service & Inspektion', p: ['Wartung und Inspektion erfolgen in unserer Meisterwerkstatt nach Herstellervorgaben, für Kundenfahrzeuge genauso wie für unsere Verkaufsfahrzeuge. Regelmäßige Kontrollen erkennen Sicherheitsmängel früh und verhindern teure Folgeschäden.', 'Umfang und Wechselintervalle richten sich nach Ihrem Fahrzeug. Unsere Checkliste umfasst unter anderem:'], ul: ['Beleuchtung und elektrische Einrichtungen', 'Kühlsystem, Bremsflüssigkeit, Batterie, Scheibenwaschanlage', 'Luft-, Pollen- und Kraftstofffilter, Motoröl und Ölfilter', 'Zündkerzen und Dichtheit der Antriebskomponenten', 'Bremsleitungen und Bremsbelagstärke', 'Achs- und Lenkungskomponenten auf Spiel und Verschleiß', 'Reifenzustand und Radbefestigung'] },
       { h: 'Klimaservice', p: ['Eine jährliche Prüfung hält die Kühlleistung hoch und beugt warmer Luft, beschlagenen Scheiben und Gerüchen vor. Wir arbeiten mit einem Kombi-Gerät von SNAP-ON für die Kältemittel R134a und 1234yf.'], ol: ['Hoch- und Niederdruck vergleichen und den Zustand bewerten', 'Kompressor, Trockner, Verdampfer und Kondensator prüfen, Innenraumtemperatur messen', 'Innenraumfilter erneuern', 'Kältemittel absaugen und das System evakuieren', 'Mit der vorgeschriebenen Menge Kältemittel befüllen'] },
       { h: 'Motordiagnose und Fehlerauslesen', p: ['Moderne Fahrzeuge speichern Fehler im Bordcomputer. Wir lesen den Fehlerspeicher mit SNAP-ON-Diagnosegeräten über den OBD-Anschluss aus. Manche Fehler lassen sich direkt löschen, andere analysieren wir anhand der Schaltpläne. Die Diagnosesoftware halten wir aktuell.'] },
+      { h: 'Weitere Leistungen', links: [['Alle Werkstatt-Leistungen im Überblick', '/werkstatt-leistungen']] },
       { h: 'Alles aus einer Hand', ul: ['Wartung und Reparatur für alle Marken', 'HU und AU als Prüfstützpunkt TÜV NORD', 'Umbau und Tuning', 'Unfall-Instandsetzung mit Schadensabwicklung', 'Ersatzschlüssel für Ford Mustang, Chevrolet Camaro und Dodge Challenger'] },
     ],
     cta: ['Werkstatttermin anfragen', '/#werkstatt'],
@@ -220,6 +221,889 @@ export const pages: Page[] = [
       { h: 'Erfahrung mit amerikanischer Technik', p: ['Viele US-Fahrzeuge fahren mit Automatikgetrieben und großvolumigen Motoren. Wir reparieren sie in unserer eigenen Meisterwerkstatt, genauso wie Fahrzeuge aller anderen Marken.'] },
     ],
     cta: ['Werkstatttermin anfragen', '/#werkstatt'],
+  },
+  {
+    "slug": "oelwechsel",
+    "title": "Ölservice und Ölwechsel in Hagen",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Frisches Öl und ein neuer Filter halten den Motor lange leistungsfähig.",
+    "desc": "Ölwechsel mit Filter in Hagen für alle Marken und US-Fahrzeuge, nach Herstellervorgabe. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Das Wartungsintervall Ihres Fahrzeugs ist erreicht",
+          "Die Ölwarnleuchte oder eine Service-Meldung erscheint",
+          "Der Ölstand sinkt spürbar",
+          "Sie fahren viel Kurzstrecke oder ziehen regelmäßig einen Anhänger"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Altöl ablassen und Ölfilter erneuern",
+          "Motoröl in der für Ihr Fahrzeug vorgeschriebenen Spezifikation einfüllen",
+          "Ölstand kontrollieren und Dichtheit der Ablassschraube prüfen",
+          "Service-Intervallanzeige zurücksetzen"
+        ]
+      },
+      {
+        "h": "Auch für große US-Motoren",
+        "p": [
+          "V8-Motoren aus den USA haben oft größere Ölmengen und eigene Spezifikationen. Wir kennen die Vorgaben und füllen das passende Öl ein."
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "zahnriemen-steuerkette",
+    "title": "Zahnriemen und Steuerkette erneuern",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Steuertrieb rechtzeitig prüfen oder wechseln, bevor ein Motorschaden entsteht.",
+    "desc": "Zahnriemenwechsel und Steuerkette erneuern in Hagen, alle Marken. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Der Wechselintervall des Zahnriemens ist erreicht",
+          "Rasselnde oder klappernde Geräusche beim Kaltstart",
+          "Der Motor läuft unruhig oder springt schlecht an",
+          "Eine Warnleuchte weist auf Steuerzeiten hin"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Zustand des Steuertriebs prüfen",
+          "Zahnriemen mit Spannrolle und, wo vorgesehen, Wasserpumpe erneuern",
+          "Steuerkette, Spanner und Führungsschienen ersetzen",
+          "Steuerzeiten einstellen und Probefahrt durchführen"
+        ]
+      },
+      {
+        "h": "Warum rechtzeitig wechseln",
+        "p": [
+          "Reißt ein Zahnriemen oder springt eine Steuerkette, kann der Motor erheblich beschädigt werden. Ein planmäßiger Wechsel ist deutlich günstiger als eine Motorinstandsetzung."
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "kupplungswechsel",
+    "title": "Kupplungswechsel",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Rutschende oder schwergängige Kupplung? Wir prüfen und erneuern sie.",
+    "desc": "Kupplungswechsel in Hagen für alle Marken, Diagnose und Reparatur in der Meisterwerkstatt. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Die Kupplung rutscht, besonders unter Last",
+          "Das Kupplungspedal fühlt sich schwammig oder schwergängig an",
+          "Der Gang lässt sich schwer einlegen",
+          "Es riecht verbrannt oder es treten Geräusche beim Auskuppeln auf"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Kupplungsanlage prüfen, auch Hydraulik und Ausrücklager",
+          "Kupplungssatz mit Druckplatte und Scheibe erneuern",
+          "Schwungrad prüfen und, wenn nötig, erneuern",
+          "Probefahrt und Funktionskontrolle"
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "fluessigkeiten-zuendkerzen-batterie",
+    "title": "Bremsflüssigkeit, Zündkerzen und Batterie",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Kleine Wartungsarbeiten mit großer Wirkung für Sicherheit und Zuverlässigkeit.",
+    "desc": "Bremsflüssigkeit wechseln, Zündkerzen erneuern und Batteriewechsel in Hagen. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Bremsflüssigkeit: spätestens nach dem vom Hersteller vorgesehenen Zeitraum, sie nimmt mit der Zeit Wasser auf",
+          "Zündkerzen: bei unruhigem Lauf, Startproblemen oder erhöhtem Verbrauch",
+          "Batterie: wenn der Motor nur zögerlich startet oder Bordspannung schwankt"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Bremsflüssigkeit erneuern und das System entlüften",
+          "Zündkerzen ausbauen, prüfen und passende Kerzen einsetzen",
+          "Batterie prüfen, bei Bedarf tauschen und das Bordnetz kontrollieren"
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "auspuff-katalysator",
+    "title": "Auspuff und Katalysator",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Defekte Abgasanlage? Wir reparieren oder tauschen die betroffenen Teile.",
+    "desc": "Auspuffreparatur und Katalysator in Hagen, Prüfung durch den TÜV NORD Prüfstützpunkt im Haus. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Der Motor klingt lauter als gewohnt",
+          "Es klappert unter dem Fahrzeug",
+          "Die Abgaswerte bei der AU sind nicht in Ordnung",
+          "Eine Warnleuchte weist auf den Katalysator hin"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Abgasanlage auf Rost, Undichtigkeiten und Aufhängungen prüfen",
+          "Endschalldämpfer, Mittelschalldämpfer oder Rohre erneuern",
+          "Katalysator und Lambdasonden prüfen und bei Bedarf ersetzen",
+          "Abgasuntersuchung (AU) direkt bei uns"
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "stossdaempfer-fahrwerk",
+    "title": "Stoßdämpfer und Fahrwerk",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Sicheres Fahrverhalten braucht ein intaktes Fahrwerk.",
+    "desc": "Stoßdämpfer und Fahrwerk prüfen und erneuern in Hagen, alle Marken und US-Fahrzeuge. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Das Fahrzeug schaukelt nach Bodenwellen nach",
+          "Der Bremsweg wird länger oder das Auto taucht beim Bremsen stark ein",
+          "Klopfgeräusche aus dem Fahrwerk",
+          "Reifen nutzen sich ungleichmäßig ab"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Stoßdämpfer, Federn, Lager und Querlenker prüfen",
+          "Verschlissene Teile achsweise erneuern",
+          "Spur und Sturz prüfen, bei Bedarf Achsvermessung anschließen"
+        ]
+      },
+      {
+        "h": "Schwere US-Fahrzeuge",
+        "p": [
+          "Pickups und SUV aus den USA belasten das Fahrwerk stark. Wir wählen passende Teile aus und beraten Sie auch zu Fahrwerksumbauten."
+        ],
+        "links": [
+          [
+            "Fahrwerksumbau und Höherlegung",
+            "/fahrwerksumbau-hoeherlegung"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "achsvermessung",
+    "title": "Achsvermessung",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Gerader Lauf, weniger Reifenverschleiß, sicheres Lenken.",
+    "desc": "Achsvermessung in Hagen für alle Marken und US-Fahrzeuge. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Das Fahrzeug zieht zu einer Seite",
+          "Das Lenkrad steht bei Geradeausfahrt schief",
+          "Die Reifen verschleißen ungleichmäßig",
+          "Nach neuen Reifen, Fahrwerksarbeiten, Unfall oder Bordsteinkontakt"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Spur, Sturz und Nachlauf messen",
+          "Einstellbare Werte auf die Herstellervorgabe bringen",
+          "Messprotokoll mit den Werten vor und nach der Einstellung"
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "autoelektrik",
+    "title": "Autoelektrik und Elektronik",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Elektrikfehler suchen und beheben, vom Licht bis zum Steuergerät.",
+    "desc": "Autoelektrik und Fahrzeugelektronik in Hagen: Fehlersuche, Reparatur, Diagnose. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Beleuchtung, Fensterheber oder Zentralverriegelung fallen aus",
+          "Die Batterie entlädt sich über Nacht",
+          "Fehlermeldungen im Display oder Warnleuchten",
+          "Defekte Sensoren oder Steuergeräte"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Fehlerspeicher mit SNAP-ON-Diagnosegeräten auslesen",
+          "Fehler anhand der Schaltpläne eingrenzen",
+          "Leitungen, Stecker, Sensoren und Steuergeräte prüfen und instandsetzen",
+          "Ruhestrom messen und Verbraucher aufspüren"
+        ]
+      },
+      {
+        "links": [
+          [
+            "Mehr zur Motordiagnose",
+            "/motordiagnose"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "motoreninstandsetzung",
+    "title": "Motoreninstandsetzung",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Wenn der Motor mehr braucht als eine kleine Reparatur.",
+    "desc": "Motoreninstandsetzung in Hagen: Diagnose, Reparatur und Überholung für alle Marken und US-Fahrzeuge. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Starker Ölverbrauch oder blauer Rauch",
+          "Kompressionsverlust oder Leistungseinbruch",
+          "Klopfen, Klackern oder Metallgeräusche aus dem Motor",
+          "Kühlmittel im Öl oder Öl im Kühlmittel"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Diagnose und Befund mit Erklärung der Reparaturmöglichkeiten",
+          "Teilinstandsetzung, zum Beispiel Zylinderkopf oder Dichtungen",
+          "Austausch oder Überholung des Motors, abgestimmt mit Ihnen",
+          "Probefahrt und Funktionskontrolle"
+        ]
+      },
+      {
+        "p": [
+          "Sie entscheiden, was gemacht wird. Erst danach beginnen wir mit der Reparatur."
+        ],
+        "links": [
+          [
+            "Getriebe und Motor reparieren",
+            "/getriebe-motor-reparatur"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "reifenservice",
+    "title": "Reifenservice",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Montage, Wuchten und Radwechsel aus einer Hand.",
+    "desc": "Reifenservice in Hagen: Reifenmontage, Wuchten, Radwechsel für alle Fahrzeuge inklusive US-Pickups. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Saisonaler Wechsel zwischen Sommer- und Winterreifen",
+          "Neue Reifen oder Felgen sind fällig",
+          "Das Lenkrad vibriert bei höherer Geschwindigkeit",
+          "Reifenschaden oder Luftverlust"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Reifen von der Felge ab- und aufziehen, Räder wuchten",
+          "Komplette Räder wechseln",
+          "Reifenzustand, Profiltiefe und Luftdruck prüfen",
+          "Reifendruckkontrollsystem (RDKS) anlernen"
+        ]
+      },
+      {
+        "links": [
+          [
+            "Reifeneinlagerung",
+            "/reifeneinlagerung"
+          ],
+          [
+            "Reifen und Felgen",
+            "/reifen-und-felgen"
+          ],
+          [
+            "RDKS",
+            "/rdks-reifendruckkontrolle"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "reifeneinlagerung",
+    "title": "Reifeneinlagerung",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Ihre Sommer- oder Winterräder sicher aufbewahrt, bis Sie sie wieder brauchen.",
+    "desc": "Reifeneinlagerung in Hagen: Sommer- und Winterräder einlagern lassen. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Sie haben keinen Platz für zwei Radsätze",
+          "Sie möchten die Räder trocken und sicher lagern",
+          "Sie wechseln im Frühjahr und Herbst ohnehin bei uns"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Komplette Räder oder Reifen einlagern",
+          "Beim saisonalen Wechsel bringen wir den eingelagerten Satz ans Fahrzeug",
+          "Zustand der Reifen vor der Einlagerung prüfen"
+        ]
+      },
+      {
+        "p": [
+          "Fragen Sie bei der Terminvereinbarung nach Einlagerung und Konditionen."
+        ],
+        "links": [
+          [
+            "Zum Reifenservice",
+            "/reifenservice"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "reifen-und-felgen",
+    "title": "Reifen und Felgen kaufen",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Passende Reifen und Felgen für Pkw, SUV und US-Pickups.",
+    "desc": "Reifenverkauf und Felgen in Hagen, Beratung und Montage für alle Fahrzeuge. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Ihre Reifen sind abgefahren oder gealtert",
+          "Sie möchten Sommer-, Winter- oder Ganzjahresreifen",
+          "Sie wünschen neue Felgen oder einen zweiten Radsatz",
+          "Sie brauchen Größen für Pickups oder SUV"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Beratung zu Reifengröße, Tragfähigkeit und Geschwindigkeitsindex",
+          "Reifen- und Felgenverkauf mit Montage und Wuchten",
+          "Eintragungspflichtige Rad-Reifen-Kombinationen mit dem TÜV-Prüfstützpunkt klären"
+        ]
+      },
+      {
+        "links": [
+          [
+            "Zum Reifenservice",
+            "/reifenservice"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "rdks-reifendruckkontrolle",
+    "title": "RDKS: Reifendruckkontrollsystem",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Sensoren prüfen, anlernen und tauschen.",
+    "desc": "RDKS in Hagen: Reifendruck-Sensoren prüfen, anlernen und erneuern. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Die Reifendruck-Warnleuchte leuchtet dauerhaft",
+          "Beim Radwechsel müssen die Sensoren angelernt werden",
+          "Ein Sensor ist defekt oder die Batterie ist leer"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Sensoren auslesen und prüfen",
+          "Sensoren anlernen oder ersetzen",
+          "Reifendruck auf die Herstellervorgabe einstellen und das System zurücksetzen"
+        ]
+      },
+      {
+        "p": [
+          "Bei Fahrzeugen aus den USA ist RDKS serienmäßig verbaut. Wir kennen die gängigen Systeme."
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "fahrwerksumbau-hoeherlegung",
+    "title": "Fahrwerksumbau und Höherlegung",
+    "eyebrow": "US-Fahrzeuge",
+    "lead": "Mehr Höhe, mehr Geländeeigenschaft oder ein anderer Look, sauber umgesetzt.",
+    "desc": "Fahrwerksumbau und Höherlegung für US-Fahrzeuge in Hagen, mit Eintragung beim TÜV-Prüfstützpunkt. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Sie möchten Ihren Pickup oder SUV höherlegen",
+          "Sie wünschen größere Reifen und mehr Freigang",
+          "Sie möchten das Fahrwerk für Zugbetrieb oder Gelände anpassen"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Beratung zu passenden Fahrwerkskomponenten",
+          "Einbau und Einstellung inklusive Achsvermessung",
+          "Abnahme und Eintragung über unseren Prüfstützpunkt TÜV NORD"
+        ]
+      },
+      {
+        "p": [
+          "Umbauten müssen zugelassen und eingetragen sein, sonst erlischt die Betriebserlaubnis. Wir klären das vorab mit Ihnen."
+        ],
+        "links": [
+          [
+            "Umbau und Tuning",
+            "/us-fahrzeug-tunen"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "ersatzteile-zubehoer-us",
+    "title": "Ersatzteile und Zubehör für US-Fahrzeuge",
+    "eyebrow": "US-Fahrzeuge",
+    "lead": "Teile für Dodge, RAM, Chevrolet, Ford und mehr.",
+    "desc": "Ersatzteile und Zubehör für US-Fahrzeuge in Hagen: Beratung, Beschaffung und Einbau. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Sie brauchen Verschleißteile für Ihren US-Wagen",
+          "Ein Teil ist defekt und muss beschafft werden",
+          "Sie wünschen Zubehör wie Anhängerkupplung, Trittbretter oder Laderaumabdeckungen"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Beratung und Beschaffung passender Teile",
+          "Einbau in unserer Meisterwerkstatt",
+          "Passgenaue Lösungen für amerikanische Modelle"
+        ]
+      },
+      {
+        "p": [
+          "Nennen Sie uns Modell, Baujahr und, wenn möglich, die Fahrgestellnummer. Dann können wir Teile gezielt anfragen."
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "autoglas-steinschlag",
+    "title": "Autoglas: Steinschlag und Scheibentausch",
+    "eyebrow": "KFZ-Meisterwerkstatt · Karosserie",
+    "lead": "Kleiner Steinschlag oder gerissene Scheibe? Frühes Handeln spart Kosten.",
+    "desc": "Steinschlag reparieren und Scheibentausch in Hagen für alle Marken. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Ein Steinschlag in der Frontscheibe, solange er klein ist",
+          "Die Scheibe hat einen Riss",
+          "Der Sichtbereich des Fahrers ist beeinträchtigt"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Steinschlag bewerten und, wenn möglich, reparieren",
+          "Front-, Heck- oder Seitenscheibe tauschen",
+          "Kamera- und Sensorsysteme im Scheibenbereich beachten"
+        ]
+      },
+      {
+        "p": [
+          "Ob eine Kaskoversicherung die Kosten übernimmt, klären wir gern mit Ihnen."
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "unfallgutachten",
+    "title": "Gutachten bei Unfallschäden",
+    "eyebrow": "KFZ-Meisterwerkstatt · Karosserie",
+    "lead": "Nach dem Unfall: Schaden dokumentieren und richtig abwickeln.",
+    "desc": "Gutachten bei Unfallschäden in Hagen: Unfallinstandsetzung mit Schadensabwicklung. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Ihr Fahrzeug wurde bei einem Unfall beschädigt",
+          "Sie brauchen eine verlässliche Schadensaufstellung für die Versicherung",
+          "Sie möchten Reparatur und Abwicklung aus einer Hand"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Schaden aufnehmen und dokumentieren",
+          "Reparaturweg und Kosten mit Ihnen besprechen",
+          "Abwicklung mit der Versicherung begleiten"
+        ]
+      },
+      {
+        "links": [
+          [
+            "Unfall-Instandsetzung",
+            "/unfall-instandsetzung"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "fahrzeugaufbereitung",
+    "title": "Fahrzeugaufbereitung und Politur",
+    "eyebrow": "KFZ-Meisterwerkstatt · Pflege",
+    "lead": "Lack, Felgen und Innenraum wieder auf Hochglanz.",
+    "desc": "Fahrzeugaufbereitung und Politur in Hagen: Lackpflege, Innenreinigung, Wertsteigerung. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Sie möchten Ihr Fahrzeug verkaufen und den Wert steigern",
+          "Der Lack ist matt oder zeigt feine Kratzer",
+          "Der Innenraum soll gründlich gereinigt werden"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Außenwäsche, Lackpflege und Politur",
+          "Innenraumreinigung",
+          "Felgen und Kunststoffteile pflegen"
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "ersatzwagen",
+    "title": "Ersatzwagen und Leihwagen",
+    "eyebrow": "KFZ-Meisterwerkstatt · Komfort",
+    "lead": "Mobil bleiben, während Ihr Fahrzeug in der Werkstatt ist.",
+    "desc": "Ersatzwagen und Leihwagen in Hagen bei Reparatur und Unfallinstandsetzung. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Ihr Fahrzeug bleibt für Reparatur oder Unfallinstandsetzung länger bei uns",
+          "Sie sind auf Ihr Auto beruflich angewiesen"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Auf Anfrage und nach Verfügbarkeit bekommen Sie einen Ersatzwagen",
+          "Sprechen Sie uns bei der Terminvereinbarung darauf an"
+        ]
+      },
+      {
+        "p": [
+          "Verfügbarkeit und Bedingungen besprechen wir persönlich mit Ihnen."
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "saison-checks",
+    "title": "Saison-Checks: Winter, Sommer und Urlaub",
+    "eyebrow": "KFZ-Meisterwerkstatt · Check",
+    "lead": "Gut vorbereitet durch jede Jahreszeit und in den Urlaub.",
+    "desc": "Wintercheck, Sommercheck und Urlaubscheck in Hagen: Fahrzeug prüfen lassen. Autopartner GmbH American Cars in Hagen.",
+    "blocks": [
+      {
+        "h": "Wann das sinnvoll ist",
+        "ul": [
+          "Vor dem Winter: Batterie, Beleuchtung, Frostschutz, Reifen",
+          "Vor dem Sommer: Klimaanlage, Kühlmittel, Bremsen",
+          "Vor einer langen Fahrt: Reifen, Flüssigkeiten, Bremsen, Beleuchtung"
+        ]
+      },
+      {
+        "h": "Das machen wir",
+        "ul": [
+          "Beleuchtung, Batterie, Flüssigkeiten und Wischer prüfen",
+          "Bremsen und Reifen kontrollieren",
+          "Klimaanlage auf Funktion prüfen",
+          "Kurzer Prüfbericht mit Empfehlungen"
+        ]
+      },
+      {
+        "links": [
+          [
+            "Klimaservice",
+            "/klimaservice"
+          ],
+          [
+            "Bremsen",
+            "/bremsen-service"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
+  },
+  {
+    "slug": "werkstatt-leistungen",
+    "title": "Alle Werkstatt-Leistungen",
+    "eyebrow": "KFZ-Meisterwerkstatt · alle Marken",
+    "lead": "Wartung, Reparatur, Reifen, Karosserie und Umbau für alle Fabrikate, mit besonderer Erfahrung bei US-Fahrzeugen.",
+    "desc": "Alle Werkstatt-Leistungen der Autopartner GmbH in Hagen: Wartung, Reparatur, Reifenservice, Klimaservice, HU und AU, Unfallinstandsetzung, Umbau.",
+    "blocks": [
+      {
+        "h": "Wartung und Reparatur",
+        "links": [
+          [
+            "Inspektion und Wartung",
+            "/werkstatt-service"
+          ],
+          [
+            "Ölservice und Ölwechsel",
+            "/oelwechsel"
+          ],
+          [
+            "Zahnriemen und Steuerkette",
+            "/zahnriemen-steuerkette"
+          ],
+          [
+            "Kupplungswechsel",
+            "/kupplungswechsel"
+          ],
+          [
+            "Bremsflüssigkeit, Zündkerzen, Batterie",
+            "/fluessigkeiten-zuendkerzen-batterie"
+          ],
+          [
+            "Bremsen",
+            "/bremsen-service"
+          ],
+          [
+            "Auspuff und Katalysator",
+            "/auspuff-katalysator"
+          ],
+          [
+            "Stoßdämpfer und Fahrwerk",
+            "/stossdaempfer-fahrwerk"
+          ],
+          [
+            "Achsvermessung",
+            "/achsvermessung"
+          ],
+          [
+            "Autoelektrik und Elektronik",
+            "/autoelektrik"
+          ],
+          [
+            "Motordiagnose",
+            "/motordiagnose"
+          ],
+          [
+            "Motoreninstandsetzung",
+            "/motoreninstandsetzung"
+          ],
+          [
+            "Getriebe und Motor",
+            "/getriebe-motor-reparatur"
+          ],
+          [
+            "Klimaservice",
+            "/klimaservice"
+          ],
+          [
+            "HU und AU",
+            "/hu-au-hagen"
+          ]
+        ]
+      },
+      {
+        "h": "Reifen und Räder",
+        "links": [
+          [
+            "Reifenservice",
+            "/reifenservice"
+          ],
+          [
+            "Reifeneinlagerung",
+            "/reifeneinlagerung"
+          ],
+          [
+            "Reifen und Felgen",
+            "/reifen-und-felgen"
+          ],
+          [
+            "RDKS",
+            "/rdks-reifendruckkontrolle"
+          ]
+        ]
+      },
+      {
+        "h": "Speziell für US-Fahrzeuge",
+        "links": [
+          [
+            "Umbau und Tuning",
+            "/us-fahrzeug-tunen"
+          ],
+          [
+            "Fahrwerksumbau und Höherlegung",
+            "/fahrwerksumbau-hoeherlegung"
+          ],
+          [
+            "Ersatzteile und Zubehör",
+            "/ersatzteile-zubehoer-us"
+          ],
+          [
+            "Import, Umrüstung und Homologation",
+            "/import-umruestung"
+          ],
+          [
+            "TÜV und Homologation",
+            "/tuev-und-homologation"
+          ]
+        ]
+      },
+      {
+        "h": "Karosserie, Lack und Pflege",
+        "links": [
+          [
+            "Unfall-Instandsetzung",
+            "/unfall-instandsetzung"
+          ],
+          [
+            "Gutachten bei Unfallschäden",
+            "/unfallgutachten"
+          ],
+          [
+            "Autoglas und Steinschlag",
+            "/autoglas-steinschlag"
+          ],
+          [
+            "Fahrzeugaufbereitung und Politur",
+            "/fahrzeugaufbereitung"
+          ]
+        ]
+      },
+      {
+        "h": "Komfort",
+        "links": [
+          [
+            "Ersatzwagen und Leihwagen",
+            "/ersatzwagen"
+          ],
+          [
+            "Saison-Checks",
+            "/saison-checks"
+          ]
+        ]
+      }
+    ],
+    "cta": [
+      "Werkstatttermin anfragen",
+      "/#werkstatt"
+    ]
   },
 ];
 

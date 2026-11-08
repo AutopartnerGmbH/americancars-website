@@ -74,6 +74,7 @@ export default function Home() {
             <li><a href='/bremsen-service'>Bremsen</a></li>
             <li><a href='/getriebe-motor-reparatur'>Getriebe & Motor</a></li>
             <li><a href='/unfall-instandsetzung'>Unfallreparatur</a></li>
+            <li><a href='/werkstatt-leistungen'>Alle Leistungen</a></li>
           </ul></div>
       </div></section>
 
