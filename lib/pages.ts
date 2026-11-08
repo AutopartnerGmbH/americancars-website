@@ -49,6 +49,7 @@ export const pages: Page[] = [
     blocks: [
       { h: 'US-Fahrzeug tunen und umbauen', p: ['US-Fahrzeuge machen Spaß und sind individuell, bieten aber oft Potenzial für Verbesserungen. Erst die persönliche Umsetzung macht ein Auto zum Traumwagen. Wir haben jahrelange Erfahrung und legen Wert auf Individualität, Qualität und liebevolle Details.'] },
       { h: 'Das setzen wir um', ul: ['Auspuffanlagen und Sound', 'Felgen und Reifen', 'Bodykits und Flammendesign', 'Verkabelung, Scheinwerfer, Arbeitsleuchten und Lightbars', 'Höher- und Tieferlegung', 'Kotflügel- und Spurverbreiterungen', 'Flügeltüren („LamboDoors“) auf Wunsch'] },
+      { h: 'Ihr Wunsch steht nicht dabei?', p: ['Wir setzen gerne auch individuelle Wünsche um, die in dieser Liste nicht aufgeführt sind. Sprechen Sie uns einfach an: Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei. Wir beraten Sie persönlich und sagen Ihnen ehrlich, was machbar ist.'], links: [['Jetzt Kontakt aufnehmen', '/kontakt']] },
     ],
     cta: ['Umbau anfragen', '/kontakt'],
   },
