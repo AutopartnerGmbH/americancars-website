@@ -149,3 +149,9 @@ section.calcs{padding:72px 0}
 .faqlist details[open]{border-color:#F6C500}
 .faqlist details p{margin:0;padding:0 20px 20px;color:#cfcfd4;line-height:1.6}
 .faqmore{margin-top:20px;color:#cfcfd4}.faqmore a{color:#F6C500}
+
+.fab-m{background:var(--yellow);color:#16171a}.fab-m:hover{background:#fff}
+.fab{gap:10px}
+.sprog{position:fixed;left:0;right:0;top:0;height:4px;z-index:200;pointer-events:none;background:rgba(255,255,255,.06)}
+.sprog>div{height:100%;background:linear-gradient(90deg,#F6C500,#D32A20);transform-origin:0 50%;transform:scaleX(0);will-change:transform}
+@media(prefers-reduced-motion:reduce){.sprog>div{transition:none}}

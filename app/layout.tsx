@@ -10,6 +10,7 @@ import { site } from '@/lib/site';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Fab from '@/components/Fab';
+import ScrollProgress from '@/components/ScrollProgress';
 import FormsInit from '@/components/FormsInit';
 import Consent from '@/components/Consent';
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>
+        <ScrollProgress />
         <Header />
         {children}
         <Footer />
