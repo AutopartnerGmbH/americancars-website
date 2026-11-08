@@ -27,6 +27,9 @@ export default async function SubPage({ params }: { params: Promise<{ slug: stri
         <div className='wrap'>
           <aside>
             <span className='eyebrow'>{p.eyebrow}</span>
+            {/TÜV NORD/.test(p.eyebrow) && (
+              <span className='tuev tuev-page'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord.png' alt='TÜV NORD' width={120} height={22} /></span>
+            )}
             <h1>{p.title}</h1>
             <p className='lead'>{p.lead}</p>
           </aside>

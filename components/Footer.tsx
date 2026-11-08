@@ -63,7 +63,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className='wrap legal'>
-        <span>© {site.name} · Prüfstützpunkt TÜV NORD</span>
+        <span className='legal-tuev'>© {site.name} · Prüfstützpunkt <span className='tuev'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord.png' alt='TÜV NORD' width={90} height={16} /></span></span>
         <span>
           <a href='/impressum'>Impressum</a>
           <a href='/datenschutz'>Datenschutz</a>
