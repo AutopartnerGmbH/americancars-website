@@ -95,3 +95,4 @@ section.calcs{padding:72px 0}
 .hero2 .shot img{object-position:50% 60%}@media(max-width:900px){.hero2 .shot img{object-position:50% 55%}}
 .info2{margin-top:20px}
 .brand img{display:block;height:40px;width:auto}@media(max-width:640px){.brand img{height:30px}}
+.cert{gap:14px}.cert::before{display:none}.cert .tuev{display:inline-flex;background:#fff;padding:5px 10px}.cert .tuev img{display:block;height:22px;width:auto}
