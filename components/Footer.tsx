@@ -1,3 +1,4 @@
+import TuevBadge from './TuevBadge';
 import { nav } from '@/lib/nav';
 import { site } from '@/lib/site';
 
@@ -63,7 +64,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className='wrap legal'>
-        <span className='legal-tuev'>© {site.name} · Prüfstützpunkt <span className='tuev'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord-weiss.png' alt='TÜV NORD' width={130} height={24} /></span></span>
+        <span className='legal-tuev'>© {site.name} <TuevBadge size='s' /></span>
         <span>
           <a href='/impressum'>Impressum</a>
           <a href='/datenschutz'>Datenschutz</a>

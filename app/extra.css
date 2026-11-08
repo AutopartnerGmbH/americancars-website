@@ -98,3 +98,11 @@ section.calcs{padding:72px 0}
 .cert{gap:14px}.cert::before{display:none}.cert .tuev{display:inline-flex;background:#fff;padding:5px 10px}.cert .tuev img{display:block;height:22px;width:auto}
 .legal-tuev{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap}.legal-tuev .tuev,.tuev-page{display:inline-flex;background:#fff;padding:4px 8px}.legal-tuev .tuev img{height:16px;width:auto;display:block}.tuev-page{margin:10px 0 0}.tuev-page img{height:22px;width:auto;display:block}
 .cert .tuev,.legal-tuev .tuev,.tuev-page{background:none!important;padding:0!important}.cert .tuev img{height:34px!important}.legal-tuev .tuev img{height:24px!important}.tuev-page img{height:36px!important}
+
+.tuevbadge{display:inline-flex;flex-direction:column;gap:7px;background:#fff;border-radius:6px;padding:11px 18px 12px;border-left:5px solid #F6C500;box-shadow:0 8px 28px rgba(0,0,0,.45);margin:0 0 18px}
+.tuevbadge .tb-txt{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3f4b;line-height:1}
+.tuevbadge img{display:block;height:30px;width:auto}
+.tuevbadge.s{flex-direction:row;align-items:center;gap:10px;padding:6px 12px;margin:0;box-shadow:none}
+.tuevbadge.s img{height:18px}
+.tuev-page,.cert{all:unset}
+.legal-tuev{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap}

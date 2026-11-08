@@ -28,7 +28,7 @@ export const pages: Page[] = [
   {
     slug: 'tuev-und-homologation',
     title: 'TÜV & Homologation',
-    eyebrow: 'Prüfstützpunkt TÜV NORD',
+    eyebrow: 'Prüfstützpunkt des TÜV NORD',
     lead: 'Umrüstung, Homologation, TÜV-Abnahme und Zulassung: der Rundum-Service für Importfahrzeuge.',
     desc: 'TÜV-Vollabnahme nach § 21 StVZO, Homologation und AU für US-Importfahrzeuge in Hagen. Prüfstützpunkt TÜV NORD für alle Hersteller.',
     blocks: [
@@ -172,7 +172,7 @@ export const pages: Page[] = [
   {
     slug: 'hu-au-hagen',
     title: 'HU und AU in Hagen',
-    eyebrow: 'Prüfstützpunkt TÜV NORD',
+    eyebrow: 'Prüfstützpunkt des TÜV NORD',
     lead: 'Hauptuntersuchung und Abgasuntersuchung für alle Hersteller, direkt bei uns in der Werkstatt.',
     desc: 'HU und AU in Hagen-Hohenlimburg: Prüfstützpunkt TÜV NORD für alle Marken, Vorabcheck in der Meisterwerkstatt, auch für US-Fahrzeuge. Autopartner GmbH.',
     blocks: [

@@ -1,3 +1,4 @@
+import TuevBadge from '@/components/TuevBadge';
 import Photo from '@/components/Photo';
 import Reviews from '@/components/Reviews';
 import Car from '@/components/Car';
@@ -17,7 +18,7 @@ export default function Home() {
       <section className='hero2'>
         <div className='shot'><Photo src='/img/hero.jpg' alt='Schwarzer Chrysler Pacifica von Autopartner American Cars auf der Autobahn' /></div>
         <div className='wrap hero-in'>
-          <span className='cert'>Prüfstützpunkt <span className='tuev'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord-weiss.png' alt='TÜV NORD' width={190} height={35} /></span></span>
+          <TuevBadge />
           {hero ? (
             <a className='hero-chip' href={`/fahrzeuge/${hero.slug}`}>Chrysler Pacifica ab {hero.price} →</a>
           ) : (
@@ -94,12 +95,12 @@ export default function Home() {
 
       <section className='svc s-b' id='werkstatt'><div className='wrap two'>
         <div>
-          <span className='eyebrow'>KFZ-Meisterwerkstatt · Prüfstützpunkt TÜV NORD</span>
+          <span className='eyebrow'>KFZ-Meisterwerkstatt · Prüfstützpunkt des TÜV NORD</span>
           <h2>Große Meisterwerkstatt für alle Fabrikate.</h2>
           <p className='lead'>Ob amerikanisch, deutsch oder asiatisch: Wir reparieren, warten, bauen um und prüfen Fahrzeuge aller Marken, direkt bei uns in Hagen.</p>
           <ul className='list'>
             <li><a href='/werkstatt-service'>Wartung & Reparatur</a><span>alle Marken</span></li>
-            <li><a href='/tuev-und-homologation'>TÜV, AU & Homologation</a><span>Prüfstützpunkt TÜV NORD</span></li>
+            <li><a href='/tuev-und-homologation'>TÜV, AU & Homologation</a><span>Prüfstützpunkt des TÜV NORD</span></li>
             <li><a href='/us-fahrzeug-tunen'>Umbau & Tuning</a><span>nach Ihren Wünschen</span></li>
             <li><a href='/unfall-instandsetzung'>Unfall-Instandsetzung</a><span>mit Versicherungsabwicklung</span></li>
             <li><a href='/import-umruestung'>Import, Umrüstung & Umzugsgut</a><span>US-Fahrzeuge</span></li>

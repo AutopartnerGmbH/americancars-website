@@ -1,3 +1,4 @@
+import TuevBadge from '@/components/TuevBadge';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getPage, pages } from '@/lib/pages';
@@ -26,10 +27,7 @@ export default async function SubPage({ params }: { params: Promise<{ slug: stri
       <section className='post s-b nobord'>
         <div className='wrap'>
           <aside>
-            <span className='eyebrow'>{p.eyebrow}</span>
-            {/TÜV NORD/.test(p.eyebrow) && (
-              <span className='tuev tuev-page'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord-weiss.png' alt='TÜV NORD' width={200} height={37} /></span>
-            )}
+            {/TÜV NORD/.test(p.eyebrow) ? <TuevBadge /> : <span className='eyebrow'>{p.eyebrow}</span>}
             <h1>{p.title}</h1>
             <p className='lead'>{p.lead}</p>
           </aside>
