@@ -2,7 +2,6 @@ import TuevBadge from '@/components/TuevBadge';
 import Photo from '@/components/Photo';
 import Reviews, { RatingChip } from '@/components/Reviews';
 import Marquee from '@/components/Marquee';
-import Ablauf from '@/components/Ablauf';
 import Faq from '@/components/Faq';
 import Car from '@/components/Car';
 import { vehicles } from '@/lib/vehicles';
@@ -88,8 +87,6 @@ export default function Home() {
           <div className='col'><h3>Ehrliche Beratung</h3><p>Auch wenn am Ende kein Kauf zustande kommt, loben Kunden unsere offene Art.</p></div>
         </div>
       </div></section>
-
-      <Ablauf />
 
       <section className='svc s-b' id='werkstatt'><div className='wrap two'>
         <div>
