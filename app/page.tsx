@@ -17,7 +17,7 @@ export default function Home() {
       <section className='hero2'>
         <div className='shot'><Photo src='/img/hero.jpg' alt='Schwarzer Chrysler Pacifica von Autopartner American Cars auf der Autobahn' /></div>
         <div className='wrap hero-in'>
-          <span className='cert'>Prüfstützpunkt <span className='tuev'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord.png' alt='TÜV NORD' width={120} height={22} /></span></span>
+          <span className='cert'>Prüfstützpunkt <span className='tuev'>{/* eslint-disable-next-line @next/next/no-img-element */}<img src='/img/tuev-nord-weiss.png' alt='TÜV NORD' width={190} height={35} /></span></span>
           {hero ? (
             <a className='hero-chip' href={`/fahrzeuge/${hero.slug}`}>Chrysler Pacifica ab {hero.price} →</a>
           ) : (

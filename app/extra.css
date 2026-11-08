@@ -94,6 +94,7 @@ section.calcs{padding:72px 0}
 @media(max-width:900px){.favlink{margin-left:auto}.bar .tel{margin-left:0}section.calcs{padding:48px 0}}
 .hero2 .shot img{object-position:50% 60%}@media(max-width:900px){.hero2 .shot img{object-position:50% 55%}}
 .info2{margin-top:20px}
-.brand img{display:block;height:40px;width:auto}@media(max-width:640px){.brand img{height:30px}}
+.brand img{display:block;height:52px;width:auto}@media(max-width:640px){.brand img{height:38px}}
 .cert{gap:14px}.cert::before{display:none}.cert .tuev{display:inline-flex;background:#fff;padding:5px 10px}.cert .tuev img{display:block;height:22px;width:auto}
 .legal-tuev{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap}.legal-tuev .tuev,.tuev-page{display:inline-flex;background:#fff;padding:4px 8px}.legal-tuev .tuev img{height:16px;width:auto;display:block}.tuev-page{margin:10px 0 0}.tuev-page img{height:22px;width:auto;display:block}
+.cert .tuev,.legal-tuev .tuev,.tuev-page{background:none!important;padding:0!important}.cert .tuev img{height:34px!important}.legal-tuev .tuev img{height:24px!important}.tuev-page img{height:36px!important}
