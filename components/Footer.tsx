@@ -55,7 +55,7 @@ export default function Footer() {
       <div className='wrap seo'>
         <h4>Häufig gesucht</h4>
         <p>
-          Autopartner GmbH – American Cars in Hagen: US-Fahrzeuge kaufen, importieren und umrüsten, KFZ-Meisterwerkstatt für alle Marken und Prüfstützpunkt des TÜV NORD für Hagen, Wetter, Herdecke, Iserlohn, Dortmund und das Ruhrgebiet.
+          Autopartner GmbH – American Cars in Hagen: US-Fahrzeuge kaufen, importieren und umrüsten, KFZ-Meisterwerkstatt für alle Marken und Prüfstützpunkt des TÜV NORD. Zu uns kommen Kunden aus Hagen, Wetter, Herdecke, Iserlohn, Dortmund und dem gesamten Ruhrgebiet.
         </p>
         <ul>
           {searches.map(([l, h]) => (

@@ -1,3 +1,4 @@
+import TuevBadge from '@/components/TuevBadge';
 import Photo from '@/components/Photo';
 import Reviews, { RatingChip } from '@/components/Reviews';
 import Marquee from '@/components/Marquee';
@@ -5,6 +6,7 @@ import Ablauf from '@/components/Ablauf';
 import Faq from '@/components/Faq';
 import Car from '@/components/Car';
 import { vehicles } from '@/lib/vehicles';
+import { models } from '@/lib/models';
 import { activeCategories, brandsInStock } from '@/lib/categories';
 import { site } from '@/lib/site';
 
@@ -13,6 +15,11 @@ export const revalidate = 3600;
 export default function Home() {
   const cats = activeCategories();
   const brands = brandsInStock();
+  const popular = models
+    .map((m) => ({ m, n: vehicles.filter((v) => m.match.test(v.name)).length }))
+    .filter((x) => x.n > 0)
+    .sort((a, b) => b.n - a.n)
+    .map((x) => x.m);
   const hero = vehicles.find((v) => /pacifica/i.test(v.name));
 
   return (
@@ -27,9 +34,10 @@ export default function Home() {
           )}
         </div>
         <div className='wrap h3-text'>
+          <div className='h3-tuev'><TuevBadge /></div>
           <h1>US-Fahrzeuge, <span className='mark'>persönlich ausgewählt.</span></h1>
           <p>Unfallfrei, mit Carfax-Bericht und eigener Meisterwerkstatt. Seit {site.since} in Hagen.</p>
-          <div className='acts'><a className='b1' href='/fahrzeuge'>Bestand ansehen</a><a className='b2' href='/kontakt'>Besichtigung vereinbaren</a></div>
+          <div className='acts'><a className='b1' href='/fahrzeuge'>Bestand ansehen</a></div>
         </div>
       </section>
       <Marquee />
@@ -41,14 +49,6 @@ export default function Home() {
 
       <section className='cats s-b'><div className='wrap'>
         <div className='head'><h2>Was suchen Sie?</h2><div className='brands'>{brands.map((b) => <a key={b} href={`/fahrzeuge/marke/${b.toLowerCase()}`}>{b}</a>)}</div></div>
-        <div className='tiles'>
-          {cats.map((c) => (
-            <a key={c.key} href={`/fahrzeuge/kategorie/${c.key}`}>
-              {c.cover.image ? <Photo src={c.cover.image} alt={c.cover.alt} /> : <span className='ph'></span>}
-              <span>{c.label}<small>{c.count} {c.count === 1 ? 'Fahrzeug' : 'Fahrzeuge'}</small></span>
-            </a>
-          ))}
-        </div>
       </div></section>
 
       <section className='stock s-a' id='bestand'><div className='wrap'>
@@ -66,14 +66,12 @@ export default function Home() {
       <section className='band'><Photo src='/img/silverado.jpg' alt='Chevrolet Silverado mit Offroad-Umbau' /><div className='wrap'><span className='eyebrow'>Unser Anspruch</span><p>Jedes Fahrzeug haben wir selbst geprüft. <span>Bevor Sie es sehen.</span></p></div></section>
 
       <section className='pop s-b'><div className='wrap'>
-        <div><span className='eyebrow'>Beliebte Modelle</span>
-          <ul className='poplist'>
-            <li><a href='/modelle/dodge-ram'>Dodge RAM</a></li>
-            <li><a href='/modelle/ford-mustang'>Ford Mustang</a></li>
-            <li><a href='/modelle/chevrolet-silverado'>Chevrolet Silverado</a></li>
-            <li><a href='/modelle/ford-bronco'>Ford Bronco</a></li>
-            <li><a href='/modelle/chrysler-pacifica'>Chrysler Pacifica</a></li>
-          </ul></div>
+        {popular.length > 0 && (
+          <div><span className='eyebrow'>Aktuell im Bestand</span>
+            <ul className='poplist'>
+              {popular.map((m) => <li key={m.slug}><a href={`/modelle/${m.slug}`}>{m.name}</a></li>)}
+            </ul></div>
+        )}
         <div><span className='eyebrow'>Werkstatt-Leistungen</span>
           <ul className='poplist'>
             <li><a href='/hu-au-hagen'>HU & AU</a></li>

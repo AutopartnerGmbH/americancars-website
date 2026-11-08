@@ -1,4 +1,4 @@
-const items = ['Seit 1988 in Hagen', 'Carfax zu jedem Fahrzeug', 'Finanzierung über Santander Bank', 'Meisterbetrieb · HWK Arnsberg', 'Werkstatt für alle Marken', 'Deutsch & Englisch'];
+const items = ['Seit 1988 in Hagen', 'Carfax zu jedem Fahrzeug', 'Finanzierung und Leasing möglich', 'KFZ-Meisterbetrieb für alle Marken', 'Familienbetrieb in 2. Generation', 'Deutsch & Englisch'];
 
 export default function Marquee() {
   const row = (hidden: boolean) => (

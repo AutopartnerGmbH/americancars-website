@@ -182,3 +182,7 @@ section.calcs{padding:72px 0}
   .h3-text p{font-size:19px}
 }
 html,body{overflow-x:clip}
+
+.h3-tuev{margin:0 0 30px}
+.h3-tuev .tuevbadge{margin:0}
+.ratestrip{padding:22px 0;background:#1b1c21;border-bottom:1px solid #2a2c33;align-items:center}
