@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { brandSvg } from '@/lib/icons';
 import { nav as items } from '@/lib/nav';
 import { site } from '@/lib/site';
 import { FavCount } from '@/components/Fav';
@@ -25,11 +24,8 @@ export default function Header() {
     <header className={'bar' + (open ? ' open' : '')} id='bar'>
       <div className='wrap bar-in'>
         <a className='brand' href='/' aria-label='Autopartner American Cars – Startseite'>
-          <span style={{ display: 'contents' }} dangerouslySetInnerHTML={{ __html: brandSvg }} />
-          <span>
-            <span className='t1'>Autopartner</span>
-            <span className='t2'>American <i>Cars</i></span>
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src='/img/logo.png' alt='Autopartner American Cars' width={205} height={40} />
         </a>
         <nav className='menu' id='menu' aria-label='Hauptnavigation'>
           <ul>

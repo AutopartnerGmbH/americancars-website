@@ -94,3 +94,4 @@ section.calcs{padding:72px 0}
 @media(max-width:900px){.favlink{margin-left:auto}.bar .tel{margin-left:0}section.calcs{padding:48px 0}}
 .hero2 .shot img{object-position:50% 60%}@media(max-width:900px){.hero2 .shot img{object-position:50% 55%}}
 .info2{margin-top:20px}
+.brand img{display:block;height:40px;width:auto}@media(max-width:640px){.brand img{height:30px}}
