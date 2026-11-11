@@ -154,7 +154,7 @@ export const pages: Page[] = [
     lead: 'Wissen rund um Import, Zulassung und US-Fahrzeuge.',
     desc: 'Ratgeber und Neuigkeiten rund um US-Fahrzeuge, Import und Zulassung von Autopartner GmbH American Cars in Hagen.',
     blocks: [
-      { h: 'Aktuelle Beiträge', links: [['Umzugsgut: Auto aus den USA importieren', '/umzugsgut'], ['Tipps & Hinweise zum Kauf eines US-Fahrzeugs', '/tipps-hinweise'], ['Betrugsmasche bei US-Unfallfahrzeugen', '/betrugsmasche']] },
+      { h: 'Aktuelle Beiträge', links: [['Umzugsgut: Auto aus den USA importieren', '/umzugsgut'], ['Tipps & Hinweise zum Kauf eines US-Fahrzeugs', '/tipps-hinweise'], ['Betrugsmasche bei US-Unfallfahrzeugen', '/betrugsmasche'], ['Unfallwagen aus Litauen erkennen', '/unfallwagen-litauen-erkennen'], ['Dodge RAM 5.7 Hemi: Krümmerdichtung', '/dodge-ram-5-7-hemi'], ['Autokauf: vom Kauf bis zur Übergabe', '/kauf-und-uebergabe']] },
     ],
   },
   {
@@ -179,7 +179,7 @@ export const pages: Page[] = [
     blocks: [
       { h: 'TÜV und AU aus einer Hand', p: ['Wir sind Prüfstützpunkt des TÜV NORD und prüfen Fahrzeuge aller Hersteller, vom Kleinwagen bis zum US-Pickup. Hauptuntersuchung (HU) und Abgasuntersuchung (AU) erledigen Sie bei uns in einem Termin.', 'Pkw müssen in der Regel alle zwei Jahre zur HU, die erste Untersuchung steht nach drei Jahren an.'] },
       { h: 'Das bringen Sie mit', ul: ['Ihr Fahrzeug', 'Die Zulassungsbescheinigung Teil I (Fahrzeugschein)', 'Bei Umbauten die zugehörigen Papiere, zum Beispiel Gutachten oder Teilegutachten'] },
-      { h: 'Vorab-Check gegen Überraschungen', p: ['Auf Wunsch schauen wir Ihr Fahrzeug vor der Prüfung in unserer Meisterwerkstatt an. Kleine Mängel wie Beleuchtung oder Bremsbeläge beheben wir direkt, damit die Plakette beim ersten Mal klappt.'] },
+      { h: 'Vorab-Check gegen Überraschungen', p: ['Auf Wunsch schauen wir Ihr Fahrzeug vor der Prüfung in unserer Meisterwerkstatt an. Kleine Mängel wie Beleuchtung oder Bremsbeläge beheben wir direkt, damit die Plakette beim ersten Mal klappt.', 'Ohne Mängel dauert die Prüfung normalerweise keine 60 Minuten.'] },
       { h: 'Auch für Importfahrzeuge', p: ['Für US-Importe führen wir zusätzlich die Vollabnahme nach § 21 StVZO durch.'], links: [['Mehr zu TÜV und Homologation', '/tuev-und-homologation']] },
     ],
     cta: ['Termin anfragen', '/#werkstatt'],
@@ -901,13 +901,14 @@ export const pages: Page[] = [
       {
         "h": "Das machen wir",
         "ul": [
-          "Auf Anfrage und nach Verfügbarkeit bekommen Sie einen Ersatzwagen",
+          "Einen Ersatzwagen bekommen Sie nach Verfügbarkeit gegen eine Gebühr",
+          "Einen Hol- und Bringservice bieten wir nicht an",
           "Sprechen Sie uns bei der Terminvereinbarung darauf an"
         ]
       },
       {
         "p": [
-          "Verfügbarkeit und Bedingungen besprechen wir persönlich mit Ihnen."
+          "Verfügbarkeit und Gebühr besprechen wir persönlich mit Ihnen."
         ]
       }
     ],
@@ -1390,6 +1391,52 @@ export const pages: Page[] = [
       "Anfrage senden",
       "/kontakt"
     ]
+  },
+  {
+    slug: 'unfallwagen-litauen-erkennen',
+    title: 'Unfallwagen aus Litauen erkennen',
+    eyebrow: 'Ratgeber',
+    lead: 'Schlechte Schweißnähte, laienhafte Elektrik, überbrückte Airbags: Das sehen wir bei Importen aus Litauen in der Werkstatt immer wieder.',
+    desc: 'Unfallwagen aus Litauen erkennen: typische versteckte Schäden bei US-Importen und wie die Carfax-Abfrage hilft. Erfahrung der Meisterwerkstatt in Hagen.',
+    blocks: [
+      { h: 'Was wir in der Werkstatt am häufigsten sehen', ul: ['Schlecht verarbeitete Schweißnähte', 'Extrem schlecht ausgeführte Elektrik, teilweise laienhaft repariert mit Klammern, Kabelbindern und Isolierband', 'Airbags, die schlecht verbaut sind oder ganz fehlen und nur überbrückt wurden', 'Sehr schlechte Lackierarbeiten', 'Minderwertige Teile, teilweise gebrauchte Teile aus anderen Fahrzeugen, die in einem Fahrzeug vereint wurden'] },
+      { h: 'Innenraum: schön, aber nicht original', p: ['Leder- und Stickarbeiten im Innenraum sind häufig aufwendig und schön gestaltet. Sie sind aber nicht original, denn diese Ausstattung oder dieses Design hat es vom Hersteller offiziell nie gegeben.'] },
+      { h: 'So erkennen Sie einen Unfallwagen', p: ['Am einfachsten ist eine Carfax-Abfrage. Dafür benötigen Sie die Fahrgestellnummer (VIN) des Fahrzeugs. Bei jedem unserer Fahrzeuge stellen wir Ihnen den Bericht zur Verfügung.'], links: [['Mehr zu Carfax', '/carfax'], ['Tipps & Hinweise zum Kauf', '/tipps-hinweise'], ['So läuft die Betrugsmasche', '/betrugsmasche']] },
+      { box: 'Die Hinweise beruhen auf unseren Erfahrungen aus der Werkstatt. Für ihre Richtigkeit im Einzelfall übernehmen wir keine Haftung.' },
+    ],
+    cta: ['Fahrzeuge mit Carfax ansehen', '/fahrzeuge'],
+  },
+  {
+    slug: 'dodge-ram-5-7-hemi',
+    title: 'Dodge RAM 5.7 Hemi: Krümmerdichtung',
+    eyebrow: 'Ratgeber aus der Werkstatt',
+    lead: 'Ein typischer Fall beim 5,7-Liter-Hemi V8: Die Dichtung am Auspuffkrümmer wird undicht.',
+    desc: 'Dodge RAM 5.7 Hemi V8: defekte Krümmerdichtung erkennen und richtig reparieren, abgerissene Bolzen, verzogener Krümmer. Meisterwerkstatt Hagen.',
+    blocks: [
+      { h: 'Grundsätzlich robust', p: ['Amerikanische Motoren sind grundsätzlich sehr pflegeleicht und beständig. Voraussetzung ist, dass die Service- und Ölwechselintervalle eingehalten werden.'] },
+      { h: 'Defekte Krümmerdichtung beim 5.7 Hemi', p: ['Beim Dodge RAM mit 5,7-Liter-Hemi-V8 ist häufig die Dichtung des Auspuffkrümmers kaputt. Erkennen lässt sich das an einem typischen Geräusch beim Kaltstart.'] },
+      { h: 'Darauf achten wir bei der Reparatur', ul: ['Beim Ausbau dürfen die Krümmerbolzen nicht abreißen. Sind sie abgerissen, setzen wir neue Bolzen ein.', 'Der Krümmer wird darauf geprüft, ob er verzogen ist.', 'Ist er verzogen, kommt entweder ein neuer Krümmer drauf, oder der vorhandene Krümmer wird plan bearbeitet, wenn das noch möglich ist.'] },
+      { h: 'Kosten', p: ['Reparaturen an diesen Fahrzeugen sind sehr individuell. Deshalb nennen wir hier keine Preise. Sprechen Sie uns an, wir sagen Ihnen nach der Prüfung, was nötig ist.'] },
+    ],
+    cta: ['Werkstatttermin anfragen', '/#werkstatt'],
+  },
+  {
+    slug: 'kauf-und-uebergabe',
+    title: 'Autokauf: vom Kauf bis zur Übergabe',
+    eyebrow: 'Ihr Autokauf bei uns',
+    lead: 'So läuft es ab: Anzahlung, Zahlungsarten, Probefahrt, Zulassung und Übergabe auf einen Blick.',
+    desc: 'Autokauf bei Autopartner GmbH in Hagen: Anzahlung, Zahlungsarten, Probefahrt, Zulassung gegen Aufpreis, Lieferung und Garantie über die Intec AG.',
+    blocks: [
+      { h: 'Das machen wir vor der Übergabe', ul: ['Wir kontrollieren das Fahrzeug', 'Wir machen meistens einen neuen TÜV drauf', 'Wir reinigen und bereiten das Fahrzeug auf', 'Wir checken alles noch einmal durch', 'Wir führen eine Inspektion und einen Ölwechsel durch'] },
+      { h: 'Anzahlung statt Reservierung', p: ['Bei uns ist eine Anzahlung möglich. Dazu schreiben wir einen Kaufvertrag und vereinbaren darin die Anzahlung. Eine Reservierung auf Zuruf ist leider nicht möglich.'] },
+      { h: 'Zahlungsarten', ul: ['Bargeld (es gelten die gesetzlichen Vorgaben)', 'Banküberweisung', 'EC-Karte, aber keine Kreditkarten. Viele Karten haben Sicherheitslimits, deshalb ist die Zahlung eines gesamten Autos per EC-Karte nur selten möglich.', 'Finanzierung und Leasing über verschiedene Bankpartner'], links: [['Zur Finanzierung', '/#finanzierung']] },
+      { h: 'Probefahrt', p: ['Probefahrten sind nach Terminvereinbarung möglich. Zuerst besprechen wir den Kaufpreis und klären die Zahlung. Soll finanziert werden, stellen wir vorher eine Finanzierungsanfrage. Fällt sie positiv aus, machen wir kurz vor dem Kauf gerne eine Probefahrt.'] },
+      { h: 'Zulassung durch uns', p: ['Die Zulassung übernehmen wir gegen Aufpreis. Dafür benötigen wir von Ihnen:'], ul: ['Original-Personalausweis', 'Unterlagen zur Zulassung: Fahrzeugpapiere (Fahrzeugbrief und Fahrzeugschein) und TÜV-Bericht', 'Ausgefülltes und unterschriebenes SEPA-Mandat', 'Vollmacht zur Zulassung', 'eVB-Nummer', 'Gegebenenfalls die Reservierungsbestätigung für das Wunschkennzeichen'] },
+      { h: 'Wie lange dauert es?', p: ['Von unserer Seite dauert es in der Regel maximal eine Woche. Am längsten dauert meist der Zulassungsprozess, der ist zusätzlich einzuplanen.'] },
+      { h: 'Lieferung', p: ['Wir liefern das Fahrzeug gegen Aufpreis. Der Preis richtet sich nach der Entfernung. Diesel und Maut sind aktuell teuer, deshalb nennen wir den Preis im Einzelfall.'] },
+      { h: 'Garantie und Inzahlungnahme', p: ['Garantiegeber ist die Intec AG. Die Garantie kostet 595 € pro Jahr und ist bis zu 3 Jahre abschließbar. Den Umfang finden Sie in den AGB der Intec AG.', 'Wir nehmen Fahrzeuge in Zahlung, aber nur nach vorheriger Prüfung.'] },
+    ],
+    cta: ['Fahrzeuge ansehen', '/fahrzeuge'],
   },
 ];
 

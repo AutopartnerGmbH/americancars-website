@@ -9,7 +9,7 @@ import { extras } from '@/lib/extras';
 export const dynamicParams = false;
 
 const hidden = ['team'];
-const notService = ['blog', 'betrugsmasche', 'karriere', 'team', 'tipps-hinweise', 'carfax', 'werkstatt-leistungen'];
+const notService = ['blog', 'betrugsmasche', 'karriere', 'team', 'tipps-hinweise', 'carfax', 'werkstatt-leistungen', 'unfallwagen-litauen-erkennen', 'dodge-ram-5-7-hemi', 'kauf-und-uebergabe'];
 const visible = pages.filter((p) => !hidden.includes(p.slug));
 
 export function generateStaticParams() {

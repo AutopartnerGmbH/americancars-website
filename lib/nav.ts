@@ -24,8 +24,10 @@ export const nav: NavItem[] = [
     sub: [
       ['Import & Umrüstung', '/import-umruestung'],
       ['Umzugsgut', '/umzugsgut'],
+      ['Autokauf & Übergabe', '/kauf-und-uebergabe'],
       ['Carfax', '/carfax'],
       ['Tipps & Hinweise', '/tipps-hinweise'],
+      ['Unfallwagen aus Litauen', '/unfallwagen-litauen-erkennen'],
       ['Betrugsmasche', '/betrugsmasche'],
       ['Blog', '/blog'],
     ],

@@ -4,6 +4,33 @@ export type Extra = { signsTitle?: string; signs?: string[]; faq: [string, strin
 const book = 'Rufen Sie uns an oder schreiben Sie uns, wir vereinbaren einen Termin in unserer Werkstatt in Hagen-Hohenlimburg.';
 
 export const extras: Record<string, Extra> = {
+  'unfallwagen-litauen-erkennen': {
+    signsTitle: 'Warnsignale beim Kauf',
+    signs: ['Der Verkäufer nennt die Fahrgestellnummer (VIN) nicht', 'Sehr hochwertige Ausstattung bei auffällig niedrigem Preis', 'Aufwendige Leder- oder Stickarbeiten, die es ab Werk nie gab', 'Sichtbar schlechter Lack oder grobe Schweißnähte', 'Kabel, die mit Kabelbindern oder Isolierband befestigt sind'],
+    faq: [
+      ['Wie erkenne ich als Laie einen Unfallwagen?', 'Am einfachsten mit einer Carfax-Abfrage. Dafür brauchen Sie die Fahrgestellnummer (VIN).'],
+      ['Was finden Sie bei Importen aus Litauen am häufigsten?', 'Schlecht verarbeitete Schweißnähte, laienhaft reparierte Elektrik, schlecht lackierte Teile, gebrauchte Teile aus anderen Fahrzeugen und teils fehlende oder überbrückte Airbags.'],
+      ['Bekomme ich bei Ihnen einen Carfax-Bericht?', 'Ja, zu jedem unserer Fahrzeuge stellen wir den Carfax-Bericht zur Verfügung.'],
+    ],
+  },
+  'dodge-ram-5-7-hemi': {
+    signsTitle: 'Woran Sie das Problem erkennen',
+    signs: ['Typisches Geräusch beim Kaltstart', 'Das Problem tritt am 5,7-Liter-Hemi V8 häufig auf'],
+    faq: [
+      ['Welches typische Problem hat der 5.7 Hemi im Dodge RAM?', 'Häufig ist die Dichtung des Auspuffkrümmers defekt. Das fällt durch ein typisches Geräusch beim Kaltstart auf.'],
+      ['Worauf achten Sie bei der Reparatur?', 'Beim Ausbau dürfen die Krümmerbolzen nicht abreißen, sonst werden neue eingesetzt. Außerdem prüfen wir, ob der Krümmer verzogen ist, und ersetzen oder bearbeiten ihn dann.'],
+      ['Was kostet die Reparatur?', 'Reparaturen an diesen Fahrzeugen sind sehr individuell, deshalb nennen wir keine Pauschalpreise. Sprechen Sie uns an.'],
+    ],
+  },
+  'kauf-und-uebergabe': {
+    faq: [
+      ['Kann ich ein Fahrzeug reservieren?', 'Eine Reservierung auf Zuruf ist nicht möglich. Wir schreiben einen Kaufvertrag und vereinbaren darin eine Anzahlung.'],
+      ['Kann ich mit EC-Karte oder Kreditkarte bezahlen?', 'EC-Karte ja, Kreditkarte nein. Viele Karten haben Sicherheitslimits, ein ganzes Auto lässt sich damit selten bezahlen.'],
+      ['Wann ist eine Probefahrt möglich?', 'Nach Terminvereinbarung, sobald Kaufpreis und Zahlung geklärt sind. Bei einer Finanzierung nach positiver Finanzierungsanfrage.'],
+      ['Wie lange dauert es bis zur Übergabe?', 'Von unserer Seite in der Regel maximal eine Woche, dazu kommt die Zulassung.'],
+      ['Nehmen Sie mein Auto in Zahlung?', 'Ja, nach vorheriger Prüfung.'],
+    ],
+  },
   'werkstatt-service': {
     signsTitle: 'Wann sollten Sie in die Werkstatt?',
     signs: ['Die Inspektion oder der Ölwechsel ist laut Serviceheft fällig', 'Warnleuchten im Cockpit leuchten oder blinken', 'Ungewohnte Geräusche, Vibrationen oder Geruch', 'Vor dem Urlaub, vor der Winter- oder Sommersaison', 'Vor der HU, damit es keine Überraschung gibt'],
@@ -54,6 +81,7 @@ export const extras: Record<string, Extra> = {
     signs: ['Fahrzeugschein und, falls vorhanden, letzten Prüfbericht mitbringen', 'Licht, Blinker und Bremslicht vorab prüfen', 'Reifenprofil und Reifendruck kontrollieren', 'Warnleuchten im Cockpit ansprechen', 'Bei Bedarf einen Vorab-Check in der Werkstatt machen'],
     faq: [
       ['Wie oft muss ich zur Hauptuntersuchung?', 'Pkw müssen in der Regel alle zwei Jahre zur HU, die erste Untersuchung steht nach drei Jahren an.'],
+      ['Wie lange dauert die HU?', 'Wenn keine Mängel vorliegen, dauert die Prüfung normalerweise keine 60 Minuten.'],
       ['Kann ich HU und AU in einem Termin erledigen?', 'Ja, bei uns erledigen Sie Hauptuntersuchung und Abgasuntersuchung in einem Termin.'],
       ['Was passiert bei Mängeln?', 'Bei erheblichen Mängeln gibt es keine Plakette. Wir können die Mängel in unserer Meisterwerkstatt beheben und das Fahrzeug anschließend erneut vorführen.'],
     ],
@@ -251,7 +279,8 @@ export const extras: Record<string, Extra> = {
     signsTitle: 'Wann brauchen Sie einen Ersatzwagen?',
     signs: ['Reparatur dauert länger', 'Unfallinstandsetzung', 'Umbauten', 'Wartung bei knappem Zeitplan', 'Urlaub oder Dienstreise'],
     faq: [
-      ['Bekomme ich einen Ersatzwagen?', 'Sprechen Sie uns bei der Terminvereinbarung darauf an, wir sagen Ihnen die Möglichkeiten.'],
+      ['Bekomme ich einen Ersatzwagen?', 'Ja, nach Verfügbarkeit und gegen eine Gebühr. Sprechen Sie uns bei der Terminvereinbarung darauf an.'],
+      ['Gibt es einen Hol- und Bringservice?', 'Nein, einen Hol- und Bringservice bieten wir nicht an.'],
       ['Wer zahlt den Ersatzwagen bei einem Unfall?', 'Bei unverschuldetem Unfall übernimmt in der Regel die gegnerische Versicherung die Kosten. Das klären wir im Einzelfall.'],
       ['Wie reserviere ich?', book],
     ],
