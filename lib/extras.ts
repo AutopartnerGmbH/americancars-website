@@ -10,7 +10,7 @@ export const extras: Record<string, Extra> = {
     faq: [
       ['Wie erkenne ich als Laie einen Unfallwagen?', 'Am einfachsten mit einer Carfax-Abfrage. Dafür brauchen Sie die Fahrgestellnummer (VIN).'],
       ['Was finden Sie bei Importen aus Litauen am häufigsten?', 'Schlecht verarbeitete Schweißnähte, laienhaft reparierte Elektrik, schlecht lackierte Teile, gebrauchte Teile aus anderen Fahrzeugen und teils fehlende oder überbrückte Airbags.'],
-      ['Bekomme ich bei Ihnen einen Carfax-Bericht?', 'Ja, zu jedem unserer Fahrzeuge stellen wir den Carfax-Bericht zur Verfügung.'],
+      ['Bekomme ich bei Ihnen einen Carfax-Bericht?', 'Ja, zu unseren Fahrzeugen erhalten Sie den Carfax-Bericht nach Ihrer Anfrage bei uns.'],
     ],
   },
   'dodge-ram-5-7-hemi': {
@@ -38,6 +38,30 @@ export const extras: Record<string, Extra> = {
       ['Reparieren Sie nur US-Fahrzeuge?', 'Nein. Unsere Meisterwerkstatt wartet und repariert Fahrzeuge aller Marken, vom Kleinwagen bis zum US-Pickup.'],
       ['Verliere ich die Herstellergarantie, wenn ich bei Ihnen warten lasse?', 'Wartung in einer freien Meisterwerkstatt nach Herstellervorgaben und mit Teilen entsprechender Qualität ist grundsätzlich zulässig. Ob für Ihr Fahrzeug Besonderheiten gelten, klären wir gern vorab mit Ihnen.'],
       ['Wie bekomme ich einen Termin?', book],
+    ],
+  },
+  'betrugsmasche': {
+    faq: [
+      ['Was ist ein Salvage Title?', 'Einen Salvage Title erhält ein Fahrzeug in den USA, wenn die Versicherung es als Totalschaden eingestuft hat. Er steht im Carfax. In den USA darf das Fahrzeug so nicht mehr zugelassen werden.'],
+      ['Verkaufen Sie Fahrzeuge mit Salvage Title?', 'Nein. Fahrzeuge mit Salvage Title verkaufen wir nicht. Wir verkaufen ausschließlich Fahrzeuge mit unfallfreier Carfax-Historie.'],
+      ['Wie schütze ich mich vor einem aufgebauten Unfallwagen?', 'Fragen Sie nach der Fahrgestellnummer und lassen Sie sich die Carfax-Historie zeigen. Lassen Sie Vorschäden im Kaufvertrag festhalten und das Fahrzeug vor dem Kauf in einer Werkstatt prüfen. Seien Sie vorsichtig bei auffällig günstigen Preisen.'],
+      ['Erkennt der TÜV einen Unfallwagen?', 'Nicht zuverlässig. Der TÜV prüft, ob das Fahrzeug zum Zeitpunkt der Abnahme verkehrssicher ist, nicht ob es frühere Unfallschäden gab. Airbags lassen sich sicher nur einzeln überprüfen, zum Beispiel durch Ausbau. Das können wir in unserer Werkstatt tun.'],
+    ],
+  },
+  'tipps-hinweise': {
+    faq: [
+      ['Worauf muss ich beim Kauf eines US-Fahrzeugs achten?', 'Fragen Sie nach der Fahrgestellnummer und der Carfax-Historie, lassen Sie Vorschäden im Kaufvertrag festhalten und seien Sie vorsichtig bei Angeboten, die auffällig günstig sind. Die Tipps auf dieser Seite helfen Ihnen bei der Einschätzung.'],
+      ['Wie erkenne ich einen Unfallwagen aus den USA?', 'Eine Carfax-Abfrage zeigt gemeldete Unfälle und Totalschäden. Schäden, die weder gemeldet noch in zugelassenen Werkstätten repariert wurden, zeigt sie nicht. Verdächtig sind außerdem aufwendige Beklebungen, die Schäden verdecken können, und sehr hochwertige Ausstattung zu einem niedrigen Preis.'],
+      ['Was ist die VIN und wo finde ich sie?', 'Die VIN ist die 17-stellige Fahrgestellnummer. Sie finden sie meist am unteren Rand der Frontscheibe auf der Fahrerseite und in den Fahrzeugpapieren.'],
+    ],
+  },
+  'carfax': {
+    faq: [
+      ['Erhalte ich zu Ihren Fahrzeugen einen Carfax-Bericht, und kostet er etwas?', 'Ja. Zu unseren angebotenen Fahrzeugen erhalten Sie die Carfax-Abfrage nach Ihrer Anfrage bei uns, kostenlos. Alle importierten Fahrzeuge bei uns haben eine unfallfreie Carfax-Historie. Pauschale Abfragen für beliebige andere Fahrzeuge bieten wir nicht an.'],
+      ['Gibt es Carfax auch für Fahrzeuge aus Deutschland?', 'Nein. Carfax gilt nur für Fahrzeuge aus den USA und Kanada. Für ein Fahrzeug, das nie dort war, liegen in der Regel keine Daten vor.'],
+      ['Kann Carfax eine Tachomanipulation anzeigen?', 'Der Bericht kann Hinweise liefern, etwa wenn die Kilometerstände in der Historie nicht zusammenpassen. Deshalb lohnt sich der Blick auf den Kilometerverlauf.'],
+      ['Was bedeutet Salvage Title?', 'Einen Salvage Title erhält ein Fahrzeug in den USA, wenn die Versicherung es als Totalschaden eingestuft hat. Solche Fahrzeuge verkaufen wir nicht.'],
+      ['Reicht der Carfax-Bericht allein aus?', 'Der Bericht ist ein wichtiger Baustein, aber nicht der einzige. Bei den Fahrzeugen, die wir selbst einkaufen, lassen wir diese zusätzlich vor dem Kauf nach unseren Standards durch unsere Partner in den USA und Kanada prüfen.'],
     ],
   },
   'import-umruestung': {

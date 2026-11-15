@@ -32,7 +32,7 @@ export const nav: NavItem[] = [
       ['Blog', '/blog'],
     ],
   },
-  { label: 'Team', href: '' },
+  { label: 'Team', href: '/team' },
   { label: 'Ankauf', href: '/#ankauf' },
   { label: 'Kundenstimmen', href: '/#bewertungen' },
   { label: 'Kontakt', href: '/kontakt' },

@@ -110,6 +110,10 @@ export const longtext: Record<string, Block[]> = {
     { h: 'Eintragung nicht vergessen', p: ['Nicht jede Kombination aus Rad und Reifen ist ohne Weiteres zulässig. Wir klären vorab mit unserem Prüfstützpunkt des TÜV NORD, ob eine Eintragung nötig ist, damit Ihre Betriebserlaubnis nicht erlischt.'] },
     { h: 'Mehr zu Reifen', p: ['Montage, Wuchten und Einlagerung finden Sie auf diesen Seiten.'], links: [['Zum Reifenservice', '/reifenservice'], ['Zur Reifeneinlagerung', '/reifeneinlagerung']] },
   ],
+  'carfax': [
+    { h: 'Warum Carfax beim US-Import so wichtig ist', p: ['Deutsche Fahrzeugpapiere erzählen nur das deutsche Kapitel eines Autos. Was in den USA oder Kanada passiert ist, etwa Unfälle, Wasserschäden, Titelvermerke oder der Kilometerverlauf, steht in keinem deutschen Dokument. Über die Fahrgestellnummer macht Carfax diese Vorgeschichte sichtbar.'] },
+    { h: 'Worauf Sie im Bericht achten sollten', ul: ['Verlauf der Kilometerstände: Passen die Einträge zusammen?', 'Anzahl der Vorbesitzer und frühere Nutzung, zum Beispiel als Mietwagen oder Taxi', 'Vermerke zu Schäden und zum Title, zum Beispiel „Salvage“ nach einem Totalschaden', 'Offene Rückrufe des Herstellers'] },
+  ],
   'import-umruestung': [
     { h: 'Zwei Wege zu Ihrem US-Fahrzeug', p: ['Sie haben zwei Möglichkeiten: Sie kaufen eines der Fahrzeuge, die wir selbst einkaufen, oder Sie lassen Ihr eigenes Wunschfahrzeug von uns importieren. Der Importprozess ist in beiden Fällen derselbe.'] },
     { h: 'Fahrzeuge, die wir selbst einkaufen', p: ['Diese Fahrzeuge kaufen wir in den USA und Kanada selbst und lassen sie vor dem Kauf nach unseren Standards von unseren Partnern vor Ort prüfen. Viele davon verkaufen wir direkt vom Schiff, weil uns Historie, Fotos und Daten der Fahrzeuge schon vorliegen.'] },
