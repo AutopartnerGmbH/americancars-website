@@ -1,4 +1,4 @@
-// Beispielrechnung Finanzierung (Santander Consumer Bank), Annuitätendarlehen ohne Schlussrate.
+// Beispielrechnung Finanzierung (Partnerbank, Zinssatz bitte regelmäßig prüfen), Annuitätendarlehen ohne Schlussrate.
 export const EFF = 6.99; // effektiver Jahreszins in %
 export const TERMS = [24, 36, 48, 60, 72, 84];
 

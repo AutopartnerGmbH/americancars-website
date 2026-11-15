@@ -35,8 +35,7 @@ export default function Finanzierung({ price }: { price: number }) {
         <div><dt>Gesamtbetrag der Raten</dt><dd>{eur(r.total)}</dd></div>
       </dl>
       <p className='note'>
-        Unverbindliches Berechnungsbeispiel, kein Angebot. Ein Darlehen erfordert Bonität und wird von der Santander Consumer Bank AG,
-        Santander-Platz 1, 41061 Mönchengladbach, gewährt. Die Autopartner GmbH vermittelt den Kredit. Für Ihr persönliches Angebot sprechen Sie uns an.
+        Unverbindliches Berechnungsbeispiel, kein Angebot. Ein Darlehen erfordert Bonität und wird von einer unserer Partnerbanken, derzeit OpenBank und AKF Bank, gewährt. Die Autopartner GmbH vermittelt den Kredit. Für Ihr persönliches Angebot sprechen Sie uns an.
       </p>
     </div>
   );
