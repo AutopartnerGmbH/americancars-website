@@ -10,7 +10,7 @@ export const site = {
   hours: [
     ['Montag bis Donnerstag', '8:00 – 17:00 Uhr'],
     ['Freitag', '8:00 – 15:30 Uhr'],
-    ['Samstag', 'nach Vereinbarung'],
+    ['Samstag', 'nur mit Terminvereinbarung'],
   ] as [string, string][],
   payment: 'Überweisung, EC-Karte, Barzahlung (keine Kreditkarten)',
   languages: 'Deutsch, Englisch',

@@ -34,7 +34,7 @@ export default function Home() {
         <div className='wrap h3-text'>
           <div className='h3-tuev'><TuevBadge /></div>
           <h1>US-Fahrzeuge, <span className='mark'>persönlich ausgewählt.</span></h1>
-          <p>Unfallfrei, mit Carfax-Bericht und eigener Meisterwerkstatt. Seit {site.since} in Hagen.</p>
+          <p>Unfallfreie Importe, Carfax-Bericht auf Anfrage und eigene Meisterwerkstatt. Seit {site.since} in Hagen.</p>
           <div className='acts'><a className='b1' href='/fahrzeuge'>Bestand ansehen</a></div>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function Home() {
       <div className='ratestrip'><RatingChip /></div>
       <section className='intro s-a'><div className='wrap'>
         <span className='eyebrow'>Autopartner GmbH</span>
-        <p>Wir importieren amerikanische Fahrzeuge und kennen jedes einzelne. <span>Bei uns kaufen Sie kein Auto aus dem Katalog, sondern eines, das wir selbst geprüft haben.</span></p>
+        <p>Wir importieren amerikanische Fahrzeuge und kennen jedes einzelne. <span>Bei uns kaufen Sie kein Auto aus dem Katalog, sondern eines, das nach unseren Standards geprüft wurde.</span></p>
       </div></section>
 
       <section className='stock s-b' id='bestand'><div className='wrap'>
@@ -57,7 +57,7 @@ export default function Home() {
         <div className='more'><a className='link' href='/fahrzeuge'>Alle {vehicles.length} Fahrzeuge ansehen</a></div>
       </div></section>
 
-      <section className='band'><Photo src='/img/silverado.jpg' alt='Chevrolet Silverado mit Offroad-Umbau' /><div className='wrap'><span className='eyebrow'>Unser Anspruch</span><p>Jedes Fahrzeug haben wir selbst geprüft. <span>Bevor Sie es sehen.</span></p></div></section>
+      <section className='band'><Photo src='/img/silverado.jpg' alt='Chevrolet Silverado mit Offroad-Umbau' /><div className='wrap'><span className='eyebrow'>Unser Anspruch</span><p>Jedes Fahrzeug wird nach unseren Standards geprüft. <span>Bevor Sie es sehen.</span></p></div></section>
 
       <section className='pop s-b'><div className='wrap'>
         {popular.length > 0 && (
@@ -66,25 +66,15 @@ export default function Home() {
               {popular.map((m) => <li key={m.slug}><a href={`/modelle/${m.slug}`}>{m.name}</a></li>)}
             </ul></div>
         )}
-        <div><span className='eyebrow'>Werkstatt-Leistungen</span>
-          <ul className='poplist'>
-            <li><a href='/hu-au-hagen'>HU & AU</a></li>
-            <li><a href='/klimaservice'>Klimaservice</a></li>
-            <li><a href='/motordiagnose'>Motordiagnose</a></li>
-            <li><a href='/bremsen-service'>Bremsen</a></li>
-            <li><a href='/getriebe-motor-reparatur'>Getriebe & Motor</a></li>
-            <li><a href='/unfall-instandsetzung'>Unfallreparatur</a></li>
-            <li><a href='/werkstatt-leistungen'>Alle Leistungen</a></li>
-          </ul></div>
       </div></section>
 
       <section className='why s-c' id='warum'><div className='wrap'>
         <span className='eyebrow'>Warum American Cars</span>
         <div className='cols'>
-          <div className='col'><h3>Carfax zu jedem Fahrzeug</h3><p>Sie sehen die Historie, bevor Sie sich entscheiden. Kostenlos und ohne Nachfragen.</p></div>
+          <div className='col'><h3>Carfax auf Anfrage</h3><p>Zu unseren importierten Fahrzeugen aus den USA und Kanada erhalten Sie den unfallfreien Carfax-Bericht kostenlos, bevor Sie sich entscheiden.</p></div>
           <div className='col'><h3>Meisterwerkstatt im Haus</h3><p>Wir kennen amerikanische Technik und reparieren alle Marken, vor dem Verkauf und danach.</p></div>
-          <div className='col'><h3>Prüfstützpunkt des TÜV NORD</h3><p>HU, AU und Vollabnahmen direkt bei uns in Hagen, für alle Hersteller.</p></div>
-          <div className='col'><h3>Ehrliche Beratung</h3><p>Auch wenn am Ende kein Kauf zustande kommt, loben Kunden unsere offene Art.</p></div>
+          <div className='col'><h3>Prüfstützpunkt des TÜV NORD</h3><p>HU, AU und Abnahmen direkt bei uns im Haus in Hagen, für alle Hersteller.</p></div>
+          <div className='col'><h3>Ehrliche Beratung</h3><p>Wir beraten offen, auch wenn am Ende kein Kauf zustande kommt.</p></div>
         </div>
       </div></section>
 
@@ -127,13 +117,13 @@ export default function Home() {
         <div>
           <span className='eyebrow'>Ankauf & Inzahlungnahme</span>
           <h2>Ihr Fahrzeug in guten Händen.</h2>
-          <p className='lead'>Schicken Sie uns die Eckdaten und ein paar Fotos. Wir melden uns mit einem Angebot, auch für die Inzahlungnahme beim Kauf eines unserer Fahrzeuge. [Konditionen ergänzen]</p>
+          <p className='lead'>Schicken Sie uns die Eckdaten und ein paar Fotos. Wir melden uns mit einem Angebot, auch für die Inzahlungnahme beim Kauf eines unserer Fahrzeuge.</p>
         </div>
       </div></section>
 
       <section className='fin s-c' id='finanzierung'><div className='wrap'>
         <div><span className='eyebrow'>Finanzierung</span><h2>Die Monatsrate sehen Sie sofort.</h2></div>
-        <div><p className='lead'>Bei jedem Fahrzeug steht die Rate direkt neben dem Preis. Berechnungsgrundlage: [Laufzeit, Anzahlung und Zins ergänzen].</p><p style={{ margin: '24px 0 0' }}><a className='link' href='/kontakt'>Finanzierung anfragen</a></p></div>
+        <div><p className='lead'>Bei jedem Fahrzeug berechnen Sie mit unserem Rechner die Monatsrate. Laufzeit und Anzahlung stellen Sie selbst ein. Das Ergebnis ist ein unverbindliches Beispiel, verbindlich ist das Angebot der Bank.</p><p style={{ margin: '24px 0 0' }}><a className='link' href='/kontakt'>Finanzierung anfragen</a></p></div>
       </div></section>
 
       <section className='fin s-b' id='umzugsgut-info'><div className='wrap'>

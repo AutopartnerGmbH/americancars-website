@@ -1,6 +1,6 @@
 // Redaktionelle Einleitungstexte für Listen-Seiten (Google braucht eigenen Text neben der Fahrzeugliste).
 const common =
-  'Alle Fahrzeuge aus unserem Bestand haben wir selbst geprüft. Zu jedem Fahrzeug gibt es einen Carfax-Bericht, damit Sie die Historie vor dem Kauf kennen. Import, Umrüstung, TÜV-Vollabnahme und Zulassung erledigen wir in Hagen, und Ihre Finanzierung rechnen Sie direkt auf der Fahrzeugseite durch.';
+  'Unsere Fahrzeuge werden nach unseren Standards geprüft. Zu unseren importierten Fahrzeugen erhalten Sie auf Anfrage den Carfax-Bericht, damit Sie die Historie vor dem Kauf kennen. Import, Umrüstung, TÜV-Vollabnahme und Zulassung erledigen wir in Hagen, und Ihre Finanzierung rechnen Sie direkt auf der Fahrzeugseite durch.';
 
 const texts: Record<string, string[]> = {
   alle: [

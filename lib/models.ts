@@ -14,7 +14,7 @@ export type Model = {
 const check: Block = {
   h: 'Worauf Sie beim Kauf achten sollten',
   ul: [
-    'Einen Carfax-Bericht zur Fahrzeughistorie. Bei uns gibt es ihn zu jedem Fahrzeug.',
+    'Einen Carfax-Bericht zur Fahrzeughistorie. Zu unseren importierten Fahrzeugen erhalten Sie ihn auf Anfrage kostenlos.',
     'Unfallfreiheit, bestätigt durch Carfax und eine Prüfung in der Meisterwerkstatt',
     'Wartungsnachweise und den Zustand von Getriebe und Fahrwerk',
     'Vollständige Papiere für die deutsche Zulassung',
@@ -23,7 +23,7 @@ const check: Block = {
 const service: Block = {
   h: 'Import, Zulassung und Service aus einer Hand',
   p: ['Wir importieren US-Fahrzeuge selbst. Umrüstung, TÜV-Vollabnahme nach § 21 StVZO und die Vorbereitung der deutschen Zulassung erledigen wir in Hagen. Danach betreuen wir Ihr Fahrzeug in unserer Meisterwerkstatt.'],
-  links: [['So läuft der Import', '/import-umruestung'], ['Carfax zu jedem Fahrzeug', '/carfax']],
+  links: [['So läuft der Import', '/import-umruestung'], ['Carfax-Fahrzeughistorie', '/carfax']],
 };
 
 export const models: Model[] = [

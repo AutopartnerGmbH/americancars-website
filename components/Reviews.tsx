@@ -31,7 +31,7 @@ export default async function Reviews() {
   const data = await load();
   const live = (data?.reviews ?? []).filter((r) => r.rating === 5 && r.text).slice(0, 5);
   const rating = data?.rating ? data.rating.toFixed(1).replace('.', ',') : '4,8';
-  const total = data?.user_ratings_total ?? 140;
+  const total = data?.user_ratings_total ?? 141;
   const place = process.env.GOOGLE_PLACE_ID;
   const all = 'https://www.google.com/maps/search/?api=1&query=Autopartner+GmbH+Auf+dem+L%C3%B6lfert+37+Hagen';
   const write = place ? `https://search.google.com/local/writereview?placeid=${place}` : all;

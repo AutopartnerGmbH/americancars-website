@@ -1,10 +1,10 @@
 export const faqs: [string, string][] = [
-  ['Kann ich ein Fahrzeug direkt aus den USA importieren lassen?', 'Ja. Wir übernehmen die Fahrzeugprüfung in Florida, den Transport nach Bremerhaven, die Verzollung, die Umrüstung und die TÜV-Vollabnahme nach § 21 StVZO in Hagen. Danach kann das Fahrzeug nach deutschem Standard zugelassen werden.'],
-  ['Bekomme ich zu jedem Fahrzeug einen Carfax-Bericht?', 'Ja, zu jedem Fahrzeug gibt es den Carfax-Bericht. Sie sehen die Fahrzeughistorie, bevor Sie sich entscheiden, kostenlos und ohne Nachfragen.'],
-  ['Kann ich ein Fahrzeug über Ihre Partnerbank finanzieren?', 'Ja, die Finanzierung läuft über die Santander Bank, derzeit mit 6,99 % effektivem Jahreszins. Bei jedem Fahrzeug sehen Sie mit dem Rechner direkt die Monatsrate. Verbindlich ist das Angebot der Bank.'],
-  ['Gibt es eine Garantie?', 'Ja, auf Wunsch bieten wir eine Garantie für 595 € pro Jahr an. Sie ist immer kostenpflichtig und wird beim Kauf gesondert vereinbart.'],
+  ['Kann ich ein Fahrzeug direkt aus den USA oder Kanada importieren lassen?', 'Ja. Wir kümmern uns um die Fahrzeugprüfung durch unsere Partner in den USA und Kanada, den Transport, die Verzollung, die Umrüstung und die Abnahme beim TÜV in Hagen. Danach kann das Fahrzeug nach deutschem Standard zugelassen werden.'],
+  ['Bekomme ich zu Ihren Fahrzeugen einen Carfax-Bericht?', 'Ja. Zu unseren importierten Fahrzeugen aus den USA und Kanada erhalten Sie nach Ihrer Anfrage bei uns den Carfax-Bericht kostenlos. Alle importierten Fahrzeuge bei uns haben eine unfallfreie Carfax-Historie. Pauschale Abfragen für beliebige andere Fahrzeuge bieten wir nicht an.'],
+  ['Kann ich ein Fahrzeug finanzieren oder leasen?', 'Ja, privat und gewerblich. Wir arbeiten mit verschiedenen Banken zusammen. Bei jedem Fahrzeug sehen Sie mit dem Rechner direkt eine unverbindliche Monatsrate. Verbindlich ist das Angebot der Bank.'],
+  ['Gibt es eine Garantie?', 'Ja. Wir bieten eine Garantie über die Intec AG an. Sie kostet 595 € pro Jahr, kann bis zu 3 Jahren abgeschlossen werden und gilt auch für importierte Fahrzeuge. Sie wird beim Kauf gesondert vereinbart.'],
   ['Wie kann ich bezahlen?', 'Per Überweisung, mit EC-Karte oder bar. Kreditkarten wie Mastercard, Visa oder Amex nehmen wir nicht an.'],
-  ['Nehmen Sie mein Fahrzeug in Zahlung?', 'Ja. Schicken Sie uns die Eckdaten und ein paar Fotos, wir melden uns mit einem Angebot, auch für die Inzahlungnahme beim Kauf eines unserer Fahrzeuge.'],
+  ['Nehmen Sie mein Fahrzeug in Zahlung?', 'Ja, nach vorheriger Prüfung des Fahrzeugs. Schicken Sie uns dazu einfach die Eckdaten und ein paar Fotos.'],
   ['Reparieren Sie auch Fahrzeuge anderer Marken?', 'Ja. Unsere Meisterwerkstatt wartet und repariert alle Marken, nicht nur amerikanische Fahrzeuge. Als Prüfstützpunkt des TÜV NORD erledigen wir HU und AU in einem Termin.'],
 ];
 
