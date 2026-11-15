@@ -5,7 +5,7 @@ import { vehicles } from '@/lib/vehicles';
 import { activeCategories, brandsInStock } from '@/lib/categories';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://americancars-website.vercel.app';
-const hidden: string[] = [];
+const hidden: string[] = ['karriere'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [

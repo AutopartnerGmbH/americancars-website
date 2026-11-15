@@ -6,7 +6,7 @@ const cols: [string, [string, string][]][] = [
   ['Fahrzeuge', [['Fahrzeugangebote', '/fahrzeuge'], ['Ankauf', '/#ankauf'], ['Finanzierung', '/#finanzierung']]],
   ['Service', nav[1].sub as [string, string][]],
   ['Dein Autopartner', nav[2].sub as [string, string][]],
-  ['Unternehmen', [['Karriere', '/karriere'], ['Kundenstimmen', '/#bewertungen'], ['Kontakt', '/kontakt']]],
+  ['Unternehmen', [['Kundenstimmen', '/#bewertungen'], ['Kontakt', '/kontakt']]],
 ];
 
 const searches: [string, string][] = [
