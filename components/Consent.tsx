@@ -53,7 +53,7 @@ export default function Consent() {
   return (
     <div className='consent' role='dialog' aria-label='Cookie-Hinweis'>
       <p>
-        Wir möchten Ihnen passende Fahrzeuge auch auf anderen Seiten zeigen. Dafür setzen wir mit Ihrer Einwilligung Marketing-Cookies von Google und Meta. Ohne Einwilligung laden wir nichts nach.{' '}
+        Mit Ihrer Einwilligung messen wir, wie unsere Seite genutzt wird (Statistik){META ? ' und zeigen Ihnen passende Fahrzeuge auch auf anderen Seiten (Marketing)' : ''}. Dafür setzen wir Cookies von Google{META ? ' und Meta' : ''}. Ohne Einwilligung laden wir nichts nach.{' '}
         <a href='/datenschutz'>Datenschutz</a> · <a href='/impressum'>Impressum</a>
       </p>
       <div className='consent-b'>
