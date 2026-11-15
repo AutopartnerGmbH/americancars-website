@@ -1,4 +1,4 @@
-// Beispielrechnung Finanzierung (Partnerbank, Zinssatz bitte regelmäßig prüfen), Annuitätendarlehen ohne Schlussrate.
+// Beispielrechnung Finanzierung (OpenBank und AKF Bank, 6,99 % laut Inhaber für beide, Stand 11/2026), Annuitätendarlehen ohne Schlussrate.
 export const EFF = 6.99; // effektiver Jahreszins in %
 export const TERMS = [24, 36, 48, 60, 72, 84];
 
