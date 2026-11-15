@@ -195,3 +195,9 @@ html,body{overflow-x:clip}
 .pfaq summary::after{content:'+';position:absolute;right:4px;top:10px;font-size:22px;color:#F6C500}
 .pfaq[open] summary::after{content:'–'}
 .pfaq p{margin:0 0 16px;color:#cfcfd4}
+/* Unterseiten: lange Wörter in der schmalen linken Spalte dürfen nicht in die rechte Spalte laufen */
+.post aside{min-width:0}
+.post h1{font-size:clamp(26px,2.8vw,40px);line-height:1.12;overflow-wrap:break-word;word-break:normal;hyphens:auto;-webkit-hyphens:auto}
+.post .lead,.post aside .lead{overflow-wrap:break-word}
+.post article{min-width:0;overflow-wrap:break-word}
+@media (max-width:900px){.post h1{font-size:clamp(28px,7.6vw,40px)}}
