@@ -1,3 +1,4 @@
+import { longtext } from './longtext';
 export type Block = { h?: string; p?: string[]; ul?: string[]; ol?: string[]; links?: [string, string][]; box?: string };
 export type Page = {
   slug: string;
@@ -9,7 +10,7 @@ export type Page = {
   cta?: [string, string];
 };
 
-export const pages: Page[] = [
+const basePages: Page[] = [
   {
     slug: 'werkstatt-service',
     title: 'Werkstatt & Service',
@@ -47,9 +48,9 @@ export const pages: Page[] = [
     lead: 'Sie nennen uns Ihren Wunsch, wir setzen fast alles um.',
     desc: 'US-Fahrzeug tunen und umbauen in Hagen: Höher- und Tieferlegung, Verbreiterung, Felgen, Auspuff, Lightbars und mehr. Autopartner GmbH American Cars.',
     blocks: [
-      { h: 'US-Fahrzeug tunen und umbauen', p: ['US-Fahrzeuge machen Spaß und sind individuell, bieten aber oft Potenzial für Verbesserungen. Erst die persönliche Umsetzung macht ein Auto zum Traumwagen. Wir haben jahrelange Erfahrung und legen Wert auf Individualität, Qualität und liebevolle Details.'] },
-      { h: 'Das setzen wir um', ul: ['Auspuffanlagen und Sound', 'Felgen und Reifen', 'Bodykits und Flammendesign', 'Verkabelung, Scheinwerfer, Arbeitsleuchten und Lightbars', 'Höher- und Tieferlegung', 'Kotflügel- und Spurverbreiterungen', 'Flügeltüren („LamboDoors“) auf Wunsch'] },
-      { h: 'Ihr Wunsch steht nicht dabei?', p: ['Wir setzen gerne auch individuelle Wünsche um, die in dieser Liste nicht aufgeführt sind. Sprechen Sie uns einfach an: Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei. Wir beraten Sie persönlich und sagen Ihnen ehrlich, was machbar ist.'], links: [['Jetzt Kontakt aufnehmen', '/kontakt']] },
+      { h: 'US-Fahrzeug tunen und umbauen', p: ['US-Fahrzeuge machen Spaß und sind individuell, bieten aber oft Raum für eigene Ideen. Erst die persönliche Umsetzung macht ein Auto zum Traumwagen. Wir haben jahrelange Erfahrung und legen Wert auf Individualität, Qualität und liebevolle Details.'] },
+      { h: 'Das setzen wir um', ul: ['Auspuffanlagen und Sound', 'Felgen und Reifen', 'Bodykits', 'Verkabelung, Scheinwerfer, Arbeitsleuchten und Lightbars', 'Höher- und Tieferlegung', 'Kotflügel- und Spurverbreiterungen', 'Flügeltüren („LamboDoors“) auf Wunsch'] },
+      { h: 'Ihr Wunsch steht nicht dabei?', p: ['Wir setzen gerne auch individuelle Wünsche um, die in dieser Liste nicht aufgeführt sind, etwa Baustellenbeleuchtung, Signalleuchten oder einen Offroad-Umbau. Sprechen Sie uns einfach an: Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei. Wir beraten Sie persönlich und sagen Ihnen ehrlich, was machbar ist.'], links: [['Jetzt Kontakt aufnehmen', '/kontakt']] },
     ],
     cta: ['Umbau anfragen', '/kontakt'],
   },
@@ -61,7 +62,7 @@ export const pages: Page[] = [
     desc: 'Unfall-Instandsetzung in Hagen für alle Marken: Gutachter, Versicherungsabwicklung, Ersatzteile, Lack, Ersatzfahrzeug. Autopartner GmbH.',
     blocks: [
       { h: 'Unfallreparatur für alle Marken', p: ['Ein Unfall bringt viele Aufgaben mit sich: Polizei, Versicherung, Gutachter und ein Auto, das eine Weile ausfällt. Wenn das Fahrzeug kein Totalschaden ist, reparieren wir es so, dass es technisch und optisch wieder uneingeschränkt verkehrssicher ist.', 'Wir reparieren alle Marken, vom VW bis zum Porsche. Bei US-Fahrzeugen kennen wir die Besonderheiten bei Teilen und Reparaturablauf.'] },
-      { h: 'Das übernehmen wir für Sie', ul: ['Abschleppen oder Abholung am aktuellen Standort', 'Fahrzeugannahme und Schadensaufnahme', 'Beauftragung eines Gutachters und Schadensdokumentation', 'Abstimmung mit Ihrer Versicherung bis zur Reparaturfreigabe', 'Beschaffung von Ersatzteilen, auch für US-Fahrzeuge (nur Teile in Originalqualität)', 'Lackierung und Einbau, auch von Teilen aus den USA', 'Ersatzfahrzeug, gegebenenfalls gegen Aufpreis', 'Endmontage und Finish'] },
+      { h: 'Das übernehmen wir für Sie', ul: ['Abschleppen vom aktuellen Standort in unsere Werkstatt', 'Fahrzeugannahme und Schadensaufnahme', 'Beauftragung eines Gutachters und Schadensdokumentation', 'Abstimmung mit Ihrer Versicherung bis zur Reparaturfreigabe', 'Beschaffung von Ersatzteilen, auch für US-Fahrzeuge (nur Teile in Originalqualität)', 'Lackierung und Einbau, auch von Teilen aus den USA', 'Ersatzfahrzeug gegen Gebühr', 'Endmontage und Finish'] },
       { p: ['Alle Modelle und Baujahre, vom Glasschaden über den Auffahrunfall bis zum Wildunfall. Der Umgang mit Versicherungen ist für uns Routine. Rufen Sie uns einfach an.'] },
     ],
     cta: ['Jetzt anfragen', '/kontakt'],
@@ -177,9 +178,9 @@ export const pages: Page[] = [
     lead: 'Hauptuntersuchung und Abgasuntersuchung für alle Hersteller, direkt bei uns in der Werkstatt.',
     desc: 'HU und AU in Hagen-Hohenlimburg: Prüfstützpunkt des TÜV NORD für alle Marken, Vorabcheck in der Meisterwerkstatt, auch für US-Fahrzeuge. Autopartner GmbH.',
     blocks: [
-      { h: 'TÜV und AU aus einer Hand', p: ['Wir sind Prüfstützpunkt des TÜV NORD und prüfen Fahrzeuge aller Hersteller, vom Kleinwagen bis zum US-Pickup. Hauptuntersuchung (HU) und Abgasuntersuchung (AU) erledigen Sie bei uns in einem Termin.', 'Pkw müssen in der Regel alle zwei Jahre zur HU, die erste Untersuchung steht nach drei Jahren an.'] },
+      { h: 'TÜV und AU aus einer Hand', p: ['Wir sind Prüfstützpunkt des TÜV NORD und prüfen Fahrzeuge aller Hersteller, vom Kleinwagen bis zum US-Pickup. Hauptuntersuchung (HU) und Abgasuntersuchung (AU) erledigen Sie bei uns in einem Termin.', 'Pkw müssen in der Regel alle zwei Jahre zur HU.'] },
       { h: 'Das bringen Sie mit', ul: ['Ihr Fahrzeug', 'Die Zulassungsbescheinigung Teil I (Fahrzeugschein)', 'Bei Umbauten die zugehörigen Papiere, zum Beispiel Gutachten oder Teilegutachten'] },
-      { h: 'Vorab-Check gegen Überraschungen', p: ['Auf Wunsch schauen wir Ihr Fahrzeug vor der Prüfung in unserer Meisterwerkstatt an. Kleine Mängel wie Beleuchtung oder Bremsbeläge beheben wir direkt, damit die Plakette beim ersten Mal klappt.', 'Ohne Mängel dauert die Prüfung normalerweise keine 60 Minuten.'] },
+      { h: 'Vorab-Check gegen Überraschungen', p: ['Auf Wunsch schauen wir Ihr Fahrzeug vor der Prüfung in unserer Meisterwerkstatt an. Kleine Mängel wie Beleuchtung oder Bremsbeläge beheben wir direkt, damit die Plakette beim ersten Mal klappt.'] },
       { h: 'Auch für Importfahrzeuge', p: ['Für US-Importe führen wir zusätzlich die Vollabnahme nach § 21 StVZO durch.'], links: [['Mehr zu TÜV und Homologation', '/tuev-und-homologation']] },
     ],
     cta: ['Termin anfragen', '/#werkstatt'],
@@ -192,7 +193,7 @@ export const pages: Page[] = [
     desc: 'Motordiagnose und Fehlerspeicher auslesen in Hagen: Diagnosegeräte von SNAP-ON, alle Marken, auch US-Fahrzeuge. Autopartner GmbH American Cars.',
     blocks: [
       { h: 'Wenn eine Warnleuchte aufleuchtet', p: ['Moderne Fahrzeuge speichern Fehler im Bordcomputer. Wir lesen den Fehlerspeicher mit SNAP-ON-Diagnosegeräten über den OBD-Anschluss aus. Manche Fehler lassen sich direkt löschen, andere analysieren wir anhand der Schaltpläne.', 'Die Diagnosesoftware halten wir aktuell, damit auch neuere Modelle zuverlässig ausgelesen werden.'] },
-      { h: 'Typische Anlässe', ul: ['Motorkontrollleuchte oder Warnleuchten im Kombiinstrument', 'Leistungsverlust oder unruhiger Motorlauf', 'Erhöhter Verbrauch', 'Probleme beim Starten', 'Elektrikfehler und Fehlermeldungen im Display'] },
+      { h: 'Typische Anlässe', ul: ['Motorkontrollleuchte oder Warnleuchten im Kombiinstrument', 'Leistungsverlust oder unruhiger Motorlauf', 'Erhöhter Verbrauch', 'Probleme beim Starten', 'Elektrikfehler und Fehlermeldungen im Display', 'Das Fahrzeug geht im Leerlauf aus', 'Vor dem Kauf eines Gebrauchtwagens'] },
       { h: 'Für US-Fahrzeuge und alle anderen Marken', p: ['Wir kennen amerikanische Fahrzeuge in jedem Detail und diagnostizieren genauso Fahrzeuge deutscher und asiatischer Hersteller.'] },
     ],
     cta: ['Werkstatttermin anfragen', '/#werkstatt'],
@@ -204,7 +205,7 @@ export const pages: Page[] = [
     lead: 'Bremsbeläge, Bremsscheiben und Bremsflüssigkeit: sicher bremsen ist keine Nebensache.',
     desc: 'Bremsen prüfen und reparieren in Hagen: Beläge, Scheiben, Bremsflüssigkeit und Bremsleitungen für alle Marken. KFZ-Meisterwerkstatt Autopartner GmbH.',
     blocks: [
-      { h: 'Woran Sie merken, dass die Bremse Aufmerksamkeit braucht', ul: ['Quietschen oder Schleifen beim Bremsen', 'Vibrieren im Lenkrad oder Bremspedal', 'Der Pedalweg wird länger oder weich', 'Das Fahrzeug zieht beim Bremsen zur Seite', 'Die Bremsenwarnleuchte brennt'] },
+      { h: 'Woran Sie merken, dass die Bremse Aufmerksamkeit braucht', ul: ['Quietschen, Schleifen oder Rubbeln beim Bremsen', 'Vibrieren im Lenkrad oder Bremspedal', 'Der Pedalweg wird länger oder weich', 'Das Fahrzeug zieht beim Bremsen zur Seite', 'Die Bremsenwarnleuchte oder die Warnleuchte für Bremsbeläge oder ABS brennt'] },
       { h: 'Das prüfen und erneuern wir', ul: ['Bremsbeläge und Bremsscheiben', 'Bremsflüssigkeit', 'Bremsleitungen und Bremsschläuche', 'Bremssättel und Bremsbelagstärke', 'Radlager und Achskomponenten auf Spiel und Verschleiß'] },
       { h: 'Auch für schwere US-Fahrzeuge', p: ['Pickups und SUV aus den USA sind schwer und beanspruchen die Bremsen stark. Wir kennen die Besonderheiten und verbauen die passenden Teile.'] },
     ],
@@ -212,14 +213,14 @@ export const pages: Page[] = [
   },
   {
     slug: 'getriebe-motor-reparatur',
-    title: 'Getriebe und Motor reparieren',
+    title: 'Getriebe und Motor: Diagnose und Service',
     eyebrow: 'KFZ-Meisterwerkstatt · alle Marken',
-    lead: 'Erst die Diagnose, dann der Preis: Getriebe- und Motorinstandsetzung in der Meisterwerkstatt.',
-    desc: 'Getriebe und Motor reparieren in Hagen: Diagnose, Getriebeservice und Motoreninstandsetzung für alle Marken und US-Fahrzeuge. Autopartner GmbH American Cars.',
+    lead: 'Erst die Diagnose, dann die Entscheidung: Wir prüfen Getriebe und Motor und besprechen mit Ihnen das weitere Vorgehen.',
+    desc: 'Getriebe und Motor in Hagen: Diagnose, Motorinstandsetzung und Getriebespülung für alle Marken und US-Fahrzeuge. Autopartner GmbH American Cars.',
     blocks: [
-      { h: 'Schäden früh erkennen', ul: ['Ruckeln oder verzögertes Schalten', 'Ungewöhnliche Geräusche aus Getriebe oder Motor', 'Ölverlust unter dem Fahrzeug', 'Leistungsverlust oder starker Ölverbrauch', 'Warnleuchten im Kombiinstrument'] },
+      { h: 'Schäden früh erkennen', ul: ['Ruckeln oder verzögertes Schalten', 'Ungewöhnliche Geräusche, etwa Mahlen oder Pfeifen, aus Getriebe oder Motor', 'Ölverlust unter dem Fahrzeug', 'Leistungsverlust, Überhitzung oder starker Ölverbrauch', 'Warnleuchten im Kombiinstrument'] },
       { h: 'So gehen wir vor', ol: ['Wir lesen den Fehlerspeicher aus und prüfen das Fahrzeug.', 'Wir erklären Ihnen den Befund und die Reparaturmöglichkeiten.', 'Sie entscheiden. Erst danach beginnen wir mit der Reparatur.'] },
-      { h: 'Erfahrung mit amerikanischer Technik', p: ['Viele US-Fahrzeuge fahren mit Automatikgetrieben und großvolumigen Motoren. Wir reparieren sie in unserer eigenen Meisterwerkstatt, genauso wie Fahrzeuge aller anderen Marken.'] },
+      { h: 'Erfahrung mit amerikanischer Technik', p: ['Viele US-Fahrzeuge fahren mit Automatikgetrieben und großvolumigen Motoren. Diagnose, Motorinstandsetzung und Getriebespülung führen wir in unserer eigenen Meisterwerkstatt durch, bei amerikanischen Fahrzeugen genauso wie bei allen anderen Marken. Getriebeinstandsetzungen führen wir nicht selbst durch, sondern vergeben sie extern.'] },
     ],
     cta: ['Werkstatttermin anfragen', '/#werkstatt'],
   },
@@ -236,6 +237,7 @@ export const pages: Page[] = [
           "Das Wartungsintervall Ihres Fahrzeugs ist erreicht",
           "Die Ölwarnleuchte oder eine Service-Meldung erscheint",
           "Der Ölstand sinkt spürbar",
+          "Der Motor läuft lauter als gewohnt",
           "Sie fahren viel Kurzstrecke oder ziehen regelmäßig einen Anhänger"
         ]
       },
@@ -273,7 +275,9 @@ export const pages: Page[] = [
           "Der Wechselintervall des Zahnriemens ist erreicht",
           "Rasselnde oder klappernde Geräusche beim Kaltstart",
           "Der Motor läuft unruhig oder springt schlecht an",
-          "Eine Warnleuchte weist auf Steuerzeiten hin"
+          "Eine Warnleuchte weist auf Steuerzeiten hin",
+          "Sichtbare Risse am Zahnriemen",
+          "Vor dem Kauf eines Gebrauchtwagens ohne Nachweis über den Wechsel"
         ]
       },
       {
@@ -288,7 +292,8 @@ export const pages: Page[] = [
       {
         "h": "Warum rechtzeitig wechseln",
         "p": [
-          "Reißt ein Zahnriemen oder springt eine Steuerkette, kann der Motor erheblich beschädigt werden. Ein planmäßiger Wechsel ist deutlich günstiger als eine Motorinstandsetzung."
+          "Reißt ein Zahnriemen oder springt eine Steuerkette, kann der Motor erheblich beschädigt werden. Ein planmäßiger Wechsel ist in der Regel deutlich günstiger als die Folgen eines Ausfalls.",
+          "Der Steuertrieb sorgt dafür, dass Kurbelwelle und Nockenwelle im richtigen Takt laufen. Fällt er aus, drohen schwere Motorschäden. Prüfen Sie deshalb die Intervalle im Serviceheft und sprechen Sie uns bei Geräuschen frühzeitig an."
         ]
       }
     ],
@@ -310,7 +315,8 @@ export const pages: Page[] = [
           "Die Kupplung rutscht, besonders unter Last",
           "Das Kupplungspedal fühlt sich schwammig oder schwergängig an",
           "Der Gang lässt sich schwer einlegen",
-          "Es riecht verbrannt oder es treten Geräusche beim Auskuppeln auf"
+          "Es riecht verbrannt oder es treten Geräusche beim Auskuppeln auf",
+          "Ruckeln beim Anfahren"
         ]
       },
       {
@@ -340,7 +346,8 @@ export const pages: Page[] = [
         "ul": [
           "Bremsflüssigkeit: spätestens nach dem vom Hersteller vorgesehenen Zeitraum, sie nimmt mit der Zeit Wasser auf",
           "Zündkerzen: bei unruhigem Lauf, Startproblemen oder erhöhtem Verbrauch",
-          "Batterie: wenn der Motor nur zögerlich startet oder Bordspannung schwankt"
+          "Kühlmittel: spätestens nach dem vom Hersteller vorgesehenen Zeitraum, es altert mit der Zeit",
+          "Batterie: wenn der Motor nur zögerlich startet, die Bordspannung schwankt oder die Batterie älter als fünf Jahre ist, am besten vor dem Winter"
         ]
       },
       {
@@ -348,6 +355,7 @@ export const pages: Page[] = [
         "ul": [
           "Bremsflüssigkeit erneuern und das System entlüften",
           "Zündkerzen ausbauen, prüfen und passende Kerzen einsetzen",
+          "Kühlmittel erneuern",
           "Batterie prüfen, bei Bedarf tauschen und das Bordnetz kontrollieren"
         ]
       }
@@ -370,7 +378,9 @@ export const pages: Page[] = [
           "Der Motor klingt lauter als gewohnt",
           "Es klappert unter dem Fahrzeug",
           "Die Abgaswerte bei der AU sind nicht in Ordnung",
-          "Eine Warnleuchte weist auf den Katalysator hin"
+          "Eine Warnleuchte weist auf den Katalysator hin",
+          "Abgasgeruch im Innenraum",
+          "Sichtbarer Rost oder Löcher an der Abgasanlage"
         ]
       },
       {
@@ -400,7 +410,8 @@ export const pages: Page[] = [
         "ul": [
           "Das Fahrzeug schaukelt nach Bodenwellen nach",
           "Der Bremsweg wird länger oder das Auto taucht beim Bremsen stark ein",
-          "Klopfgeräusche aus dem Fahrwerk",
+          "Klopf-, Klapper- oder Poltergeräusche aus dem Fahrwerk",
+          "Ölspuren am Dämpfer",
           "Reifen nutzen sich ungleichmäßig ab"
         ]
       },
@@ -443,7 +454,7 @@ export const pages: Page[] = [
           "Das Fahrzeug zieht zu einer Seite",
           "Das Lenkrad steht bei Geradeausfahrt schief",
           "Die Reifen verschleißen ungleichmäßig",
-          "Nach neuen Reifen, Fahrwerksarbeiten, Unfall oder Bordsteinkontakt"
+          "Nach neuen Reifen, dem Tausch von Fahrwerksteilen, Unfall oder Bordsteinkontakt"
         ]
       },
       {
@@ -473,7 +484,9 @@ export const pages: Page[] = [
           "Beleuchtung, Fensterheber oder Zentralverriegelung fallen aus",
           "Die Batterie entlädt sich über Nacht",
           "Fehlermeldungen im Display oder Warnleuchten",
-          "Defekte Sensoren oder Steuergeräte"
+          "Defekte Sensoren oder Steuergeräte",
+          "Sicherungen brennen wiederholt durch",
+          "Kontrollleuchten flackern"
         ]
       },
       {
@@ -512,7 +525,9 @@ export const pages: Page[] = [
           "Starker Ölverbrauch oder blauer Rauch",
           "Kompressionsverlust oder Leistungseinbruch",
           "Klopfen, Klackern oder Metallgeräusche aus dem Motor",
-          "Kühlmittel im Öl oder Öl im Kühlmittel"
+          "Kühlmittel im Öl oder Öl im Kühlmittel",
+          "Überhitzung",
+          "Nach einem Motorschaden"
         ]
       },
       {
@@ -530,7 +545,7 @@ export const pages: Page[] = [
         ],
         "links": [
           [
-            "Getriebe und Motor reparieren",
+            "Getriebe und Motor: Diagnose und Service",
             "/getriebe-motor-reparatur"
           ]
         ]
@@ -554,7 +569,9 @@ export const pages: Page[] = [
           "Saisonaler Wechsel zwischen Sommer- und Winterreifen",
           "Neue Reifen oder Felgen sind fällig",
           "Das Lenkrad vibriert bei höherer Geschwindigkeit",
-          "Reifenschaden oder Luftverlust"
+          "Reifenschaden oder Luftverlust",
+          "Risse oder Beulen an der Flanke",
+          "Die Profiltiefe nähert sich der Mindestgrenze"
         ]
       },
       {
@@ -638,7 +655,7 @@ export const pages: Page[] = [
       {
         "h": "Wann das sinnvoll ist",
         "ul": [
-          "Ihre Reifen sind abgefahren oder gealtert",
+          "Ihre Reifen sind abgefahren oder gealtert (das Alter steht in der DOT-Nummer)",
           "Sie möchten Sommer-, Winter- oder Ganzjahresreifen",
           "Sie wünschen neue Felgen oder einen zweiten Radsatz",
           "Sie brauchen Größen für Pickups oder SUV"
@@ -678,7 +695,9 @@ export const pages: Page[] = [
         "ul": [
           "Die Reifendruck-Warnleuchte leuchtet dauerhaft",
           "Beim Radwechsel müssen die Sensoren angelernt werden",
-          "Ein Sensor ist defekt oder die Batterie ist leer"
+          "Ein Sensor ist defekt oder die Batterie ist leer",
+          "Nach einem Felgenwechsel",
+          "Vor der Hauptuntersuchung"
         ]
       },
       {
@@ -691,7 +710,7 @@ export const pages: Page[] = [
       },
       {
         "p": [
-          "Bei Fahrzeugen aus den USA ist RDKS serienmäßig verbaut. Wir kennen die gängigen Systeme."
+          "Bei neueren Fahrzeugen aus den USA ist RDKS in der Regel serienmäßig verbaut. Wir kennen die gängigen Systeme."
         ]
       }
     ],
@@ -719,13 +738,15 @@ export const pages: Page[] = [
         "h": "Das machen wir",
         "ul": [
           "Beratung zu passenden Fahrwerkskomponenten",
+          "Prüfung, ob Reifen- und Felgengrößen zum Umbau passen",
           "Einbau und Einstellung inklusive Achsvermessung",
+          "Lichteinstellung nach dem Umbau anpassen",
           "Abnahme und Eintragung über unseren Prüfstützpunkt des TÜV NORD"
         ]
       },
       {
         "p": [
-          "Umbauten müssen zugelassen und eingetragen sein, sonst erlischt die Betriebserlaubnis. Wir klären das vorab mit Ihnen."
+          "Umbauten müssen zugelassen und eingetragen sein, sonst erlischt die Betriebserlaubnis. Wir klären jeden Umbau vorab mit dem TÜV."
         ],
         "links": [
           [
@@ -752,7 +773,9 @@ export const pages: Page[] = [
         "ul": [
           "Sie brauchen Verschleißteile für Ihren US-Wagen",
           "Ein Teil ist defekt und muss beschafft werden",
-          "Sie wünschen Zubehör wie Anhängerkupplung, Trittbretter oder Laderaumabdeckungen"
+          "Sie wünschen Zubehör wie Anhängerkupplung, Trittbretter oder Laderaumabdeckungen (Tonneau Covers)",
+          "Sie suchen Karosserie- und Anbauteile, Original- oder Nachrüstteile",
+          "Sie brauchen Teile für ein älteres oder neueres Fahrzeug"
         ]
       },
       {
@@ -786,7 +809,10 @@ export const pages: Page[] = [
         "ul": [
           "Ein Steinschlag in der Frontscheibe, solange er klein ist",
           "Die Scheibe hat einen Riss",
-          "Der Sichtbereich des Fahrers ist beeinträchtigt"
+          "Der Sichtbereich des Fahrers ist beeinträchtigt",
+          "Die Scheibe beschlägt von innen oder die Dichtung ist beschädigt",
+          "Die Hauptuntersuchung steht an",
+          "Nach Einbruch oder Vandalismus"
         ]
       },
       {
@@ -830,7 +856,9 @@ export const pages: Page[] = [
         "ul": [
           "Ihr Fahrzeug wurde bei einem Unfall beschädigt",
           "Sie brauchen eine verlässliche Schadensaufstellung für die Versicherung",
-          "Sie möchten Reparatur und Abwicklung aus einer Hand"
+          "Sie möchten Reparatur und Abwicklung aus einer Hand",
+          "Sie vermuten verdeckte Schäden",
+          "Sie möchten eine Wertminderung nach dem Unfall prüfen lassen"
         ]
       },
       {
@@ -867,7 +895,9 @@ export const pages: Page[] = [
         "ul": [
           "Sie möchten Ihr Fahrzeug verkaufen und den Wert steigern",
           "Der Lack ist matt oder zeigt feine Kratzer",
-          "Der Innenraum soll gründlich gereinigt werden"
+          "Der Innenraum ist verschmutzt, riecht oder soll gründlich gereinigt werden",
+          "Nach dem Winter",
+          "Sie möchten den Wert Ihres Fahrzeugs erhalten"
         ]
       },
       {
@@ -895,15 +925,15 @@ export const pages: Page[] = [
         "h": "Wann das sinnvoll ist",
         "ul": [
           "Ihr Fahrzeug bleibt für Reparatur oder Unfallinstandsetzung länger bei uns",
-          "Sie sind auf Ihr Auto beruflich angewiesen"
+          "Sie sind auf Ihr Auto beruflich angewiesen",
+          "Es stehen Umbauten an",
+          "Sie haben bei der Wartung einen knappen Zeitplan"
         ]
       },
       {
         "h": "Das machen wir",
         "ul": [
-          "Einen Ersatzwagen bekommen Sie nach Verfügbarkeit gegen eine Gebühr",
-          "Einen Hol- und Bringservice bieten wir nicht an",
-          "Sprechen Sie uns bei der Terminvereinbarung darauf an"
+          "Einen Ersatzwagen bekommen Sie nach Verfügbarkeit gegen eine Gebühr"
         ]
       },
       {
@@ -929,7 +959,9 @@ export const pages: Page[] = [
         "ul": [
           "Vor dem Winter: Batterie, Beleuchtung, Frostschutz, Reifen",
           "Vor dem Sommer: Klimaanlage, Kühlmittel, Bremsen",
-          "Vor einer langen Fahrt: Reifen, Flüssigkeiten, Bremsen, Beleuchtung"
+          "Vor einer langen Fahrt: Reifen, Flüssigkeiten, Bremsen, Beleuchtung",
+          "Nach längerer Standzeit",
+          "Vor der Hauptuntersuchung"
         ]
       },
       {
@@ -938,7 +970,7 @@ export const pages: Page[] = [
           "Beleuchtung, Batterie, Flüssigkeiten und Wischer prüfen",
           "Bremsen und Reifen kontrollieren",
           "Klimaanlage auf Funktion prüfen",
-          "Kurzer Prüfbericht mit Empfehlungen"
+          "Kurze Rückmeldung mit Empfehlungen"
         ]
       },
       {
@@ -1439,5 +1471,7 @@ export const pages: Page[] = [
     cta: ['Fahrzeuge ansehen', '/fahrzeuge'],
   },
 ];
+
+export const pages: Page[] = basePages.map((p) => (longtext[p.slug] ? { ...p, blocks: [...p.blocks, ...longtext[p.slug]] } : p));
 
 export const getPage = (slug: string) => pages.find((p) => p.slug === slug);
