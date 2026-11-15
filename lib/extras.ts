@@ -40,13 +40,28 @@ export const extras: Record<string, Extra> = {
       ['Wie bekomme ich einen Termin?', book],
     ],
   },
+  'import-umruestung': {
+    faq: [
+      ['Wie lange dauert ein Import insgesamt?', 'Die Gesamtdauer hängt von vielen Faktoren ab, etwa vom Verschiffungshafen. In der Regel sollten Sie mit mindestens drei Monaten rechnen. Die Überfahrt allein dauert sechs bis acht Wochen, je nach Hafen.'],
+      ['Wie lange dauern Umrüstung und TÜV-Abnahme?', 'Sobald das Fahrzeug bei uns in Hagen angekommen ist, rechnen Sie für Umrüstung und TÜV-Abnahme mit etwa fünf bis sieben Tagen.'],
+      ['Welche Marken und Modelle können importiert werden?', 'Wir können nahezu alle Marken und Modelle importieren. Sprechen Sie uns einfach mit Ihrem Wunschmodell an.'],
+      ['Kann ich mein Wunschfahrzeug selbst in den USA kaufen und von Ihnen importieren lassen?', 'Ja. Die Suche und den Kauf Ihres Traumautos übernehmen Sie selbst. Wir holen das Fahrzeug beim Verkäufer ab und wickeln den gesamten restlichen Importprozess für Sie ab: Transport, Verzollung, Umrüstung und TÜV-Abnahme, auf Wunsch auch die Zulassung gegen Aufpreis.'],
+      ['Worin unterscheidet sich ein selbst gekauftes Fahrzeug von Ihren eigenen Fahrzeugen?', 'Der Importprozess ist identisch. Der Unterschied liegt vor dem Kauf: Fahrzeuge, die wir selbst kaufen, lassen wir nach unseren Standards durch unsere Partner in den USA und Kanada prüfen. Wenn Sie selbst kaufen, haben Sie diese Kontrolle vor dem Kauf nicht.'],
+      ['Kann ich ein Fahrzeug kaufen, das noch auf dem Schiff ist?', 'Ja, wir verkaufen viele Fahrzeuge direkt vom Schiff. Das ist bei uns möglich, weil uns Historie, Fotos und Daten der Fahrzeuge bereits vorliegen.'],
+      ['Machen Sie Umrüstung und Abnahme auch für Fahrzeuge, die ich selbst importiert habe?', 'Ja, das machen wir sehr häufig. Die Preise nennen wir Ihnen gern auf Anfrage.'],
+      ['Was kostet ein Import?', 'Die Kosten hängen vom Einzelfall ab. Bitte stellen Sie uns eine Anfrage, dann nennen wir Ihnen die Preise.'],
+      ['Ist eine Finanzierung oder Leasing möglich?', 'Ja, beides ist möglich. Wir arbeiten mit verschiedenen Banken zusammen und berechnen Ihnen gern ein individuelles Angebot, sowohl für Privat- als auch für Gewerbekunden.'],
+      ['Gilt die Garantie auch für importierte Fahrzeuge?', 'Ja, unsere Garantie gilt auch für importierte Fahrzeuge. Sie wird über die Intec AG abgeschlossen, kostet 595 € pro Jahr und kann bis zu 3 Jahren abgeschlossen werden.'],
+      ['Aus welchen Ländern importieren Sie?', 'Wir importieren aus den USA und Kanada. Je nach Verschiffungshafen, zum Beispiel in Kalifornien, Texas oder Kanada, können die Transportzeiten abweichen.'],
+      ['Was ist die Zoll-Unbedenklichkeitsbescheinigung (ZUB)?', 'Die ZUB erhalten Sie, nachdem Zoll und Einfuhrumsatzsteuer bezahlt sind. Für die TÜV-Abnahme ist sie nicht notwendig. Erst für die Erstellung der deutschen Fahrzeugpapiere wird sie benötigt.'],
+      ['Welche Unterlagen brauche ich für TÜV-Abnahme und deutsche Fahrzeugpapiere?', 'Für die TÜV-Abnahme benötigen wir die Herkunftsdokumente (US-Title bzw. MSO). Für die Erstellung der deutschen Fahrzeugpapiere kommen die Zollunbedenklichkeitsbescheinigung sowie die Rechnung bzw. der Kaufvertrag hinzu.'],
+      ['Übernehmen Sie auch die Zulassung?', 'Ja, auf Wunsch übernehmen wir auch die Zulassung, gegen Aufpreis. Dafür benötigen wir Ihren Ausweis, ein SEPA-Mandat, eine Vollmacht und die eVB-Nummer, gegebenenfalls außerdem die Bestätigung Ihres Wunschkennzeichens.'],
+    ],
+  },
   'tuev-und-homologation': {
-    signsTitle: 'Das sollten Sie vor der Abnahme bereithalten',
-    signs: ['US-Title bzw. MSO als Herkunftsnachweis', 'Zollunbedenklichkeitsbescheinigung', 'Rechnung bzw. Kaufvertrag', 'Fahrzeugdatenblatt und KBA-Auskunft', 'Lichttechnisches Gutachten, wenn erforderlich'],
     faq: [
       ['Was ist die TÜV-Vollabnahme nach § 21 StVZO?', 'Bei Importfahrzeugen ohne EU-Typgenehmigung prüft der Prüfer das Fahrzeug einzeln und erstellt ein Gutachten. Mit diesem Gutachten und den Papieren kann das Fahrzeug nach deutschem Standard zugelassen werden.'],
       ['Müssen US-Fahrzeuge umgerüstet werden?', 'Meist ja, zum Beispiel mit nachgerüsteter Nebelschlussleuchte und gelben statt roten Blinkern. Welche Anpassungen nötig sind, hängt vom Fahrzeug ab. Das klären wir vor dem Kauf.'],
-      ['Kann ich auch mit einem normalen Pkw zur HU kommen?', 'Ja. Wir sind Prüfstützpunkt des TÜV NORD und prüfen Fahrzeuge aller Hersteller.'],
     ],
   },
   'us-fahrzeug-tunen': {

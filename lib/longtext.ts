@@ -110,6 +110,11 @@ export const longtext: Record<string, Block[]> = {
     { h: 'Eintragung nicht vergessen', p: ['Nicht jede Kombination aus Rad und Reifen ist ohne Weiteres zulässig. Wir klären vorab mit unserem Prüfstützpunkt des TÜV NORD, ob eine Eintragung nötig ist, damit Ihre Betriebserlaubnis nicht erlischt.'] },
     { h: 'Mehr zu Reifen', p: ['Montage, Wuchten und Einlagerung finden Sie auf diesen Seiten.'], links: [['Zum Reifenservice', '/reifenservice'], ['Zur Reifeneinlagerung', '/reifeneinlagerung']] },
   ],
+  'import-umruestung': [
+    { h: 'Zwei Wege zu Ihrem US-Fahrzeug', p: ['Sie haben zwei Möglichkeiten: Sie kaufen eines der Fahrzeuge, die wir selbst einkaufen, oder Sie lassen Ihr eigenes Wunschfahrzeug von uns importieren. Der Importprozess ist in beiden Fällen derselbe.'] },
+    { h: 'Fahrzeuge, die wir selbst einkaufen', p: ['Diese Fahrzeuge kaufen wir in den USA und Kanada selbst und lassen sie vor dem Kauf nach unseren Standards von unseren Partnern vor Ort prüfen. Viele davon verkaufen wir direkt vom Schiff, weil uns Historie, Fotos und Daten der Fahrzeuge schon vorliegen.'] },
+    { h: 'Ihr eigenes Wunschfahrzeug', p: ['Sie suchen und kaufen Ihr Traumauto in den USA selbst. Wir holen es beim Verkäufer ab und wickeln den gesamten restlichen Importprozess für Sie ab, von Transport und Verzollung bis zu Umrüstung und TÜV-Abnahme.', 'Der Unterschied zu unseren eigenen Fahrzeugen liegt vor dem Kauf: Wir lassen unsere Fahrzeuge durch unsere Partner in den USA prüfen. Wenn Sie selbst kaufen, haben Sie diese Kontrolle vor dem Kauf nicht.'] },
+  ],
   'rdks-reifendruckkontrolle': [
     { h: 'Wofür das RDKS da ist', p: ['Das Reifendruckkontrollsystem warnt Sie bei Druckverlust. Es gibt direkt messende Systeme mit Sensoren im Rad und indirekte Systeme, die den Druck über die Raddrehzahl erkennen.'] },
     { h: 'Beim Radwechsel beachten', p: ['Die Batterie im Sensor ist nach einigen Jahren leer, dann muss der Sensor getauscht werden. Nach dem Radwechsel oder bei zwei Radsätzen müssen die Sensoren angelernt werden. Das übernehmen wir für Sie.'] },

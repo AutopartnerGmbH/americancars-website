@@ -33,8 +33,10 @@ const basePages: Page[] = [
     lead: 'Umrüstung, Homologation, TÜV-Abnahme und Zulassung: der Rundum-Service für Importfahrzeuge.',
     desc: 'TÜV-Vollabnahme nach § 21 StVZO, Homologation und AU für US-Importfahrzeuge in Hagen. Prüfstützpunkt des TÜV NORD für alle Hersteller.',
     blocks: [
-      { h: 'Umrüstung und TÜV-Abnahme für US-Cars', p: ['Wir führen die TÜV-Vollabnahme für US-Importfahrzeuge nach § 21 StVZO durch, die für den Straßenverkehr in Deutschland nötig ist. Die erforderlichen Unterlagen beschaffen wir für Sie:'], ul: ['Zollunbedenklichkeitsbescheinigung', 'KBA-Auskunft', 'Herkunftsdokumente (US-Title bzw. MSO)', 'Fahrzeugdatenblatt', 'Lichttechnisches Gutachten'] },
-      { h: 'So geht es weiter', ol: ['Umrüstung nach den geltenden StVZO-Vorgaben', 'Antrag auf den deutschen Fahrzeugbrief', 'TÜV-Vorführung und Abnahme', 'Deutsche Papiere inklusive nötiger Ausnahmegenehmigungen', 'Abgasuntersuchung (AU)'], p: ['Danach können Sie das Fahrzeug beim Straßenverkehrsamt anmelden.'] },
+      { h: 'Umrüstung und TÜV-Abnahme für US-Cars', p: ['Für US-Importfahrzeuge ist eine TÜV-Vollabnahme nach § 21 StVZO nötig, damit sie in Deutschland auf die Straße dürfen. Für die Abnahme bringen Sie bitte mit:'], ul: ['Herkunftsdokumente (US-Title bzw. MSO)'] },
+      { p: ['Für die Erstellung der deutschen Fahrzeugpapiere benötigen wir zusätzlich:'], ul: ['Zollunbedenklichkeitsbescheinigung', 'Rechnung bzw. Kaufvertrag'] },
+      { h: 'So läuft die Umrüstung und Abnahme ab', ol: ['Umrüstung der lichttechnischen Einrichtung nach den geltenden StVZO-Vorgaben', 'Abgasuntersuchung (AU)', 'Gegebenenfalls Achsvermessung (bei Unfallfahrzeugen)', 'TÜV-Vorführung, Abnahme und Homologation', 'Deutsche Papiere inklusive nötiger Ausnahmegenehmigungen'] },
+      { p: ['Danach können Sie das Fahrzeug beim Straßenverkehrsamt anmelden.'] },
       { h: 'TÜV- und AU-Untersuchungen für alle Marken', p: ['Wir sind zertifizierter Prüfstützpunkt für alle Hersteller. AU- und TÜV-Untersuchungen sind nach kurzer Terminvereinbarung möglich, Inspektionen und Voruntersuchungen meist kurzfristig. Auch Mercedes, BMW, Audi, VW und Porsche sind bei uns willkommen.'] },
       { h: 'Homologation und Typzulassung', p: ['Importierte Fahrzeuge müssen die deutschen Vorschriften erfüllen, damit sie zugelassen werden. Die größte Hürde sind meist die Abgasvorschriften, die von Land zu Land abweichen. Mit Homologation ist die Einhaltung dieser Vorschriften und die Erteilung der Betriebserlaubnis gemeint. Ohne Umrüstung geht es in der Regel nicht.', 'Das richtet sich an alle, die ein Fahrzeug mit ausländischen Papieren fahren und deutsche Papiere brauchen.'] },
       { h: 'Umzugsgut', p: ['Sie kehren nach längerem Auslandsaufenthalt zurück und bringen Ihr Fahrzeug mit? Wir unterstützen bei Abholung in den USA, Anmeldung mit deutschen Papieren und Auslieferung bis vor die Haustür.'], links: [['Mehr zum Umzugsgut', '/umzugsgut']] },
@@ -71,13 +73,13 @@ const basePages: Page[] = [
     slug: 'import-umruestung',
     title: 'Import & Umrüstung',
     eyebrow: 'Dein Autopartner',
-    lead: 'Von der Fahrzeugprüfung in Florida bis zur deutschen Zulassung: so kommt Ihr US-Fahrzeug zu Ihnen.',
-    desc: 'US-Fahrzeug importieren: Prüfung in Florida, Transport nach Bremerhaven, Zoll, Umrüstung und TÜV-Vollabnahme in Hagen. Autopartner GmbH American Cars.',
+    lead: 'Von der Fahrzeugprüfung in den USA und Kanada bis zur deutschen Zulassung: so kommt Ihr US-Fahrzeug zu Ihnen.',
+    desc: 'US-Fahrzeug importieren: Prüfung in den USA und Kanada, Transport, Zoll, Umrüstung und TÜV-Vollabnahme in Hagen. Autopartner GmbH American Cars.',
     blocks: [
-      { h: 'Unser Anspruch', p: ['Ein langjähriger Partner in Florida prüft die Fahrzeuge, bevor wir sie kaufen.'], ul: ['Nur unfallfreie Fahrzeuge, belegt per Carfax oder Autocheck', 'Direkter Transport von den USA nach Deutschland, ohne Umweg über osteuropäische Werkstätten', 'Keine Fahrzeuge mit Wasserschäden, defekter Bordelektronik oder defekten Steuergeräten'] },
-      { h: 'Transport und Ankunft', ol: ['Nach dem Kauf holt ein Transportunternehmen das Fahrzeug ab und bringt es zum Hafen Miami.', 'Die Überfahrt nach Bremerhaven dauert etwa vier bis sechs Wochen, je nach Route und Wetter.', 'Nach Entladung und Verzollung kommt das Fahrzeug zu uns nach Hagen.'] },
-      { h: 'Umrüstung und Zulassung', p: ['Die Umrüstung erfolgt in unserer Meisterwerkstatt nach TÜV-Vorgaben. Danach folgt die Vollabnahme nach § 21 StVZO durch den TÜV NORD mit einem mehrseitigen Gutachten. Mit Gutachten und Papieren ist die Zulassung nach deutschem Standard möglich.', 'Typische Anpassungen sind eine nachgerüstete Nebelschlussleuchte, weil US-Fahrzeuge ab Werk keine haben, und gelbe statt rote Blinker.'] },
-      { h: 'Wissenswertes zum Import', ul: ['Das „Certificate of Title“ (kurz Title) entspricht in etwa Fahrzeugbrief und Fahrzeugschein.', 'Zoll: 10 % des Kaufpreises', 'Einfuhrumsatzsteuer: 19 % auf Kaufpreis plus Zollgebühren', 'Nach Zahlung von Zoll und Steuer gibt es die Zoll-Unbedenklichkeitsbescheinigung (ZUB).', 'Mit Title, ZUB und TÜV-Gutachten entstehen die deutschen Fahrzeugpapiere.'], p: ['Ein zuverlässiger Verschiffer ist unverzichtbar und der Papierkram ist aufwendig. Genau das nehmen wir Ihnen ab.'] },
+      { h: 'Unser Anspruch', p: ['Bei den Fahrzeugen, die wir selbst in den USA und Kanada einkaufen, lassen wir diese vor dem Kauf nach unseren Standards durch unsere langjährigen Partner vor Ort prüfen.'], ul: ['Nur unfallfreie Fahrzeuge, belegt per Carfax oder Autocheck', 'Direkter Transport von den USA nach Deutschland, ohne Umweg über osteuropäische Werkstätten', 'Keine Fahrzeuge mit Wasserschäden, defekter Bordelektronik oder defekten Steuergeräten'] },
+      { h: 'Transport und Ankunft', ol: ['Nach dem Kauf holt ein Transportunternehmen das Fahrzeug ab und bringt es zum Verschiffungshafen.', 'Die Überfahrt nach Deutschland dauert in der Regel sechs bis acht Wochen, je nach Hafen. Wird ab Kalifornien, Texas oder Kanada verschifft, können die Transportzeiten abweichen.', 'Nach Entladung und Verzollung kommt das Fahrzeug zu uns nach Hagen.'] },
+      { h: 'Umrüstung und Zulassung', p: ['Die Umrüstung erfolgt in unserer Meisterwerkstatt nach den StVZO-Vorgaben. Danach folgen Abgasuntersuchung und, wenn nötig, Achsvermessung. Anschließend erfolgen Vorführung, Abnahme und Homologation beim TÜV NORD, mit Vollabnahme nach § 21 StVZO und einem mehrseitigen Gutachten. Mit Gutachten und Papieren ist die Zulassung nach deutschem Standard möglich.', 'Typische Anpassungen sind eine nachgerüstete Nebelschlussleuchte, weil US-Fahrzeuge ab Werk keine haben, und gelbe statt rote Blinker.'] },
+      { h: 'Wissenswertes zum Import', ul: ['Das „Certificate of Title“ (kurz Title) entspricht in etwa Fahrzeugbrief und Fahrzeugschein.', 'Zoll: 10 % des Kaufpreises', 'Einfuhrumsatzsteuer: 19 % auf Kaufpreis plus Zollgebühren', 'Nach Zahlung von Zoll und Steuer gibt es die Zoll-Unbedenklichkeitsbescheinigung (ZUB).', 'Mit Title, ZUB und TÜV-Gutachten entstehen die deutschen Fahrzeugpapiere.'], p: ['Ein zuverlässiger Verschiffer ist unverzichtbar und der Papierkram ist aufwendig. Genau das nehmen wir Ihnen ab. Die Abgaben können sich ändern, es gelten die jeweils gültigen gesetzlichen Regelungen.'] },
     ],
     cta: ['Import anfragen', '/kontakt'],
   },
@@ -115,7 +117,7 @@ const basePages: Page[] = [
     lead: 'Preise, die zu schön sind, um wahr zu sein: so läuft die Masche mit aufgebauten US-Unfallwagen.',
     desc: 'Betrugsmasche bei US-Fahrzeugen: Salvage Title, Wiederaufbau in Osteuropa, zusammengesetzte Unfallwagen, manipulierte Airbags. Warnung aus Hagen.',
     blocks: [
-      { p: ['Medien haben über Händler berichtet, die unfallbeschädigte US-Modelle wie Mustang, Challenger, Camaro, Pacifica oder Grand Caravan anbieten, oft zu auffällig günstigen Preisen. Unser Partner in Florida sieht solche Fahrzeuge vor dem Kauf.'] },
+      { p: ['Medien haben über Händler berichtet, die unfallbeschädigte US-Modelle wie Mustang, Challenger, Camaro, Pacifica oder Grand Caravan anbieten, oft zu auffällig günstigen Preisen. Unsere Partner in den USA und Kanada sehen solche Fahrzeuge vor dem Kauf.'] },
       { h: 'So läuft es typischerweise ab', ol: ['In den USA hat ein Fahrzeug einen schweren Unfall. Die Versicherung erklärt es zum Totalschaden und es erhält einen „Salvage Title“. Das steht im Carfax. In den USA darf das Auto so nicht mehr zugelassen werden.', 'Die Versicherung verkauft das nicht fahrbereite Fahrzeug an den Meistbietenden, häufig an ausländische Aufkäufer.', 'Die Aufkäufer lassen die Fahrzeuge etwa in Litauen günstig reparieren. Bis hierhin ist nichts zu beanstanden.'] },
       { h: 'Wo es unseriös wird', ul: ['Zwei Unfallwagen werden zu einem verbunden, zum Beispiel einer mit Front- und einer mit Heckschaden.', 'Airbags werden durch Stecker simuliert, die das Steuergerät täuschen, oder der Airbagstoff wird durch wirkungslose Materialien ersetzt.', 'Lack, Streifen, Hauben, Spoiler, Auspuffanlagen und angebliche Edeltuning-Teile werten das Fahrzeug optisch auf.', 'Kunstleder und Schriftzüge in Kopfstützen oder Türen können auf einen Wiederaufbau hinweisen.', 'Eine Gasanlage ist oft eingebaut und im Preis enthalten, das macht das Angebot attraktiver.'] },
       { h: 'Grenzen der TÜV-Prüfung', p: ['Der TÜV prüft, ob das Fahrzeug zum Zeitpunkt der Abnahme verkehrssicher ist. Er prüft nicht, ob es frühere Unfallschäden gab. Airbags werden mit Diagnosegeräten getestet. Sind sie überbrückt, sind weitere Kontrollen nicht möglich.'] },
@@ -999,6 +1001,11 @@ const basePages: Page[] = [
     "desc": "Alle Werkstatt-Leistungen der Autopartner GmbH in Hagen: Wartung, Reparatur, Reifenservice, Klimaservice, HU und AU, Unfallinstandsetzung, Umbau.",
     "blocks": [
       {
+        "p": [
+          "Hier finden Sie alle Leistungen unserer KFZ-Meisterwerkstatt in Hagen-Hohenlimburg. Wir arbeiten an allen Marken, mit besonderer Erfahrung bei US-Fahrzeugen. Wählen Sie eine Leistung für Details oder vereinbaren Sie direkt einen Termin."
+        ]
+      },
+      {
         "h": "Wartung und Reparatur",
         "links": [
           [
@@ -1142,7 +1149,13 @@ const basePages: Page[] = [
             "/saison-checks"
           ]
         ]
+      },
+      {
+        "p": [
+          "Sie finden Ihre Leistung nicht? Rufen Sie uns an unter 02334 / 80814-0, wir beraten Sie gern."
+        ]
       }
+
     ],
     "cta": [
       "Werkstatttermin anfragen",
