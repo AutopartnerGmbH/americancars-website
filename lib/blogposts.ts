@@ -112,11 +112,11 @@ export const blogPages: Page[] = [
     title: 'HU und AU beim US-Fahrzeug: Ablauf und Vorbereitung',
     eyebrow: 'Ratgeber',
     lead: 'Auch US-Fahrzeuge müssen regelmäßig zur Hauptuntersuchung. Bei uns erledigen Sie das direkt vor Ort.',
-    desc: 'HU und AU beim US-Fahrzeug: Intervall, Dauer, Vorbereitung und Prüfung beim Prüfstützpunkt der TÜV NORD in Hagen-Hohenlimburg. Autopartner GmbH American Cars.',
+    desc: 'HU und AU beim US-Fahrzeug: Intervall, Dauer, Vorbereitung und Prüfung beim Prüfstützpunkt des TÜV NORD in Hagen-Hohenlimburg. Autopartner GmbH American Cars.',
     cta,
     blocks: [
       { h: 'Wie oft ist die HU fällig?', p: ['Bei Pkw ist die Hauptuntersuchung in der Regel alle zwei Jahre fällig. Den Termin erkennen Sie an der Prüfplakette auf dem hinteren Kennzeichen.'] },
-      { h: 'HU direkt bei uns', p: ['Wir sind Prüfstützpunkt der TÜV NORD. Die Hauptuntersuchung ist bei uns direkt in der Werkstatt in Hagen-Hohenlimburg möglich. Ohne Mängel dauert die Prüfung in der Regel unter 60 Minuten.'] },
+      { h: 'HU direkt bei uns', p: ['Wir sind Prüfstützpunkt des TÜV NORD. Die Hauptuntersuchung ist bei uns direkt in der Werkstatt in Hagen-Hohenlimburg möglich. Ohne Mängel dauert die Prüfung in der Regel unter 60 Minuten.'] },
       { h: 'So bereiten Sie sich vor', ul: ['Beleuchtung: Funktionieren alle Leuchten, auch bei umgerüsteten Fahrzeugen?', 'Reifen: Profil, Alter und Zustand', 'Bremsen: Beläge, Scheiben und Bremsflüssigkeit', 'Fahrwerk und Lenkung: Spiel, Geräusche, Undichtigkeiten', 'Unterboden und Auspuff: Rost, Undichtigkeiten', 'Papiere: Fahrzeugschein und, bei Umbauten, die zugehörigen Gutachten'] },
       { h: 'Und die Abgasuntersuchung?', p: ['Die Abgasuntersuchung gehört zur Hauptuntersuchung dazu und wird in der Regel gemeinsam durchgeführt.'], links: [['TÜV und Homologation', '/tuev-und-homologation'], ['Zur Werkstatt', '/werkstatt-leistungen']] },
     ],
@@ -149,9 +149,29 @@ export const blogPages: Page[] = [
       { h: 'Bei der Probefahrt', p: ['Achten Sie auf Geräusche, Lenkverhalten, Bremsen und Schaltvorgänge. Fahren Sie nach Möglichkeit auch Strecken, die Ihrem Alltag entsprechen, zum Beispiel Stadt, Landstraße und, wenn sinnvoll, Autobahn.'], links: [['Vom Kauf bis zur Übergabe', '/kauf-und-uebergabe'], ['Tipps & Hinweise', '/tipps-hinweise']] },
     ],
   },
+  {
+    slug: 'lohnt-sich-us-import',
+    title: 'Lohnt sich ein US-Import? Für wen und für wen nicht',
+    eyebrow: 'Ratgeber',
+    lead: 'Ein Fahrzeug aus den USA kann eine sehr gute Entscheidung sein. Es kann aber auch unnötig kompliziert werden. Entscheidend ist, was Sie suchen und wie viel Zeit Sie mitbringen.',
+    desc: 'Lohnt sich ein US-Import? Für wen sich der Import eignet, wann ein Fahrzeug aus dem Bestand besser passt und was beim Import dazukommt. Autopartner GmbH American Cars, Hagen.',
+    cta,
+    blocks: [
+      { h: 'Für wen sich ein Import eher lohnt', ul: ['Sie suchen ein Modell, das es in Deutschland nicht oder nur selten gibt, zum Beispiel bestimmte Pickups, Ausstattungen oder Motorisierungen.', 'Sie wissen genau, welches Fahrzeug Sie möchten, und können warten.', 'Sie möchten die Auswahl nicht auf den deutschen Markt beschränken.'] },
+      { h: 'Für wen ein Fahrzeug aus unserem Bestand die bessere Wahl ist', ul: ['Sie brauchen das Fahrzeug in den nächsten Wochen.', 'Sie möchten das Fahrzeug vor dem Kauf anschauen und Probe fahren.', 'Sie möchten sich nicht mit Zoll, Umrüstung und Abnahme befassen. Bei einem Fahrzeug aus unserem Bestand ist das bereits erledigt.'] },
+      { h: 'Was beim Import dazukommt', p: ['Zum Kauf kommen Überfahrt, Verzollung, Umrüstung, TÜV-Abnahme und deutsche Papiere hinzu. Rechnen Sie insgesamt mit mindestens drei Monaten.'], links: [['Zoll und Einfuhrumsatzsteuer', '/zoll-und-einfuhrumsatzsteuer-us-import'], ['TÜV und Homologation', '/tuev-und-homologation']] },
+      { h: 'Zwei Wege bei uns', p: ['Sie kaufen ein Fahrzeug, das wir selbst einkaufen. Unsere Partner in den USA und Kanada prüfen es vorab nach unseren Standards. Oder Sie suchen Ihr Wunschfahrzeug selbst aus: Dann holen wir es ab und wickeln alles Weitere für Sie ab. Bei einem eigenmächtigen Kauf fehlt Ihnen allerdings diese Kontrolle vor dem Kauf.'], links: [['Import und Umrüstung', '/import-umruestung']] },
+      { h: 'Unser Rat', p: ['Lassen Sie sich vor der Entscheidung beraten. Wir sagen Ihnen offen, ob sich ein Import für Ihr Wunschfahrzeug lohnt oder ob ein Fahrzeug aus dem Bestand besser passt.'] },
+    ],
+  },
 ];
 
 export const blogExtras: Record<string, Extra> = {
+  'lohnt-sich-us-import': { faq: [
+    ['Ist ein Import immer günstiger?', 'Nicht pauschal. Das hängt vom Fahrzeug, vom Modell und vom Aufwand für Umrüstung und Abnahme ab. Wir beraten Sie dazu gern im Einzelfall.'],
+    ['Wie lange dauert ein Import?', 'Rechnen Sie insgesamt mit mindestens drei Monaten. Die Überfahrt dauert in der Regel 6 bis 8 Wochen, Umrüstung und Abnahme etwa 5 bis 7 Tage.'],
+    ['Kann ich auch ein Fahrzeug aus dem Bestand nehmen?', 'Ja. Fahrzeuge aus unserem Bestand sind bereits verzollt, umgerüstet und abgenommen und lassen sich deutlich schneller übernehmen.'],
+  ] },
   'us-fahrzeug-alltag': { faq: [
     ['Passt ein US-Pickup in eine normale Garage?', 'Das hängt vom Modell ab. Viele Pickups sind länger und breiter als gewöhnliche Pkw. Messen Sie Ihren Stellplatz und vergleichen Sie ihn mit den Fahrzeugmaßen.'],
     ['Wird die Werkstattbetreuung aufwendiger als bei europäischen Fahrzeugen?', 'Das hängt vor allem von der Werkstatt ab. Wir betreuen US-Fahrzeuge täglich in unserer Meisterwerkstatt in Hagen-Hohenlimburg.'],
@@ -181,7 +201,7 @@ export const blogExtras: Record<string, Extra> = {
     ['Wie lange dauert die Lieferung?', 'Das hängt vom Teil ab. Wir nennen Ihnen eine Einschätzung, sobald wir Ihre Angaben haben.'],
   ] },
   'hu-au-us-fahrzeuge': { faq: [
-    ['Kann ich die HU direkt bei Ihnen machen lassen?', 'Ja, wir sind Prüfstützpunkt der TÜV NORD und führen die Hauptuntersuchung in unserer Werkstatt in Hagen-Hohenlimburg durch.'],
+    ['Kann ich die HU direkt bei Ihnen machen lassen?', 'Ja, wir sind Prüfstützpunkt des TÜV NORD und führen die Hauptuntersuchung in unserer Werkstatt in Hagen-Hohenlimburg durch.'],
     ['Wie oft muss ein US-Fahrzeug zur HU?', 'Bei Pkw in der Regel alle zwei Jahre.'],
     ['Wie lange dauert die HU?', 'Ohne Mängel in der Regel unter 60 Minuten.'],
   ] },

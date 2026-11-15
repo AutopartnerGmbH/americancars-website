@@ -162,6 +162,7 @@ const basePages: Page[] = [
       { p: ['In unserem Blog erklären wir, worauf es beim Kauf, Import und Unterhalt eines US-Fahrzeugs ankommt. Die Beiträge entstehen aus dem Alltag in unserer Werkstatt und unserem Autohaus in Hagen-Hohenlimburg.'] },
       { h: 'Grundlagen', p: ['Die wichtigsten Begriffe und Abläufe rund um US-Fahrzeuge.'] },
       { h: 'Carfax: die Fahrzeughistorie', p: ['Was ein Carfax-Bericht zeigt und worauf Sie beim Lesen achten sollten.'], links: [['Beitrag lesen', '/carfax']] },
+      { h: 'Lohnt sich ein US-Import?', p: ['Für wen sich der Import eignet und wann ein Fahrzeug aus dem Bestand besser passt.'], links: [['Beitrag lesen', '/lohnt-sich-us-import']] },
       { h: 'Import und Umrüstung', p: ['Wie ein Fahrzeug aus den USA oder Kanada zu Ihnen kommt und was dabei passiert.'], links: [['Beitrag lesen', '/import-umruestung']] },
       { h: 'TÜV und Homologation', p: ['Welche Schritte nötig sind, bis ein importiertes Fahrzeug zugelassen werden kann.'], links: [['Beitrag lesen', '/tuev-und-homologation']] },
       { h: 'Fahrgestellnummer (VIN) erklärt', p: ['So lesen Sie die 17 Zeichen und erkennen Herkunft und Modelljahr.'], links: [['Beitrag lesen', '/fahrgestellnummer-vin-erklaert']] },
