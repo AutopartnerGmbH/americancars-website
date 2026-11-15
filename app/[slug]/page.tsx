@@ -9,7 +9,7 @@ import { extras } from '@/lib/extras';
 export const dynamicParams = false;
 
 const hidden: string[] = ['karriere'];
-const notService = ['blog', 'betrugsmasche', 'karriere', 'team', 'tipps-hinweise', 'carfax', 'werkstatt-leistungen', 'unfallwagen-litauen-erkennen', 'dodge-ram-5-7-hemi', 'kauf-und-uebergabe'];
+const notService = ['blog', 'betrugsmasche', 'karriere', 'team', 'tipps-hinweise', 'carfax', 'werkstatt-leistungen', 'unfallwagen-litauen-erkennen', 'dodge-ram-5-7-hemi', 'kauf-und-uebergabe', 'us-fahrzeug-alltag', 'winterreifen-pickup-suv', 'fahrgestellnummer-vin-erklaert', 'title-arten-usa-erklaert', 'direkt-vom-schiff-kaufen', 'zoll-und-einfuhrumsatzsteuer-us-import', 'ersatzteile-fuer-us-fahrzeuge-finden', 'hu-au-us-fahrzeuge', 'umbauten-eintragung-felgen-hoeherlegung', 'checkliste-besichtigung-probefahrt'];
 const visible = pages.filter((p) => !hidden.includes(p.slug));
 
 export function generateStaticParams() {

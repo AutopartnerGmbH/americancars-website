@@ -1,4 +1,5 @@
 import { longtext } from './longtext';
+import { blogPages } from './blogposts';
 export type Block = { h?: string; p?: string[]; ul?: string[]; ol?: string[]; links?: [string, string][]; box?: string };
 export type Page = {
   slug: string;
@@ -158,7 +159,29 @@ const basePages: Page[] = [
     lead: 'Wissen rund um Import, Zulassung und US-Fahrzeuge.',
     desc: 'Ratgeber und Neuigkeiten rund um US-Fahrzeuge, Import und Zulassung von Autopartner GmbH American Cars in Hagen.',
     blocks: [
-      { h: 'Aktuelle Beiträge', links: [['Umzugsgut: Auto aus den USA importieren', '/umzugsgut'], ['Tipps & Hinweise zum Kauf eines US-Fahrzeugs', '/tipps-hinweise'], ['Betrugsmasche bei US-Unfallfahrzeugen', '/betrugsmasche'], ['Unfallwagen aus Litauen erkennen', '/unfallwagen-litauen-erkennen'], ['Dodge RAM 5.7 Hemi: Krümmerdichtung', '/dodge-ram-5-7-hemi'], ['Autokauf: vom Kauf bis zur Übergabe', '/kauf-und-uebergabe']] },
+      { p: ['In unserem Blog erklären wir, worauf es beim Kauf, Import und Unterhalt eines US-Fahrzeugs ankommt. Die Beiträge entstehen aus dem Alltag in unserer Werkstatt und unserem Autohaus in Hagen-Hohenlimburg.'] },
+      { h: 'Grundlagen', p: ['Die wichtigsten Begriffe und Abläufe rund um US-Fahrzeuge.'] },
+      { h: 'Carfax: die Fahrzeughistorie', p: ['Was ein Carfax-Bericht zeigt und worauf Sie beim Lesen achten sollten.'], links: [['Beitrag lesen', '/carfax']] },
+      { h: 'Import und Umrüstung', p: ['Wie ein Fahrzeug aus den USA oder Kanada zu Ihnen kommt und was dabei passiert.'], links: [['Beitrag lesen', '/import-umruestung']] },
+      { h: 'TÜV und Homologation', p: ['Welche Schritte nötig sind, bis ein importiertes Fahrzeug zugelassen werden kann.'], links: [['Beitrag lesen', '/tuev-und-homologation']] },
+      { h: 'Fahrgestellnummer (VIN) erklärt', p: ['So lesen Sie die 17 Zeichen und erkennen Herkunft und Modelljahr.'], links: [['Beitrag lesen', '/fahrgestellnummer-vin-erklaert']] },
+      { h: 'US-Title erklärt', p: ['Clean, Salvage, Rebuilt und MSO: was die Title-Arten bedeuten.'], links: [['Beitrag lesen', '/title-arten-usa-erklaert']] },
+      { h: 'Kauf und Import', p: ['Alles rund um den Weg zum eigenen US-Fahrzeug.'] },
+      { h: 'Umzugsgut: Auto aus den USA importieren', p: ['Wann ein Fahrzeug als Umzugsgut eingeführt werden kann.'], links: [['Beitrag lesen', '/umzugsgut']] },
+      { h: 'Tipps & Hinweise zum Kauf eines US-Fahrzeugs', p: ['Worauf Sie vor der Kaufentscheidung achten sollten.'], links: [['Beitrag lesen', '/tipps-hinweise']] },
+      { h: 'Autokauf: vom Kauf bis zur Übergabe', p: ['Der Ablauf von der Anfrage bis zur Fahrzeugübergabe.'], links: [['Beitrag lesen', '/kauf-und-uebergabe']] },
+      { h: 'Direkt vom Schiff kaufen', p: ['So läuft der Kauf eines Fahrzeugs ab, das gerade importiert wird.'], links: [['Beitrag lesen', '/direkt-vom-schiff-kaufen']] },
+      { h: 'Zoll und Einfuhrumsatzsteuer beim US-Import', p: ['Welche Abgaben anfallen und wer sich um die Verzollung kümmert.'], links: [['Beitrag lesen', '/zoll-und-einfuhrumsatzsteuer-us-import']] },
+      { h: 'Checkliste: Besichtigung und Probefahrt', p: ['Das sollten Sie beim Termin vor Ort prüfen.'], links: [['Beitrag lesen', '/checkliste-besichtigung-probefahrt']] },
+      { h: 'Betrugsmasche bei US-Unfallfahrzeugen', p: ['Wie Sie manipulierte Unfallfahrzeuge erkennen.'], links: [['Beitrag lesen', '/betrugsmasche']] },
+      { h: 'Unfallwagen aus Litauen erkennen', p: ['Typische Hinweise auf Unfallschäden bei Importfahrzeugen.'], links: [['Beitrag lesen', '/unfallwagen-litauen-erkennen']] },
+      { h: 'Alltag und Technik', p: ['Praxiswissen für den Betrieb und Unterhalt.'] },
+      { h: 'US-Fahrzeug im Alltag', p: ['Größe, Verbrauch, Steuer und Service: was Sie vor dem Kauf bedenken sollten.'], links: [['Beitrag lesen', '/us-fahrzeug-alltag']] },
+      { h: 'Winterreifen für Pickup und SUV', p: ['Pflicht, Alpine-Symbol, Tragfähigkeit und Reifendruckkontrolle.'], links: [['Beitrag lesen', '/winterreifen-pickup-suv']] },
+      { h: 'HU und AU bei US-Fahrzeugen', p: ['Intervalle, Dauer und Vorbereitung der Hauptuntersuchung.'], links: [['Beitrag lesen', '/hu-au-us-fahrzeuge']] },
+      { h: 'Umbauten, Felgen und Höherlegung', p: ['Was bei Eintragung und Betriebserlaubnis zu beachten ist.'], links: [['Beitrag lesen', '/umbauten-eintragung-felgen-hoeherlegung']] },
+      { h: 'Ersatzteile für US-Fahrzeuge finden', p: ['Welche Angaben Sie für das passende Teil brauchen.'], links: [['Beitrag lesen', '/ersatzteile-fuer-us-fahrzeuge-finden']] },
+      { h: 'Dodge RAM 5.7 Hemi: Krümmerdichtung', p: ['Ein typisches Problem und wie wir es beheben.'], links: [['Beitrag lesen', '/dodge-ram-5-7-hemi']] },
     ],
   },
   {
@@ -1486,6 +1509,6 @@ const basePages: Page[] = [
   },
 ];
 
-export const pages: Page[] = basePages.map((p) => (longtext[p.slug] ? { ...p, blocks: [...p.blocks, ...longtext[p.slug]] } : p));
+export const pages: Page[] = [...basePages, ...blogPages].map((p) => (longtext[p.slug] ? { ...p, blocks: [...p.blocks, ...longtext[p.slug]] } : p));
 
 export const getPage = (slug: string) => pages.find((p) => p.slug === slug);

@@ -1,3 +1,4 @@
+import { blogExtras } from './blogposts';
 // Zusatzinhalte für Unterseiten: Anzeichen/Wann-Abschnitt und FAQ. Allgemeines Fachwissen, keine Preis- oder Terminzusagen.
 export type Extra = { signsTitle?: string; signs?: string[]; faq: [string, string][] };
 
@@ -292,3 +293,5 @@ extras['us-cars-dortmund'] = cityFaq('Dortmund');
 extras['us-cars-wuppertal'] = cityFaq('Wuppertal');
 extras['us-cars-witten'] = cityFaq('Witten');
 extras['us-cars-sauerland'] = cityFaq('dem Sauerland');
+
+Object.assign(extras, blogExtras);
