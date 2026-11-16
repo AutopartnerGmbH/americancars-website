@@ -3,17 +3,17 @@ import { useState } from 'react';
 import { EFF, TERMS, calc, eur } from '@/lib/finance';
 
 export default function Finanzierung({ price }: { price: number }) {
-  const [down, setDown] = useState(Math.round((price * 0.1) / 100) * 100);
+  const [down, setDown] = useState(String(Math.round((price * 0.1) / 100) * 100));
   const [months, setMonths] = useState(60);
-  const d = Math.min(Math.max(0, down || 0), price);
+  const d = Math.min(Number(down) || 0, price);
   const r = calc(price, d, months);
   return (
     <div className='calc'>
       <h3>Finanzierungsbeispiel</h3>
       <div className='r2'>
         <label className='f'>Anzahlung (€)
-          <input type='number' inputMode='numeric' min={0} max={price} step={500} value={down}
-            onChange={(e) => setDown(Number(e.target.value))} />
+          <input type='text' inputMode='numeric' pattern='[0-9]*' placeholder='0' value={down}
+            onChange={(e) => setDown(e.target.value.replace(/\D/g, '').replace(/^0+/, '').slice(0, 7))} />
         </label>
         <label className='f'>Laufzeit
           <select value={months} onChange={(e) => setMonths(Number(e.target.value))}>
