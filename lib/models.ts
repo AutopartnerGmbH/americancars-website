@@ -23,7 +23,7 @@ const check: Block = {
 };
 const service: Block = {
   h: 'Import, Zulassung und Service aus einer Hand',
-  p: ['Wir importieren US-Fahrzeuge selbst. Umrüstung, TÜV-Vollabnahme nach § 21 StVZO und die Vorbereitung der deutschen Zulassung erledigen wir in Hagen. Danach betreuen wir Ihr Fahrzeug in unserer Meisterwerkstatt.'],
+  p: ['Wir importieren US-Fahrzeuge selbst. Umrüstung, TÜV-Abnahme und die Vorbereitung der deutschen Zulassung erledigen wir in Hagen. Danach betreuen wir Ihr Fahrzeug in unserer Meisterwerkstatt.'],
   links: [['So läuft der Import', '/import-umruestung'], ['Carfax-Fahrzeughistorie', '/carfax']],
 };
 

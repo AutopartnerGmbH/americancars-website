@@ -1,6 +1,6 @@
 import Car from '@/components/Car';
 import JsonLd, { crumbs } from '@/components/JsonLd';
-import { listingText } from '@/lib/listingtext';
+import { listingText, listingLinks } from '@/lib/listingtext';
 import { activeCategories, brandsInStock } from '@/lib/categories';
 import { vehicles, type Vehicle } from '@/lib/vehicles';
 
@@ -32,6 +32,7 @@ export default function Listing({ title, intro, list, current }: { title: string
           {body.length > 0 && (
             <div className='seotext'>
               {body.map((t, i) => <p key={i}>{t}</p>)}
+              <p>{listingLinks(current).map(([l, h]) => <span key={h} style={{ display: 'block', margin: '8px 0' }}><a className='link' href={h}>{l}</a></span>)}</p>
             </div>
           )}
         </div>

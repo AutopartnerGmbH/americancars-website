@@ -10,7 +10,7 @@ export const generateStaticParams = () => activeCategories().map((c) => ({ cat: 
 export async function generateMetadata({ params }: { params: Promise<{ cat: string }> }): Promise<Metadata> {
   const { cat } = await params;
   const c = activeCategories().find((x) => x.key === cat);
-  return c ? { title: `${c.label} aus den USA kaufen`, description: `${c.label} aus den USA im aktuellen Bestand von Autopartner GmbH American Cars in Hagen: geprüft, mit Carfax-Bericht und Finanzierungsrechner.` } : {};
+  return c ? { title: `${c.label} aus den USA kaufen`, description: `${c.label} aus den USA im aktuellen Bestand von Autopartner GmbH American Cars in Hagen: geprüft, Carfax-Bericht auf Anfrage und Finanzierungsrechner.` } : {};
 }
 
 export default async function Page({ params }: { params: Promise<{ cat: string }> }) {
