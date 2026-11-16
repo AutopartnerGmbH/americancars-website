@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const v = getVehicle(slug);
   if (!v) return {};
   return {
-    title: { absolute: `${v.name} kaufen | American Cars` },
-    description: `${v.name}, ${v.meta}, ${v.price}. Autopartner GmbH American Cars in Hagen, Prüfstützpunkt des TÜV NORD.`,
+    title: { absolute: `${v.name} kaufen in Hagen | American Cars` },
+    description: `${v.name}, ${v.meta}, ${v.price}. Finanzierung möglich, eigene Meisterwerkstatt. Autopartner GmbH American Cars in Hagen, Prüfstützpunkt des TÜV NORD.`,
   };
 }
 
@@ -50,7 +50,7 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
       : {}),
   };
   const similar = vehicles.filter((x) => x.slug !== v.slug).slice(0, 3);
-  const specs: [string, string][] = [...v.specs, ['Getriebe', '[aus mobile.de]'], ['Carfax', '[Bericht verlinken]']];
+  const specs: [string, string][] = [...v.specs, ['Carfax', 'Bericht auf Anfrage']];
 
   return (
     <main id='top'>
@@ -72,7 +72,7 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
               {pn && v.vat === 'ausweisbar' && <span>Netto {(pn / 1.19).toLocaleString('de-DE', { maximumFractionDigits: 0 })} € · MwSt. ausweisbar</span>}
               {v.vat === 'differenz' && <span>Differenzbesteuert, MwSt. nicht ausweisbar</span>}
             </div>
-            <p className='warr'><b>Garantie optional:</b> 595 € pro Jahr. Details besprechen wir gern persönlich mit Ihnen.</p>
+            <p className='warr'><b>Garantie optional (Intec AG):</b> 595 € pro Jahr, kann bis zu 3 Jahren abgeschlossen werden. Der Umfang richtet sich nach den Bedingungen der Intec AG. Zulassung und Lieferung auf Wunsch gegen Aufpreis.</p>
             <dl className='specs'>
               {specs.map(([k, val]) => (
                 <div key={k}><dt>{k}</dt><dd>{val}</dd></div>
@@ -91,8 +91,8 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
           <div className='desc'>
             <span className='eyebrow'>Fahrzeugbeschreibung</span>
             <h2>Ausstattung &amp; Details</h2>
-            <p>[Hier erscheint später automatisch der Beschreibungstext und die Ausstattungsliste aus Ihrem mobile.de-Inserat, dazu die weiteren Fotos als Galerie.]</p>
-            <p>Jedes Fahrzeug haben wir selbst geprüft. Fragen zur Historie, zur Garantie oder zur Lieferung beantworten wir Ihnen persönlich.</p>
+            <p>Ausstattung, weitere Fotos und Details zu diesem Fahrzeug senden wir Ihnen auf Anfrage gern zu.</p>
+            <p>Unsere Fahrzeuge werden nach unseren Standards geprüft. Fragen zur Historie, zur Garantie, zu Zulassung oder Lieferung beantworten wir Ihnen persönlich.</p>
           </div>
           <form className='form js-form' noValidate>
             <h3>Anfrage zu diesem Fahrzeug</h3>
@@ -103,7 +103,6 @@ export default async function Fahrzeug({ params }: { params: Promise<{ slug: str
             <label className='f'>Ich möchte
               <select name='w'>
                 <option>Informationen zum Fahrzeug</option>
-                <option>Probefahrt vereinbaren</option>
                 <option>Finanzierung anfragen</option>
                 <option>Mein Auto in Zahlung geben</option>
               </select>
