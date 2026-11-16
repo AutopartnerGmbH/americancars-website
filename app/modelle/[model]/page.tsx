@@ -42,6 +42,11 @@ export default async function ModelPage({ params }: { params: Promise<{ model: s
                 )}
               </div>
             ))}
+            <h3>Häufige Fragen</h3>
+            {m.faq.map(([q, a]) => (
+              <details key={q} className='pfaq'><summary>{q}</summary><p>{a}</p></details>
+            ))}
+            <JsonLd data={{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: m.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }} />
             <p className='cta2'><a className='b1' href='/kontakt'>Anfrage senden</a></p>
           </article>
         </div>
