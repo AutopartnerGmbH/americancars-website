@@ -7,23 +7,40 @@ import { useFavs } from '@/lib/favs';
 type V = { slug: string; name: string; meta: string; price: string; tag: string; image: string | null; alt: string; specs: [string, string][] };
 
 export default function MerklisteView({ all }: { all: V[] }) {
-  const { favs } = useFavs();
+  const { favs, toggle } = useFavs();
   const [sel, setSel] = useState<string[]>([]);
   const list = favs.map((s) => all.find((v) => v.slug === s)).filter(Boolean) as V[];
+  const gone = favs.filter((s) => !all.some((v) => v.slug === s));
   const pick = (slug: string) =>
     setSel((c) => (c.includes(slug) ? c.filter((x) => x !== slug) : c.length >= 3 ? c : [...c, slug]));
   const cmp = sel.map((s) => all.find((v) => v.slug === s)).filter(Boolean) as V[];
   const keys = Array.from(new Set(cmp.flatMap((v) => v.specs.map(([k]) => k))));
 
-  if (list.length === 0)
+  if (list.length === 0 && gone.length === 0)
     return (
       <p className='lead'>
         Ihre Merkliste ist noch leer. Mit dem Herz an einem Fahrzeug merken Sie es sich. Die Liste bleibt nur auf Ihrem Gerät gespeichert. <a className='link' href='/fahrzeuge'>Fahrzeuge ansehen</a>
       </p>
     );
 
+  const goneNote = gone.length > 0 && (
+    <p className='note' style={{ marginBottom: 24 }}>
+      {gone.length === 1 ? 'Ein gemerktes Fahrzeug ist nicht mehr verfügbar.' : `${gone.length} gemerkte Fahrzeuge sind nicht mehr verfügbar.`}{' '}
+      <button type='button' className='link' style={{ background: 'none', border: 0, padding: 0, cursor: 'pointer', font: 'inherit', textDecoration: 'underline' }} onClick={() => gone.forEach((g) => toggle(g))}>Von der Liste entfernen</button>
+    </p>
+  );
+
+  if (list.length === 0)
+    return (
+      <>
+        {goneNote}
+        <p className='lead'>Ihre Merkliste enthält aktuell keine verfügbaren Fahrzeuge. <a className='link' href='/fahrzeuge'>Fahrzeuge ansehen</a></p>
+      </>
+    );
+
   return (
     <>
+      {goneNote}
       <div className='grid'>
         {list.map((v) => (
           <div className='carw' key={v.slug}>
