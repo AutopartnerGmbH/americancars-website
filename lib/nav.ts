@@ -15,6 +15,7 @@ export const nav: NavItem[] = [
       ['Motordiagnose', '/motordiagnose'],
       ['Bremsen', '/bremsen-service'],
       ['Getriebe & Motor', '/getriebe-motor-reparatur'],
+      ['Ersatzschlüssel', '/ersatzschluessel-us-fahrzeuge'],
       ['Alle Werkstatt-Leistungen', '/werkstatt-leistungen'],
     ],
   },

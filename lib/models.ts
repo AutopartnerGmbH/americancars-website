@@ -61,7 +61,7 @@ export const models: Model[] = [
       { h: 'Der Mustang in unserer Werkstatt', p: ['Wartung, Reifen und Fahrwerk erledigen wir in unserer Meisterwerkstatt in Hagen-Hohenlimburg. Umbauten wie Felgen oder Fahrwerk klären wir vorab mit dem TÜV.'], links: [['Umbauten, Felgen und Höherlegung', '/umbauten-eintragung-felgen-hoeherlegung']] },
       check,
       service,
-      { h: 'Ersatzschlüssel', p: ['Für Ford Mustang, Chevrolet Camaro und Dodge Challenger fertigen wir auch Ersatzschlüssel.'] },
+      { h: 'Ersatzschlüssel', p: ['Für Ford Mustang, Chevrolet Camaro und Dodge Challenger fertigen wir auch Ersatzschlüssel.'], links: [['Mehr zum Ersatzschlüssel-Service', '/ersatzschluessel-us-fahrzeuge']] },
     ],
     faq: [
       ['Gibt es den Mustang als Coupé und als Cabrio?', 'Ja, wir bieten beide Karosserieformen an, je nach aktuellem Bestand. Was verfügbar ist, sehen Sie unten auf dieser Seite.'],

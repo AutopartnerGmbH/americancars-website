@@ -1,5 +1,6 @@
 import { longtext } from './longtext';
 import { blogPages } from './blogposts';
+import { schluesselPage } from './schluessel';
 export type Block = { h?: string; p?: string[]; ul?: string[]; ol?: string[]; links?: [string, string][]; box?: string };
 export type Page = {
   slug: string;
@@ -22,7 +23,7 @@ const basePages: Page[] = [
       { h: 'Service & Inspektion', p: ['Wartung und Inspektion erfolgen in unserer Meisterwerkstatt nach Herstellervorgaben, für Kundenfahrzeuge genauso wie für unsere Verkaufsfahrzeuge. Regelmäßige Kontrollen erkennen Sicherheitsmängel früh und verhindern teure Folgeschäden.', 'Umfang und Wechselintervalle richten sich nach Ihrem Fahrzeug. Unsere Checkliste umfasst unter anderem:'], ul: ['Beleuchtung und elektrische Einrichtungen', 'Kühlsystem, Bremsflüssigkeit, Batterie, Scheibenwaschanlage', 'Luft-, Pollen- und Kraftstofffilter, Motoröl und Ölfilter', 'Zündkerzen und Dichtheit der Antriebskomponenten', 'Bremsleitungen und Bremsbelagstärke', 'Achs- und Lenkungskomponenten auf Spiel und Verschleiß', 'Reifenzustand und Radbefestigung'] },
       { h: 'Klimaservice', p: ['Eine jährliche Prüfung hält die Kühlleistung hoch und beugt warmer Luft, beschlagenen Scheiben und Gerüchen vor. Wir arbeiten mit einem Kombi-Gerät von SNAP-ON für die Kältemittel R134a und 1234yf.'], ol: ['Hoch- und Niederdruck vergleichen und den Zustand bewerten', 'Kompressor, Trockner, Verdampfer und Kondensator prüfen, Innenraumtemperatur messen', 'Innenraumfilter erneuern', 'Kältemittel absaugen und das System evakuieren', 'Mit der vorgeschriebenen Menge Kältemittel befüllen'] },
       { h: 'Motordiagnose und Fehlerauslesen', p: ['Moderne Fahrzeuge speichern Fehler im Bordcomputer. Wir lesen den Fehlerspeicher mit SNAP-ON-Diagnosegeräten über den OBD-Anschluss aus. Manche Fehler lassen sich direkt löschen, andere analysieren wir anhand der Schaltpläne. Die Diagnosesoftware halten wir aktuell.'] },
-      { h: 'Weitere Leistungen', links: [['Alle Werkstatt-Leistungen im Überblick', '/werkstatt-leistungen']] },
+      { h: 'Weitere Leistungen', links: [['Alle Werkstatt-Leistungen im Überblick', '/werkstatt-leistungen'], ['Ersatzschlüssel für US-Fahrzeuge', '/ersatzschluessel-us-fahrzeuge']] },
       { h: 'Alles aus einer Hand', ul: ['Wartung und Reparatur für alle Marken', 'HU und AU als Prüfstützpunkt des TÜV NORD', 'Umbau und Tuning', 'Unfall-Instandsetzung mit Schadensabwicklung', 'Ersatzschlüssel für Ford Mustang, Chevrolet Camaro und Dodge Challenger'] },
     ],
     cta: ['Werkstatttermin anfragen', '/#werkstatt'],
@@ -1510,6 +1511,6 @@ const basePages: Page[] = [
   },
 ];
 
-export const pages: Page[] = [...basePages, ...blogPages].map((p) => (longtext[p.slug] ? { ...p, blocks: [...p.blocks, ...longtext[p.slug]] } : p));
+export const pages: Page[] = [...basePages, schluesselPage, ...blogPages].map((p) => (longtext[p.slug] ? { ...p, blocks: [...p.blocks, ...longtext[p.slug]] } : p));
 
 export const getPage = (slug: string) => pages.find((p) => p.slug === slug);
