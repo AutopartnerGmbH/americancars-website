@@ -7,7 +7,7 @@ const notice = {
   from: '2026-12-01T00:00:00+01:00',
   until: '2027-01-04T00:00:00+01:00',
   title: 'Betriebsferien:',
-  text: 'Über Weihnachten und Neujahr sind wir vom',
+  text: 'Über Weihnachten und Neujahr haben wir vom',
   dates: '19.12.2026 bis 03.01.2027',
   after: 'geschlossen. Ab dem 04.01.2027 sind wir wieder für Sie da.',
 };
