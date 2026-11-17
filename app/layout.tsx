@@ -9,6 +9,7 @@ import './extra.css';
 import { site } from '@/lib/site';
 import { BASE } from '@/lib/url';
 import Header from '@/components/Header';
+import Notice from '@/components/Notice';
 import Footer from '@/components/Footer';
 import Fab from '@/components/Fab';
 import ScrollProgress from '@/components/ScrollProgress';
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ScrollProgress />
+        <Notice />
         <Header />
         {children}
         <Footer />
