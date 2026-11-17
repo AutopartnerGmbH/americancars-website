@@ -201,3 +201,28 @@ html,body{overflow-x:clip}
 .post .lead,.post aside .lead{overflow-wrap:break-word}
 .post article{min-width:0;overflow-wrap:break-word}
 @media (max-width:900px){.post h1{font-size:clamp(28px,7.6vw,40px)}}
+
+/* Kopfzeile: Menü schmal halten, Handy-Menü bereits bis 1180px */
+.bar .wrap{max-width:1480px}
+.bar-in{gap:20px}
+.menu>ul{gap:0}
+.menu>ul>li>a{padding:0 10px;font-size:13.5px}
+@media (min-width:901px) and (max-width:1180px){
+.bar-in{height:64px;gap:12px}
+.bar .tel{margin-left:0;display:block}
+.favlink{margin-left:auto}
+.burger{display:block}
+.menu{position:fixed;top:64px;left:0;right:0;bottom:0;background:var(--bg);overflow-y:auto;display:block;padding:8px 24px 40px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .2s,transform .2s,visibility .2s}
+.bar.open .menu{opacity:1;visibility:visible;transform:none}
+.menu>ul{flex-direction:column;gap:0}
+.menu>ul>li{display:flex;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--line)}
+.menu>ul>li>a{flex:1;height:auto;padding:18px 0;font-size:18px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.menu .has-sub>a::after{display:none}
+.menu .tg{display:block;width:48px;height:48px;background:none;border:0;cursor:pointer;position:relative}
+.menu .tg::after{content:'';position:absolute;left:19px;top:17px;width:8px;height:8px;border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg);transition:transform .2s}
+.menu li.sub-open>.tg::after{transform:rotate(-135deg);top:21px}
+.menu .sub{position:static;flex-basis:100%;display:none;opacity:1;visibility:visible;transform:none;border:0;box-shadow:none;padding:0 0 14px 16px;min-width:0}
+.menu li.sub-open>.sub{display:block}
+.menu .sub a{padding:10px 0;font-size:17px;color:var(--mut)}
+}
+@media (min-width:1181px) and (max-width:1360px){.bar .tel{display:none}}

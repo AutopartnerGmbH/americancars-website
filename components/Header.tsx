@@ -11,7 +11,7 @@ export default function Header() {
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
     const esc = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
-    const rs = () => window.innerWidth > 900 && setOpen(false);
+    const rs = () => window.innerWidth > 1180 && setOpen(false);
     document.addEventListener('keydown', esc);
     window.addEventListener('resize', rs);
     return () => {
