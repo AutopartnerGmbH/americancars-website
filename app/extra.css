@@ -203,10 +203,12 @@ html,body{overflow-x:clip}
 @media (max-width:900px){.post h1{font-size:clamp(28px,7.6vw,40px)}}
 
 /* Kopfzeile: Menü schmal halten, Handy-Menü bereits bis 1180px */
+@media (min-width:1181px){
 .bar .wrap{max-width:1480px}
 .bar-in{gap:20px}
 .menu>ul{gap:0}
 .menu>ul>li>a{padding:0 10px;font-size:13.5px}
+}
 @media (min-width:901px) and (max-width:1180px){
 .bar-in{height:64px;gap:12px}
 .bar .tel{margin-left:0;display:block}
@@ -226,3 +228,14 @@ html,body{overflow-x:clip}
 .menu .sub a{padding:10px 0;font-size:17px;color:var(--mut)}
 }
 @media (min-width:1181px) and (max-width:1360px){.bar .tel{display:none}}
+
+/* Handy-/Tablet-Menü: größer und übersichtlicher */
+@media (max-width:1180px){
+.menu{padding:12px 24px 48px}
+.menu>ul>li>a{min-height:68px;display:flex;align-items:center;padding:0;font-size:20px;letter-spacing:.03em}
+.menu .tg{width:68px;height:68px}
+.menu .tg::after{left:29px;top:26px;width:10px;height:10px}
+.menu li.sub-open>.tg::after{top:31px}
+.menu .sub{padding:0 0 18px 4px}
+.menu .sub a{display:block;padding:14px 0 14px 18px;font-size:18px;line-height:1.35;color:var(--ink);border-left:3px solid var(--yellow);margin-bottom:8px;background:var(--soft)}
+}
