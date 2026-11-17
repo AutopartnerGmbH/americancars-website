@@ -100,7 +100,7 @@ section.calcs{padding:72px 0}
 .cert .tuev,.legal-tuev .tuev,.tuev-page{background:none!important;padding:0!important}.cert .tuev img{height:34px!important}.legal-tuev .tuev img{height:24px!important}.tuev-page img{height:36px!important}
 
 .tuevbadge{display:inline-flex;flex-direction:column;gap:7px;background:#fff;border-radius:6px;padding:11px 18px 12px;border-left:5px solid #F6C500;box-shadow:0 8px 28px rgba(0,0,0,.45);margin:0 0 18px}
-.tuevbadge .tb-txt{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3f4b;line-height:1}
+.tuevbadge .tb-txt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#3a3f4b;line-height:1}
 .tuevbadge img{display:block;height:30px;width:auto}
 .tuevbadge.s{flex-direction:row;align-items:center;gap:10px;padding:6px 12px;margin:0;box-shadow:none}
 .tuevbadge.s img{height:18px}
@@ -110,7 +110,7 @@ section.calcs{padding:72px 0}
 .tuevbadge,.tuevbadge.s{background:none;border:0;border-radius:0;box-shadow:none;padding:0;gap:4px}
 .tuevbadge .tb-txt{color:#fff;font-size:12px;text-shadow:0 1px 8px rgba(0,0,0,.85)}
 .tuevbadge img{height:44px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.55))}
-.tuevbadge.s{flex-direction:row;align-items:center;gap:10px}.tuevbadge.s .tb-txt{font-size:11px}.tuevbadge.s img{height:28px}
+.tuevbadge.s{flex-direction:row;align-items:center;gap:10px}.tuevbadge.s .tb-txt{font-size:12px}.tuevbadge.s img{height:28px}
 
 /* Hero-Kennzahlen + Bewertung */
 .ratechip{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin:22px 0 0;color:#fff;font-size:14px;text-decoration:none;text-shadow:0 1px 8px rgba(0,0,0,.7)}
@@ -256,3 +256,14 @@ html,body{overflow-x:clip}
 [data-rv].rv-in{opacity:1;transform:none}
 .car[data-rv].rv-in{transition:opacity .7s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
 @media (prefers-reduced-motion:reduce){[data-rv]{opacity:1;transform:none}}
+
+/* Barrierefreiheit: größere Tippflächen (Optik bleibt) */
+.favlink{min-width:44px;min-height:44px;justify-content:center}
+.crumbs a,.filters a,.brands a,.faqmore a,.contact .mail,.contact .tel,.kontakt a,.link,.rev .score a,.ank a:not(.b1):not(.b2){position:relative}
+.crumbs a::after,.filters a::after,.brands a::after,.faqmore a::after,.contact .mail::after,.contact .tel::after,.kontakt a::after,.link::after,.rev .score a::after{content:'';position:absolute;left:-6px;right:-6px;top:50%;height:max(100%,44px);transform:translateY(-50%)}
+.filters a{padding:12px 0}
+/* Lesbarkeit: kleine Schrift anheben */
+.eyebrow,.f,.cert,.stats span{font-size:12.5px}
+.tag,.pic small{font-size:12px}
+.f{font-size:12.5px}
+.pic small{color:#9A9DA3}
