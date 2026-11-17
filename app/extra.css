@@ -250,3 +250,9 @@ html,body{overflow-x:clip}
 .notice p{margin:0;padding:12px 56px 12px 24px;text-align:center;font-size:15px;font-weight:500;line-height:1.45}
 .notice b{font-weight:700}
 .notice button{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:44px;height:44px;background:none;border:0;font-size:26px;line-height:1;color:var(--dk);cursor:pointer}
+
+/* Dezentes Einblenden beim Scrollen (nur wenn JS aktiv; ohne JS bleibt alles sichtbar) */
+[data-rv]{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+[data-rv].rv-in{opacity:1;transform:none}
+.car[data-rv].rv-in{transition:opacity .7s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1;transform:none}}

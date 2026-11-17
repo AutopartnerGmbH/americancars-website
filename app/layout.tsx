@@ -15,6 +15,7 @@ import Fab from '@/components/Fab';
 import ScrollProgress from '@/components/ScrollProgress';
 import FormsInit from '@/components/FormsInit';
 import Consent from '@/components/Consent';
+import Reveal from '@/components/Reveal';
 
 const live = process.env.NEXT_PUBLIC_LIVE === '1';
 
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ScrollProgress />
         <Notice />
+        <Reveal />
         <Header />
         {children}
         <Footer />
