@@ -33,6 +33,8 @@ export default function Impressum() {
             <p>Wir erstellen die Inhalte dieser Seite mit größter Sorgfalt. Für die Richtigkeit, Vollständigkeit und Aktualität können wir jedoch keine Gewähr übernehmen. Preise und Fahrzeugdaten sind freibleibend. Irrtümer und Zwischenverkauf bleiben vorbehalten.</p>
             <h3>Haftung für Links</h3>
             <p>Unsere Seite enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir keine Gewähr. Verantwortlich ist stets der jeweilige Anbieter. Bei Bekanntwerden von Rechtsverletzungen entfernen wir solche Links umgehend.</p>
+            <h3>Bildnachweis</h3>
+            <p>Die Fotos auf dieser Seite stammen, soweit nicht anders angegeben, von der Autopartner GmbH. Das Logo des TÜV NORD ist eine Marke der TÜV NORD GROUP und wird mit deren Einverständnis als Hinweis auf unseren Prüfstützpunkt verwendet. Fremde Bildquellen nennen wir hier.</p>
             <h3>Urheberrecht</h3>
             <p>Die Inhalte und Werke auf dieser Seite unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung und Verbreitung bedürfen der schriftlichen Zustimmung des jeweiligen Rechteinhabers.</p>
           </article>
