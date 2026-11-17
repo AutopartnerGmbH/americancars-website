@@ -26,7 +26,7 @@ export default function Kontakt() {
             <h3>Erreichbar unter</h3>
             <ul>
               <li>Telefon: <a href={`tel:${site.phoneTel}`}>{site.phone}</a></li>
-              <li>Mobil und WhatsApp: <a href={`https://wa.me/${site.whatsapp}`}>{site.mobile}</a></li>
+              <li>WhatsApp: <a href={`https://wa.me/${site.whatsapp}`}>{site.mobile}</a></li>
               <li>E-Mail: <a href={`mailto:${site.mail}`}>{site.mail}</a></li>
             </ul>
             <p><a className='btn' href={`https://wa.me/${site.whatsapp}`} target='_blank' rel='noopener noreferrer'>Per WhatsApp schreiben</a></p>

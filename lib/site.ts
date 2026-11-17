@@ -5,7 +5,7 @@ export const site = {
   phone: '02334 / 80814-0',
   phoneTel: '+492334808140',
   mobile: '0177 / 9289163',
-  whatsapp: '491779289163', // Mobilnummer aus der bisherigen Seite, bitte bestätigen
+  whatsapp: '491779289163', // nur WhatsApp, nicht telefonisch erreichbar
   mail: 'info@autopartner-hagen.de',
   hours: [
     ['Montag bis Donnerstag', '8:00 – 17:00 Uhr'],
