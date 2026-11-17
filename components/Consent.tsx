@@ -17,7 +17,11 @@ function startMarketing() {
   const w = window as unknown as Record<string, unknown>;
   if (w.__acTrack) return;
   w.__acTrack = true;
-  if (GA) {
+  if (GA && GA.startsWith('GTM-')) {
+    // Google-Tag-Container (wie von Google Analytics vorgegeben), erst nach Einwilligung
+    load('https://www.googletagmanager.com/gtm.js?id=' + GA, 'ac-gtm');
+    load('', 'ac-gtm-init', `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());`);
+  } else if (GA) {
     load('https://www.googletagmanager.com/gtag/js?id=' + GA, 'ac-gtag');
     load('', 'ac-gtag-init', `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA}');`);
   }
