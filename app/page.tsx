@@ -1,5 +1,6 @@
 import TuevBadge from '@/components/TuevBadge';
 import Photo from '@/components/Photo';
+import BandParallax from '@/components/BandParallax';
 import Reviews, { RatingChip } from '@/components/Reviews';
 import Marquee from '@/components/Marquee';
 import Faq from '@/components/Faq';
@@ -57,7 +58,7 @@ export default function Home() {
         <div className='more'><a className='link' href='/fahrzeuge'>Alle {vehicles.length} Fahrzeuge ansehen</a></div>
       </div></section>
 
-      <section className='band'><Photo src='/img/silverado.jpg' alt='Chevrolet Silverado mit Offroad-Umbau' /><div className='wrap'><span className='eyebrow'>Unser Anspruch</span><p>Jedes Fahrzeug wird nach unseren Standards geprüft. <span>Bevor Sie es sehen.</span></p></div></section>
+      <BandParallax /><section className='band'><img data-px src='/img/ram-rebel.jpg' alt='Schwarzer RAM 1500 Rebel im Autopartner-Showroom' loading='lazy' /><span className='ai-note'>Bild mit KI generiert</span><div className='wrap'><span className='eyebrow'>Unser Anspruch</span><p>Jedes Fahrzeug wird nach unseren Standards geprüft. <span>Bevor Sie es sehen.</span></p></div></section>
 
       <section className='pop s-b'><div className='wrap'>
         {popular.length > 0 && (
