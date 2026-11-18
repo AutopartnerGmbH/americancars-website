@@ -135,6 +135,11 @@ export default function Home() {
 
       <Faq />
 
+      <section className='fin s-b' id='instagram'><div className='wrap'>
+        <div><span className='eyebrow'>Instagram</span><h2>Folgen Sie uns auf Instagram.</h2></div>
+        <div><p className='lead'>Neuigkeiten und Einblicke aus unserem Autohaus in Hagen.</p><p style={{ margin: '24px 0 0' }}><a className='b1' href='https://www.instagram.com/autopartner_american.cars/' target='_blank' rel='noopener noreferrer'>Auf Instagram folgen</a> <span className='note' style={{ display: 'block', marginTop: 14 }}>@autopartner_american.cars</span></p></div>
+      </div></section>
+
       <section className='contact s-d' id='kontakt'><div className='wrap'>
         <div>
           <h2>Besuchen Sie uns in Hagen.</h2>
