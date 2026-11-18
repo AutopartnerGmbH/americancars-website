@@ -271,4 +271,6 @@ html,body{overflow-x:clip}
 /* Band mit Parallax-Bild und KI-Hinweis */
 .band img[data-px]{top:-30%;height:160%;inset:auto 0 auto 0;will-change:transform;object-position:50% 55%}
 .ai-note{position:absolute;left:24px;bottom:14px;z-index:3;font-size:12px;font-weight:500;color:#EDEDEA;background:rgba(21,22,24,.78);padding:5px 10px}
-.h3-img img{will-change:transform}
+/* Startbild bleibt beim Scrollen stehen (flüssig, ohne JS pro Bild) */
+.h3-img.fx{clip-path:inset(0)}
+.h3-img.fx img{position:fixed;left:0;top:var(--hx-top);width:100%;height:var(--hx-h)}

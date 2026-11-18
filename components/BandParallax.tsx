@@ -7,16 +7,20 @@ import { useEffect } from 'react';
 export default function BandParallax() {
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const hero = document.querySelector<HTMLElement>('.h3-img img');
+    // Startbild: bleibt per CSS (position: fixed + clip-path) stehen, ohne Scroll-Berechnung pro Bild.
+    const box = document.querySelector<HTMLElement>('.h3-img');
+    const place = () => {
+      if (!box) return;
+      box.classList.remove('fx');
+      const r = box.getBoundingClientRect();
+      box.style.setProperty('--hx-top', `${Math.round(r.top + window.scrollY)}px`);
+      box.style.setProperty('--hx-h', `${Math.round(r.height)}px`);
+      box.classList.add('fx');
+    };
     const bands = Array.from(document.querySelectorAll<HTMLElement>('.band [data-px]'));
     let raf = 0;
     const update = () => {
       raf = 0;
-      if (hero) {
-        const box = hero.parentElement as HTMLElement;
-        const y = Math.max(0, Math.min(window.scrollY, box.offsetHeight));
-        hero.style.transform = `translate3d(0,${y}px,0)`;
-      }
       bands.forEach((img) => {
         const band = img.parentElement as HTMLElement;
         const r = band.getBoundingClientRect();
@@ -27,9 +31,12 @@ export default function BandParallax() {
     };
     const on = () => { if (!raf) raf = requestAnimationFrame(update); };
     update();
+    place();
+    const ro = new ResizeObserver(() => place());
+    ro.observe(document.body);
     window.addEventListener('scroll', on, { passive: true });
     window.addEventListener('resize', on);
-    return () => { window.removeEventListener('scroll', on); window.removeEventListener('resize', on); if (raf) cancelAnimationFrame(raf); };
+    return () => { ro.disconnect(); box?.classList.remove('fx'); window.removeEventListener('scroll', on); window.removeEventListener('resize', on); if (raf) cancelAnimationFrame(raf); };
   }, []);
   return null;
 }
